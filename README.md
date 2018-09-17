@@ -1,4 +1,4 @@
-# Library Carpentry WikiData Lesson (So far unofficial and work in progress!)
+# Library Carpentry WikiData Lesson (so far unofficial and WIP!)
 
 [![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
 
