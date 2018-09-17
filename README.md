@@ -16,6 +16,7 @@ how to write new episodes.
 ## Maintainer(s)
 
 * Konrad Förtner
+* Muhammad Elhossary
 
 ## Authors
 
