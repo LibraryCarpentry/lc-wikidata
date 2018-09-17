@@ -15,7 +15,7 @@ how to write new episodes.
 
 ## Maintainer(s)
 
-* Konrad Förnster
+* Konrad Förtner
 
 ## Authors
 
