@@ -4,3 +4,6 @@
 4. Introducing Simple Wikidata practical SPARQL Queries and Wikidata Query Service.
 5. Advanced Queries
 6. Adding bulk data via Bots / Automated adding of bulk data
+
+Suggestions for excecises:
+- "Plot the amount of female mayors of european capitals over time (1900s till today)"
