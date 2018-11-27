@@ -3,4 +3,4 @@
 3. Brief overview of RDF / SPARQL language
 4. Introducing Simple Wikidata practical SPARQL Queries and Wikidata Query Service.
 5. Advanced Queries
-6. Adding bulk data via Bots/ Automated adding of bulk data
+6. Adding bulk data via Bots / Automated adding of bulk data
