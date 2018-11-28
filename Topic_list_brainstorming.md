@@ -7,3 +7,4 @@
 
 Suggestions for excecises:
 - "Plot the amount of female mayors of european capitals over time (1900s till today)"
+- [Wikidata curricula/Activities](https://www.wikidata.org/wiki/Wikidata:Wikidata_curricula/Activities)
