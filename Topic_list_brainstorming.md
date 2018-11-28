@@ -1,4 +1,9 @@
-1. Concepts foundation (Structural Databases vs Semantic Data) .
+1. Concepts foundation 
+   - Structural Databases vs Semantic Data
+   - Wikidata
+   - Wikibase
+   - LOD
+   - FAIR
 2. Introducing Wikidata visual interface
 3. Brief overview of RDF / SPARQL language
 4. Introducing Simple Wikidata practical SPARQL Queries and Wikidata Query Service.
