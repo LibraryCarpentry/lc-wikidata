@@ -15,7 +15,7 @@ how to write new episodes.
 
 * Muhammad Elhossary
 * Till Sauerwein
-* Konrad Förtner
+* Konrad Förstner
 
 ## Authors
 
