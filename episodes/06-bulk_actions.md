@@ -3,7 +3,7 @@ title: "Advanced bulk updating, bots"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How do you bulk upload to Wikidata?"
 objectives:
 - "Understand how to run a bulk import into Wikidata"
 - "practice using quickstatements? (module 3 already includes QuickStatements)"
