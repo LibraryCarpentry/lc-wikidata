@@ -3,7 +3,7 @@ title: "What is Wikidata?"
 teaching: 0
 exercises: 0
 questions:
-- "What is are Items and Statements?"
+- "What are Items and Statements?"
 - "How does the Wikidata interface look like?"
 - "How is Wikidata linked to other Wiki projects?"
 objectives:
