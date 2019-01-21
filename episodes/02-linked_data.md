@@ -14,6 +14,30 @@ objectives:
 keypoints:
 - "First key point. (FIXME)"
 ---
+
+### 2.1 RDF triples
+
+- RDF vs. relational database
+
+- https://en.wikipedia.org/wiki/Semantic_triple
+
+### 2.2 Semantic web/structured data
+
+- https://lod-cloud.net/
+
+
+### 2.3 Wikidata one pager
+- https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf
+
+### 2.4 How Wikidata compares with other data sets 
+
+## DISCUSSION: ##
+* There are already clashes with the previous module
+* Option 1 set focus or on the usage of it for librarians
+* Option 2: merge this completely into Module 1
+* Option 3: Put to the end (later module)
+
+
 FIXME
 
 {% include links.md %}
