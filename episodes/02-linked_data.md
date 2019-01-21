@@ -14,6 +14,24 @@ objectives:
 keypoints:
 - "First key point. (FIXME)"
 ---
+
+### 2.1 RDF triples
+
+- RDF vs. relational database
+
+- https://en.wikipedia.org/wiki/Semantic_triple
+
+### 2.2 Semantic web/structured data
+
+- https://lod-cloud.net/
+
+
+### 2.3 Wikidata one pager
+- https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf
+
+### 2.4 How Wikidata compares with other data sets 
+
+
 FIXME
 
 {% include links.md %}
