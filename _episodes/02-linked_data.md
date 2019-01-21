@@ -31,6 +31,12 @@ keypoints:
 
 ### 2.4 How Wikidata compares with other data sets 
 
+## DISCUSSION: ##
+* There are already clashes with the previous module
+* Option 1 set focus or on the usage of it for librarians
+* Option 2: merge this completely into Module 1
+* Option 3: Put to the end (later module)
+
 
 FIXME
 
