@@ -13,15 +13,15 @@ objectives:
 keypoints:
 - "First key point. (FIXME)"
 ---
-FIXME
+
 
 {% include links.md %}
 
-## 3.1 Create and edit an new item in the test instance ##
+## 3.1 Introduction  ##
 
 Here we will work in the test instance of Wikidata so you will not break anything. Also keep in mind that the editing history is kept in Wikidata so error can also be easily fixed there:
 
-### 3.1.1 Create a new item ###
+## 3.2 Create a new item ##
 
 - Goto https://test.wikidata.org/
 - Click "Create a new Item"
@@ -32,7 +32,7 @@ Here we will work in the test instance of Wikidata so you will not break anythin
     - Aliases
 - Click "Create"
 
-### 3.1.2 Add statements ###
+## 3.3 Add statements ##
 
 - Data types: 
     - String
