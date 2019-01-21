@@ -10,7 +10,7 @@ objectives:
 - "Define what's different about open data and why it's important (DIFFERENT TO WHAT?)"
 - "Understand what a triple is, and relate structure of a Wikidata statement to traditional metadata field structure"
 - "How linked data can create more context for patrons/users in library catalogs"
-- "How linked data can improve recall in library catalogs?
+- "How linked data can improve recall in library catalogs?"
 keypoints:
 - "First key point. (FIXME)"
 ---
