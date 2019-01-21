@@ -17,19 +17,19 @@ keypoints:
 - "First key point. (FIXME)"
 ---
 
-## 4.1 Adding references ##
+## 4.1 Adding references
 
 - Support a statement by reference
 - TODO - find example; Backup solution use the "origin of species example"
 
-## 4.2 Citations link in wikidata ##
+## 4.2 Citations link in wikidata
         
 Example of a scholorly article with citations: https://www.wikidata.org/wiki/Q52641751
 
 - some notes regarding the "cites" statement 
 
-## 4.3 Norms ##
+## 4.3 Norms
 
-## 4.4 Finding stable identifiers (???) ##
+## 4.4 Finding stable identifiers (???)
 
 {% include links.md %}
