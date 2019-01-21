@@ -3,7 +3,7 @@ title: "Intro to editing"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How to create and edit a Wikidata item?"
 objectives:
 - Be able to create and edit a Wikidata entry
 - Understand properties and relations, and where to find lists of approved properties and relations
