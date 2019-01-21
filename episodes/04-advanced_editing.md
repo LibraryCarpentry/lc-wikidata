@@ -3,7 +3,7 @@ title: "Advanced editing"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "How to add reference and follow good practice?"
 objectives:
 - Use some tools for editing, e.g. TABernacle, Wikidata Games, QuickStatements, Source MetaData or Author Disambiguator/Author resolver
 - Understand community norms around WikiData and why they're important
@@ -16,11 +16,8 @@ objectives:
 keypoints:
 - "First key point. (FIXME)"
 ---
-FIXME
 
-{% include links.md %}
-
-## 4.1 References ##
+## 4.1 Adding references ##
 
 - Support a statement by reference
 - TODO - find example; Backup solution use the "origin of species example"
@@ -34,3 +31,5 @@ Example of a scholorly article with citations: https://www.wikidata.org/wiki/Q52
 ## 4.3 Norms ##
 
 ## 4.4 Finding stable identifiers (???) ##
+
+{% include links.md %}
