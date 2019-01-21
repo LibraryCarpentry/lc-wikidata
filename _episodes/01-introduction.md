@@ -21,9 +21,9 @@ FIXME
 
 ## 1.1 Intro interface ##
 
-- Homepage - Screenshot and link to page (Participants should visit the page: https://www.wikidata.org/wiki/Wikidata:Main_Page)
-![Example Jupyter Notebook](../fig/0_jupyter_notebook_example.jpg)  
-*Screenshot of Wikidata Main Page [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
+- Homepage - 
+![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
+*Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
 
 - Earth (Q2) - Screenshot and link to page (Participants should visit the page https://www.wikidata.org/wiki/Q2)
 - Description of Earth (Q2) as an example for an entry
