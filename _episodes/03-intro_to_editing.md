@@ -1,5 +1,5 @@
 ---
-title: "Intro to editing"
+title: "Introduction to editing"
 teaching: 0
 exercises: 0
 questions:
