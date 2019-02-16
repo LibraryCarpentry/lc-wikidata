@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Introduction to querying"
 teaching: 0
 exercises: 0
 questions:
