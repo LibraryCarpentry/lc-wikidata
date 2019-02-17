@@ -46,8 +46,8 @@ and to meet some of our community members.
 ## Where to Contribute
 
 1.  If you wish to change this lesson,
-    please work in <https://github.com/swcarpentry/FIXME>,
-    which can be viewed at <https://swcarpentry.github.io/FIXME>.
+    please work in <https://github.com/LibraryCarpentry/lc-wikidata>,
+    which can be viewed at <https://librarycarpentry.github.io/lc-wikidata>.
 
 2.  If you wish to change the example lesson,
     please work in <https://github.com/carpentries/lesson-example>,
