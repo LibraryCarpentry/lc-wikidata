@@ -31,8 +31,7 @@ FIXME
   *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
 
   - Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page:
-
-  https://www.wikidata.org/wiki/Q23308
+     https://www.wikidata.org/wiki/Q23308
 
   - Let us explore the item British Library (Q23308). The top part of the item page serves for identifying the item. It    has:
     - unique identifier (Q + a number)
