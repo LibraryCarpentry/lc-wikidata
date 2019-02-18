@@ -36,26 +36,24 @@ Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by 
 ![Wikidata_World Item Page](../fig/Wikidata_Item_Q2_Earth.png)  
 *Screenshot of [Wikidata World Item Page](https://www.wikidata.org/wiki/Q2)*
 
-- Screenshot and link to page (Participants should visit the page https://www.wikidata.org/wiki/Q2)
-- Description of Earth (Q2) as an example for an entry
-    - Title - Earth (Q2)
-    - What does "Q2"?
-    - What is an item https://www.wikidata.org/wiki/Help:Items
-        - Has 
+Let us explore the item Earth (Q2). The top part of the item page serves for identifying the item. It has:
             - unique identifier (Q + a number)
             - label 
             - description
             - aliases
-    - "Statement" section
-        - What is a statement?
-            - Has
-                - property (P + a number)
-                - value
-                - qualifier (optional)
-                - references (optional)
-            - is a so called triple which will be explained later
-    - As you can see a property can have multiple statements for one property; for example "Population"; they are specified by "qualifiers" like point in time; an can references e.g. population at the 5 January 2016 has the reference http://www.worldometers.info/world-population/ as source.
-    - Usually pages can be edited by anyonce; click the pen on the upper-right; Q2 - Earth is semi-protected (as it is very important); don't worry you made a mistake, you can always go back in history
+The bottom part is the "statement" section, that adds statements to the item. A statement has:
+  - property (P + a number)
+  - value
+  - qualifier (optional)
+  - references (optional)
+  - is a so called triple which will be explained later
+  - As you can see a property can have multiple values for one property; for example "member of"; can be further specified by qualifiers (not showen on item British Library).
+
+All these new definitions like statements, qualifiers and so on can be confusing. If you are not sure you can check this overview graphic https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg:
+
+![Datamodel in Wikidata](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg)
+
+- Usually pages can be edited by anyone; click the pen on the upper-right; Q2 - Earth is semi-protected (as it is very important); don't worry you made a mistake, you can always go back in history
     - "View history" - more later
     - "Log in" and other things for registered users
 - CC0 
