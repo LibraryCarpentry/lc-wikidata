@@ -30,35 +30,36 @@ Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by 
 ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
 *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
 
-- Now go to the search bar in the top right corner and enter "earth". This will give you a list with search results. Click the entry that says: "Earth (Q2) third planet from the Sun in the Solar System". Now you should see earth's item page:
+- Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308)vnational library of the United Kingdom". Now you should see the british librarie's item page:
 
-- Earth (Q2) 
-![Wikidata_World Item Page](../fig/Wikidata_Item_Q2_Earth.png)  
-*Screenshot of [Wikidata World Item Page](https://www.wikidata.org/wiki/Q2)*
+https://www.wikidata.org/wiki/Q23308
 
-- Screenshot and link to page (Participants should visit the page https://www.wikidata.org/wiki/Q2)
-- Description of Earth (Q2) as an example for an entry
-    - Title - Earth (Q2)
-    - What does "Q2"?
-    - What is an item https://www.wikidata.org/wiki/Help:Items
-        - Has 
-            - unique identifier (Q + a number)
-            - label 
-            - description
-            - aliases
-    - "Statement" section
-        - What is a statement?
-            - Has
-                - property (P + a number)
-                - value
-                - qualifier (optional)
-                - references (optional)
-            - is a so called triple which will be explained later
-    - As you can see a property can have multiple statements for one property; for example "Population"; they are specified by "qualifiers" like point in time; an can references e.g. population at the 5 January 2016 has the reference http://www.worldometers.info/world-population/ as source.
-    - Usually pages can be edited by anyonce; click the pen on the upper-right; Q2 - Earth is semi-protected (as it is very important); don't worry you made a mistake, you can always go back in history
+Let us explore the item Earth (Q2). The top part of the item page serves for identifying the item. It has:
+  - unique identifier (Q + a number)
+  - label 
+  - description
+  - aliases
+            
+The bottom part is the "statement" section, that adds statements to the item. A statement has:
+  - property (P + a number)
+  - value
+  - qualifier (optional)
+  - references (optional)
+  - is a so called triple which will be explained later
+  - As you can see a property can have multiple values for one property; for example "member of"; can be further specified by qualifiers (not showen on item British Library).
+
+All these new definitions like statements, qualifiers and so on can be confusing. If you are not sure you can check this overview graphic https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg:
+
+![Datamodel in Wikidata](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg)
+
+- Usually pages can be edited by anyone; click the pen on the upper-right; Q2 - Earth is semi-protected (as it is very important); don't worry you made a mistake, you can always go back in history
     - "View history" - more later
     - "Log in" and other things for registered users
-- CC0 
+
+- All structured data is under the creative Creative Commons CC0 License:
+"The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."
+from https://creativecommons.org/publicdomain/zero/1.0/
+
 - Further Links
     - https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf
         
