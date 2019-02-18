@@ -41,8 +41,7 @@ You can compare the entry that you have generated on the test instance with the 
 
 ![Wikidata Feyman](../fig/Screenshot_Wikidata_Richard_Feynman_excerpt.png)  
 
-Richard Feyman wrote several books. On of it is his autobiobliography
-"Surely You're Joking, Mr. Feynman!" Let's create an instance for the book.
+Richard Feyman wrote several books. On of it most famous one is is his autobiobliography "Surely You're Joking, Mr. Feynman!". Let's create an instance for the book. This is very similar to the creation of the instance about Feynman himself.
 
 - Goto the test instance at https://test.wikidata.org/
 - Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link on the left site.
