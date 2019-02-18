@@ -40,13 +40,13 @@ FIXME
     - description
     - aliases
             
-The bottom part is the "statement" section, that adds statements to the item. A statement has:
-  - property (P + a number)
-  - value
-  - qualifier (optional)
-  - references (optional)
-  - is a so called triple which will be explained later
-  - As you can see a property can have multiple values for one property; for example "member of"; can be further specified by qualifiers (not showen on item British Library).
+  - The bottom part is the "statement" section, that adds statements to the item. A statement has:
+    - property (P + a number)
+    - value
+    - qualifier (optional)
+    - references (optional)
+    - is a so called triple which will be explained later
+    - As you can see a property can have multiple values for one property; for example "member of"; can be further specified by qualifiers (not showen on item British Library).
 
 - All these new definitions like statements, qualifiers and so on can be confusing. If you are not sure you can check this overview graphic https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg:
 
