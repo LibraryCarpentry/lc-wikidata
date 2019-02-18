@@ -19,18 +19,25 @@ keypoints:
 
 ## 3.1 Introduction
 
-Here we will work in the test instance of Wikidata so you will not break anything. Also keep in mind that the editing history is kept in Wikidata so error can also be easily fixed there:
+Here we will work in the test instance of Wikidata so you will not break anything. Also keep in mind that the editing history is kept in Wikidata so error can also be easily fixed there. The test instance is cleaned regularly.
 
 ## 3.2 Create a new item
 
-- Goto https://test.wikidata.org/
-- Click "Create a new Item"
-- Fill the form 
-    - Language:
-    - Label
-    - Description
-    - Aliases
-- Click "Create"
+In the following we will create new items. In order to avoid to fill wikidata with test entries, we will used the test instance (https://test.wikidata.org/)  and not the official, production version (https://wikidata.org/).
+
+- Goto the test version at https://test.wikidata.org/
+- Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link on the left site.
+- Fill the form - You can now add an entry about anything you want like a book, a research article or and author. We will generate an entry of the physisist Richard Feynman. You can also add yourself (if you feel famous enough). We choose "en" int the *Language* drop-down menue, write "Richard Feynman" in the *Label* field, "American theoretical physicist" in the *Description* field and "Richard Phillips Feynman" in the *Aliases* field.
+- Once we are done we click click "Create"
+
+- https://www.wikidata.org/wiki/Q39246
+
+
+![Front Page of the test instance](../fig/Screenshot_test_instance_front_page.png)  
+![Empty create form of the test instance](../fig/Screenshot_test_instance_empty_create_page.png)  
+![Freshly created Item of Richard Feynman](../fig/Screenshot_test_instance_Richard_Feynman_fresh.png)  
+![Wikidata Feyman](../fig/Screenshot_Wikidata_Richard_Feynman.png)  
+
 
 ## 3.3 Add statements
 
