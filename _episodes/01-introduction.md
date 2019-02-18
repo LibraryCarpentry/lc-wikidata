@@ -20,14 +20,22 @@ FIXME
 {% include links.md %}
 
 ## 1.1 Intro interface ##
+- What is Wikidata?
 
-- Homepage - 
+"Wikidata is a free and open knowledge base that can be read and edited by both humans and machines."
+- Let's try this out and see if we as humans can simply read the data on Wikidata:
+
+Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. This is what you should see:
+
 ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
 *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
+
+- Now go to the search bar in the top right corner and enter "earth". This will give you a list with search results. Click the entry that says: "Earth (Q2) third planet from the Sun in the Solar System". Now you should see earth's item page:
 
 - Earth (Q2) 
 ![Wikidata_World Item Page](../fig/Wikidata_Item_Q2_Earth.png)  
 *Screenshot of [Wikidata World Item Page](https://www.wikidata.org/wiki/Q2)*
+
 - Screenshot and link to page (Participants should visit the page https://www.wikidata.org/wiki/Q2)
 - Description of Earth (Q2) as an example for an entry
     - Title - Earth (Q2)
