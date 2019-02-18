@@ -67,8 +67,9 @@ Again you can compare to version in Wikidata
 
 https://www.wikidata.org/wiki/Q2743592
 
-
 ## 3.3 Add statements
+
+Once you have created entry you can extend it by further statement. 
 
 - Data types: 
     - String
@@ -78,7 +79,10 @@ https://www.wikidata.org/wiki/Q2743592
     - URL
     - And many more https://www.wikidata.org/wiki/Help:Data_type
 
-- Click add statement
+- Click on the "+ add statement" link
+
+
+
 - Fill a property and a values
 
 - Some suggestions for statements:
@@ -86,5 +90,18 @@ https://www.wikidata.org/wiki/Q2743592
     -  "date of publication" (P151) 
 
 Have a look again at Origin of Species to get inspiration: https://www.wikidata.org/wiki/Q20124
+
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_01.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_02.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_03.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_04.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_05.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_06.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_07.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_08.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_09.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_10.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_11.png)  
+![Add](../fig/Screenshot_test_instance_Joking_add_statements_12.png)  
 
 ## 3.4 Community norms [examples of how other libraries have used?]
