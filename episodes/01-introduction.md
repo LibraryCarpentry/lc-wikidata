@@ -30,11 +30,11 @@ Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by 
 ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
 *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
 
-- Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308)vnational library of the United Kingdom". Now you should see the british librarie's item page:
+- Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page:
 
 https://www.wikidata.org/wiki/Q23308
 
-Let us explore the item Earth (Q2). The top part of the item page serves for identifying the item. It has:
+Let us explore the item British Library (Q23308). The top part of the item page serves for identifying the item. It has:
   - unique identifier (Q + a number)
   - label 
   - description
@@ -52,7 +52,7 @@ All these new definitions like statements, qualifiers and so on can be confusing
 
 ![Datamodel in Wikidata](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg)
 
-- Usually pages can be edited by anyone; click the pen on the upper-right; Q2 - Earth is semi-protected (as it is very important); don't worry you made a mistake, you can always go back in history
+- Usually pages can be edited by anyone; click the pen on the upper-right; Q23308 - British Library is semi-protected; don't worry if you made a mistake, you can always go back in history
     - "View history" - more later
     - "Log in" and other things for registered users
 
@@ -62,9 +62,6 @@ from https://creativecommons.org/publicdomain/zero/1.0/
 
 - Further Links
     - https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf
-        
-        - https://www.wikidata.org/wiki/Wikidata:Introduction#/media/File:Datamodel_in_Wikidata.svg
-        - 
 
 ## 1.2 Play games to open ##
 
@@ -74,7 +71,8 @@ from https://creativecommons.org/publicdomain/zero/1.0/
 ## 1.3 Relationship with other wiki projects ##
 - Link from Wikipedia to Wikidata
     - e.g. https://en.wikipedia.org/wiki/On_the_Origin_of_Species
-        - => Follow the link "Wikidata item"
+        - => Follow the link "Wikidata item" on the left side under "tools"
         - => https://www.wikidata.org/wiki/Q20124
+        - => the wikipedia article is linked on the Wikidata's item page. You can find it on the right side.
         - => link to WikiCommons and WikiSource
 -  Link items to other wikis either added by humans or bot
