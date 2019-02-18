@@ -38,7 +38,7 @@ In the following we will create new items. In order to avoid to fill wikidata wi
 
 ![Empty create form of the test instance](../fig/Screenshot_test_instance_empty_create_page.png)  
 ![Freshly created Item of Richard Feynman](../fig/Screenshot_test_instance_Richard_Feynman_fresh.png)  
-![Wikidata Feyman](../fig/Screenshot_Wikidata_Richard_Feynman.png)  
+![Wikidata Feyman](../fig/Screenshot_Wikidata_Richard_Feynman_excerpt.png)  
 
 Richard Feyman wrote several books. On of it is his autobiobliography
 "Surely You're Joking, Mr. Feynman!" Let's create an instance for the book
