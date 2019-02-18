@@ -20,8 +20,13 @@ FIXME
 {% include links.md %}
 
 ## 1.1 Intro interface ##
+- What is Wikidata?
 
-- Homepage - 
+"Wikidata is a free and open knowledge base that can be read and edited by both humans and machines."
+- Let's try this out and see if we as humans can simply read the data on Wikidata:
+
+Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. This is what you should see:
+
 ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
 *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
 
