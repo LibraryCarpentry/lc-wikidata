@@ -15,16 +15,18 @@ keypoints:
 - "First key point. (FIXME)"
 ---
 
-## 2.1 RDF triples
+
+## 2.1 Semantic web/structured data or  vs. relational database
+- Semantic web 
+- https://lod-cloud.net/
+
+
+## 2.2 RDF triples
 
  - The RDF is a conceptual data model, It is based on the idea of making statements about resources in expressions of the form (subject–predicate–object), known as triples.
  - The subject denotes the resource, and the predicate denotes traits or aspects of the resource, and expresses a relationship between the subject and the object.
 
 - https://en.wikipedia.org/wiki/Semantic_triple
-
-## 2.2 Semantic web/structured data or  vs. relational database
-- Semantic web 
-- https://lod-cloud.net/
 
 
 ## 2.3 Wikidata one pager
