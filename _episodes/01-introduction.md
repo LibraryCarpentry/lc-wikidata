@@ -29,7 +29,7 @@ Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by 
 
 ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
 *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
-
+Now go to the search bar in the top right corner and enter "earth"
 - Earth (Q2) 
 ![Wikidata_World Item Page](../fig/Wikidata_Item_Q2_Earth.png)  
 *Screenshot of [Wikidata World Item Page](https://www.wikidata.org/wiki/Q2)*
