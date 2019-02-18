@@ -29,10 +29,13 @@ Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by 
 
 ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
 *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
-Now go to the search bar in the top right corner and enter "earth"
+
+- Now go to the search bar in the top right corner and enter "earth". This will give you a list with search results. Click the entry that says: "Earth (Q2) third planet from the Sun in the Solar System". Now you should see earth's item page:
+
 - Earth (Q2) 
 ![Wikidata_World Item Page](../fig/Wikidata_Item_Q2_Earth.png)  
 *Screenshot of [Wikidata World Item Page](https://www.wikidata.org/wiki/Q2)*
+
 - Screenshot and link to page (Participants should visit the page https://www.wikidata.org/wiki/Q2)
 - Description of Earth (Q2) as an example for an entry
     - Title - Earth (Q2)
