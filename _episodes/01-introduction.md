@@ -37,10 +37,11 @@ Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by 
 *Screenshot of [Wikidata World Item Page](https://www.wikidata.org/wiki/Q2)*
 
 Let us explore the item Earth (Q2). The top part of the item page serves for identifying the item. It has:
-            - unique identifier (Q + a number)
-            - label 
-            - description
-            - aliases
+  - unique identifier (Q + a number)
+  - label 
+  - description
+  - aliases
+            
 The bottom part is the "statement" section, that adds statements to the item. A statement has:
   - property (P + a number)
   - value
