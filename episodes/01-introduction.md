@@ -21,34 +21,34 @@ FIXME
 
 ## 1.1 Intro interface ##
 - What is Wikidata?
+  - Wikidatas own description says:
+  "Wikidata is a free and open knowledge base that can be read and edited by both humans and machines."
+  - Let's try this out and see if we as humans can simply read the data on Wikidata:
 
-"Wikidata is a free and open knowledge base that can be read and edited by both humans and machines."
-- Let's try this out and see if we as humans can simply read the data on Wikidata:
+  - Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your   browser. This is what you should see:
 
-Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. This is what you should see:
+  ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
+  *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
 
-![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
-*Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
+  - Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page:
 
-- Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page:
+  https://www.wikidata.org/wiki/Q23308
 
-https://www.wikidata.org/wiki/Q23308
-
-Let us explore the item British Library (Q23308). The top part of the item page serves for identifying the item. It has:
-  - unique identifier (Q + a number)
-  - label 
-  - description
-  - aliases
+  - Let us explore the item British Library (Q23308). The top part of the item page serves for identifying the item. It    has:
+    - unique identifier (Q + a number)
+    - label 
+    - description
+    - aliases
             
-The bottom part is the "statement" section, that adds statements to the item. A statement has:
-  - property (P + a number)
-  - value
-  - qualifier (optional)
-  - references (optional)
-  - is a so called triple which will be explained later
-  - As you can see a property can have multiple values for one property; for example "member of"; can be further specified by qualifiers (not showen on item British Library).
+  - The bottom part is the "statement" section, that adds statements to the item. A statement has:
+    - property (P + a number)
+    - value
+    - qualifier (optional)
+    - references (optional)
+    - is a so called triple which will be explained later
+    - As you can see a property can have multiple values for one property; for example "member of"; can be further specified by qualifiers (not showen on item British Library).
 
-All these new definitions like statements, qualifiers and so on can be confusing. If you are not sure you can check this overview graphic https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg:
+- All these new definitions like statements, qualifiers and so on can be confusing. If you are not sure you can check this overview graphic https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg:
 
 ![Datamodel in Wikidata](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg)
 
