@@ -71,7 +71,8 @@ from https://creativecommons.org/publicdomain/zero/1.0/
 ## 1.3 Relationship with other wiki projects ##
 - Link from Wikipedia to Wikidata
     - e.g. https://en.wikipedia.org/wiki/On_the_Origin_of_Species
-        - => Follow the link "Wikidata item"
+        - => Follow the link "Wikidata item" on the left side under "tools"
         - => https://www.wikidata.org/wiki/Q20124
+        - => the wikipedia article is linked on the Wikidata's item page. You can find it on the right side.
         - => link to WikiCommons and WikiSource
 -  Link items to other wikis either added by humans or bot
