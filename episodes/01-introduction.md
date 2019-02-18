@@ -30,11 +30,9 @@ Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by 
 ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
 *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
 
-- Now go to the search bar in the top right corner and enter "earth". This will give you a list with search results. Click the entry that says: "Earth (Q2) third planet from the Sun in the Solar System". Now you should see earth's item page:
+- Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308)vnational library of the United Kingdom". Now you should see the british librarie's item page:
 
-- Earth (Q2) 
-![Wikidata_World Item Page](../fig/Wikidata_Item_Q2_Earth.png)  
-*Screenshot of [Wikidata World Item Page](https://www.wikidata.org/wiki/Q2)*
+https://www.wikidata.org/wiki/Q23308
 
 Let us explore the item Earth (Q2). The top part of the item page serves for identifying the item. It has:
   - unique identifier (Q + a number)
@@ -57,7 +55,11 @@ All these new definitions like statements, qualifiers and so on can be confusing
 - Usually pages can be edited by anyone; click the pen on the upper-right; Q2 - Earth is semi-protected (as it is very important); don't worry you made a mistake, you can always go back in history
     - "View history" - more later
     - "Log in" and other things for registered users
-- CC0 
+
+- All structured data is under the creative Creative Commons CC0 License:
+"The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."
+from https://creativecommons.org/publicdomain/zero/1.0/
+
 - Further Links
     - https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf
         
