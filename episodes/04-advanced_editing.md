@@ -29,7 +29,11 @@ Example of a scholorly article with citations: https://www.wikidata.org/wiki/Q52
 - some notes regarding the "cites" statement 
 
 ## 4.3 Norms
+- good practices
 
-## 4.4 Finding stable identifiers (???)
+## 4.4 Finding stable identifiers
+- DOI
+- ORCID
+- etc.
 
 {% include links.md %}
