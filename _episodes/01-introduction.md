@@ -23,16 +23,15 @@ FIXME
 - What is Wikidata?
   - Wikidatas own description says:
   "Wikidata is a free and open knowledge base that can be read and edited by both humans and machines."
-  - Let's try this out and see if we as humans can simply read the data on Wikidata:
-
-  - Go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your   browser. This is what you should see:
+  - Let's try this out in the next section of this lesson and see if we as humans can simply read the data on Wikidata:
+- Explore a Wikidata Item page:
+  - Fur this purpose go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. This is what you should see:
 
   ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
   *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
 
   - Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page:
-
-  https://www.wikidata.org/wiki/Q23308
+     https://www.wikidata.org/wiki/Q23308
 
   - Let us explore the item British Library (Q23308). The top part of the item page serves for identifying the item. It    has:
     - unique identifier (Q + a number)
@@ -60,19 +59,17 @@ FIXME
 "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."
 from https://creativecommons.org/publicdomain/zero/1.0/
 
-- Further Links
+- Further Link describing Wikidata in one page (visual)
     - https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf
 
 ## 1.2 Play games to open ##
 
 - Visit random items: https://www.wikidata.org/wiki/Special:Random
-- TODO - more games needed
 
 ## 1.3 Relationship with other wiki projects ##
 - Link from Wikipedia to Wikidata
     - e.g. https://en.wikipedia.org/wiki/On_the_Origin_of_Species
         - => Follow the link "Wikidata item" on the left side under "tools"
         - => https://www.wikidata.org/wiki/Q20124
-        - => the wikipedia article is linked on the Wikidata's item page. You can find it on the right side.
+        - => the Wikipedia article is linked on the Wikidata's item page. You can find it on the right side.
         - => link to WikiCommons and WikiSource
--  Link items to other wikis either added by humans or bot
