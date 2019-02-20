@@ -120,4 +120,5 @@ further links
 
     https://commons.wikimedia.org/wiki/File:Wikidata_Query_Service_in_Brief.pdf
     https://www.uni-mannheim.de/media/Einrichtungen/dws/Files_Teaching/Semantic_Web_Technologies/SWT05-SPARQL-v1.pdf
+    https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial
 
