@@ -23,7 +23,7 @@ Here we will work in the test instance of Wikidata so you will not break anythin
 
 ## 3.2 Create new items
 
-In the following we will create new items. In order to avoid to fill wikidata with test entries, we will used the test instance (https://test.wikidata.org/) and not the official, production version (https://wikidata.org/).
+In the following we will create new items. In order to avoid to fill Wikidata with test entries, we will used the test instance (https://test.wikidata.org/) and not the official, production version (https://wikidata.org/).
 
 Goto the test instance at https://test.wikidata.org/
 
