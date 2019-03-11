@@ -42,7 +42,7 @@ keypoints:
 >
 > Got to the Wikidata page of Mae Jemison and point out one RDF triple. 
 > An RDF triplet consists of a subject, a predicate and an object. 
-> Can you assign the corresponding Wikidata terms to?
+> Can you assign the three corresponding Wikidata terms?
 > 
 > > ## Solution
 > > Got to Wikidata and either search for "Mae Jemison" or enter the ID *Q34091*. 
