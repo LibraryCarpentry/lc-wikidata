@@ -28,9 +28,11 @@ keypoints:
  - RDF data are stored on containers known as triplestores.
 
 - https://en.wikipedia.org/wiki/Semantic_triple
-> ## Is data stored in the RDF triple format part of your work as a librarian? Where does data in the RDF triple format occur in your  
+
+> ## Is data stored in the RDF triple format part of your work as a librarian? 
 >
-> Take some time to think about if data stored in the RDF triple format is part of your work as a librarian. Can you give an example in the format of an RDF triplet?  
+> Take some time to think about if data stored in the RDF triple format 
+> is part of your work as a librarian. Can you give an example in the format of an RDF triplet?  
 > > ## Solution
 > > *TO DO*: PLEASE ADD A REAL LIFE EXAMPLE
 > {: .solution}
