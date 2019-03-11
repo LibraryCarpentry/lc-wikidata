@@ -51,8 +51,11 @@ keypoints:
 > >  *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Q34091)*
 > >
 > > On Wikidata a subject is a Wikidata item, a predicate is a Property and an object is the value of the statement.
+> >
 > > subject -> Item
+> >
 > > predicate -> Property
+> >
 > > object -> value
 > {: .solution}
 {: .challenge}
