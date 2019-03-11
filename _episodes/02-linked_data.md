@@ -65,6 +65,9 @@ keypoints:
 
 ## 2.4 How Wikidata compares with other data sets 
 
+- https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata
+- https://lod-cloud.net/
+
 ## DISCUSSION: ##
 * There are already clashes with the previous module
 * Option 1 set focus or on the usage of it for librarians
