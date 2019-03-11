@@ -35,13 +35,15 @@ Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link
 
 ![Empty create form of the test instance](../fig/Screenshot_test_instance_empty_create_page.png)  
 
+![Empty create form of the test instance](../fig/l03-Mae_Jemison_01_Enter_in_form.png)  
+
 - Once we are done we click click "Create". You should see you newly created article. The URL, the adress shown in your web browser, should contain "Q" and some number that is unique for this entry at the end.
 
-![Freshly created Item of Richard Feynman](../fig/Screenshot_test_instance_Richard_Feynman_fresh.png)  
+![Freshly created Item of Richard Feynman](../fig/l03-Mae_Jemison_02_Newly_created_page.png)  
 
 You can compare the entry that you have generated on the test instance with the current version of the item in Wikidata ([Q39246](https://www.wikidata.org/wiki/Q39246)).
 
-![Wikidata Feyman](../fig/Screenshot_Wikidata_Richard_Feynman_excerpt.png)  
+![Wikidata Feyman](../fig/l03-Mae_Jemison_03_Official_Wikidata_entry_full.png)  
 
 That was fun - let's do this again but this time we create an entry for a book. Richard Feyman wrote several one. On of his most famous ones is is his autobiobliography "Surely You're Joking, Mr. Feynman!". We want to creat an entry for this . The procedure is the same as for the creation of the instance about Feynman himself:
 
@@ -51,7 +53,7 @@ That was fun - let's do this again but this time we create an entry for a book. 
 
 - Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link on the left site.
 
-![Wikidata Feyman](../fig/Screenshot_test_instance_create_Joking.png)  
+![Wikidata Feyman](../fig/l03-Mae_Jemison_04_Enter_in_form_book.png)  
 
 - Fill the form -  We choose "en" int the *Language* drop-down menue, write "Surely You're Joking, Mr. Feynman!" in the *Label* field, "book by Richard Feynman" in the *Description* field and leave the *Alias* field blank
 
@@ -59,11 +61,9 @@ That was fun - let's do this again but this time we create an entry for a book. 
 
 - Once we are done we click click "Create". You should see something like his:
 
-![Wikidata Feyman](../fig/Screenshot_test_instance_Joking_fresh.png)  
+![Wikidata Feyman](../fig/l03-Mae_Jemison_05_Newly_created_book.png)  
 
 Again you can compare to version in Wikidata
-
-![Wikidata Feyman](../fig/Screenshot_Wikidata_Joking.png)  
 
 https://www.wikidata.org/wiki/Q2743592
 
@@ -91,17 +91,11 @@ Once you have created entry you can extend it by further statement.
 
 Have a look again at Origin of Species to get inspiration: https://www.wikidata.org/wiki/Q20124
 
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_01.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_02.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_03.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_04.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_05.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_06.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_07.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_08.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_09.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_10.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_11.png)  
-![Add](../fig/Screenshot_test_instance_Joking_add_statements_12.png)  
+![Add](../fig/l03-Mae_Jemison_07_Added_instance_of.png)  
+![Add](../fig/l03-Mae_Jemison_08_Form_adding_publication_date.png)  
+![Add](../fig/l03-Mae_Jemison_09_Added_publication_date.png)  
+![Add](../fig/l03-Mae_Jemison_10_Added_authors.png)  
+![Add](../fig/l03-Mae_Jemison_10_Form_adding_authors.png)  
+![Add](../fig/l03-Mae_Jemison_11_Hoover_link.png)  
 
 ## 3.4 Community norms [examples of how other libraries have used?]
