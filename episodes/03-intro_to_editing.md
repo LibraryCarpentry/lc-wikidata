@@ -29,11 +29,11 @@ Goto the test instance at https://test.wikidata.org/
 
 Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link on the left site. You will see a form that looks like this:
 
-![Front Page of the test instance](../fig/Screenshot_test_instance_front_page.png)  
+![Front Page of the test instance](../fig/l03-Screenshot_test_instance_front_page.png)  
 
 - Please fill the form. You can now add an entry about anything you want like a book, a research article or and author. We will generate an entry of the physisist Richard Feynman who is author of serveral important research articles but also text books and popular science books. You can also add yourself (if you feel famous enough). We choose "en" int the *Language* drop-down menue, write "Richard Feynman" in the *Label* field, "American theoretical physicist" in the *Description* field and "Richard Phillips Feynman" in the *Aliases* field.
 
-![Empty create form of the test instance](../fig/Screenshot_test_instance_empty_create_page.png)  
+![Empty create form of the test instance](../fig/l03-Screenshot_test_instance_empty_create_page.png)  
 
 ![Empty create form of the test instance](../fig/l03-Mae_Jemison_01_Enter_in_form.png)  
 
@@ -49,7 +49,7 @@ That was fun - let's do this again but this time we create an entry for a book. 
 
 - Use your web browser to go to the test instance at https://test.wikidata.org/ in case that you are not there.
 
-![Front Page of the test instance](../fig/Screenshot_test_instance_front_page.png)  
+![Front Page of the test instance](../fig/l03-Screenshot_test_instance_front_page.png)  
 
 - Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link on the left site.
 
