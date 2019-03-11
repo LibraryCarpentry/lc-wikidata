@@ -15,7 +15,6 @@ keypoints:
 - "First key point. (FIXME)"
 ---
 
-
 ## 2.1 Concepts foundations (Semantic web  vs. relational database)
 - Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data.
 - A relational database is a set of formally described related tables from which data can be accessed or reassembled.
@@ -29,6 +28,13 @@ keypoints:
  - RDF data are stored on containers known as triplestores.
 
 - https://en.wikipedia.org/wiki/Semantic_triple
+> ## Is data stored in the RDF triple format part of your work as a librarian? Where does data in the RDF triple format occur in your  
+>
+> Take some time to think about if data stored in the RDF triple format is part of your work as a librarian. Can you give an example in the format of an RDF triplet?  
+> > ## Solution
+> > *TO DO*: PLEASE ADD A REAL LIFE EXAMPLE
+> {: .solution}
+{: .challenge}
 
 
 ## 2.3 Wikidata one pager
