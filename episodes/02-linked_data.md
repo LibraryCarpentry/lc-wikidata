@@ -15,7 +15,6 @@ keypoints:
 - "First key point. (FIXME)"
 ---
 
-
 ## 2.1 Concepts foundations (Semantic web  vs. relational database)
 - Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data.
 - A relational database is a set of formally described related tables from which data can be accessed or reassembled.
@@ -30,6 +29,29 @@ keypoints:
 
 - https://en.wikipedia.org/wiki/Semantic_triple
 
+> ## Is data stored in the RDF triple format part of your work as a librarian? 
+>
+> Take some time to think about if data stored in the RDF triple format 
+> is part of your work as a librarian. Can you give an example in the format of an RDF triplet?  
+> > ## Solution
+> > *TO DO*: PLEASE ADD A REAL LIFE EXAMPLE
+> {: .solution}
+{: .challenge}
+
+> ## Point out one RDF triple on the Wikidata item page of former astronaut Mae Jemison. 
+>
+> Got to the Wikidata page of Mae Jemison and point out one RDF triple. 
+> An RDF triplet consists of a subject, a predicate and an object. 
+> Can you assign the corresponding Wikidata terms to?
+> 
+> > ## Solution
+> > Got to Wikidata and either search for "Mae Jemison" or enter the ID *Q34091*. 
+> > In the picture below the statement "Mae C. Jemison - part of - NASA Astronaut Group 12" is an RDF triplet. 
+> > ![Wikidata_Main_Page](../fig/Mae_Jemison_Wikidata.png)  
+> >  *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Q34091)*
+> > On Wikidata a subject is a Wikidata item, a predicate is a Property and an object is the value of the statement.
+> {: .solution}
+{: .challenge}
 
 ## 2.3 Wikidata one pager
 - https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf
