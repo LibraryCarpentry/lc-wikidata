@@ -42,14 +42,21 @@ keypoints:
 >
 > Got to the Wikidata page of Mae Jemison and point out one RDF triple. 
 > An RDF triplet consists of a subject, a predicate and an object. 
-> Can you assign the corresponding Wikidata terms to?
+> Can you assign the three corresponding Wikidata terms?
 > 
 > > ## Solution
 > > Got to Wikidata and either search for "Mae Jemison" or enter the ID *Q34091*. 
 > > In the picture below the statement "Mae C. Jemison - part of - NASA Astronaut Group 12" is an RDF triplet. 
 > > ![Wikidata_Main_Page](../fig/Mae_Jemison_Wikidata.png)  
 > >  *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Q34091)*
+> >
 > > On Wikidata a subject is a Wikidata item, a predicate is a Property and an object is the value of the statement.
+> >
+> > subject -> Item
+> >
+> > predicate -> Property
+> >
+> > object -> value
 > {: .solution}
 {: .challenge}
 
