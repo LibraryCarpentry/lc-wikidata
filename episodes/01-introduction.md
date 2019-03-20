@@ -64,7 +64,7 @@ from https://creativecommons.org/publicdomain/zero/1.0/
 
 ## 1.2 Play games to open ##
 
-- Visit random items: https://www.wikidata.org/wiki/Special:Random
+- Visit the item page of the city you were born? Does it exist? What kind of information does it show you?
 
 ## 1.3 Relationship with other wiki projects ##
 - Link from Wikipedia to Wikidata
