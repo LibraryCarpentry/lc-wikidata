@@ -5,13 +5,12 @@ exercises: 0
 questions:
 - "How to add reference and follow good practice?"
 objectives:
-- "Be familiar with some tools for editing, e.g. TABernacle, Wikidata Games, QuickStatements, Source MetaData or Author Disambiguator/Author resolver
-- "Know community norms around Wikidata and why they're important"
-- "Be comfortable with collaborative, decentralized data creation e.g. carpentry participants should be able to identify gaps in Wikidata that could be filled not just by the participants themselves (and at the event) but by their community more broadly, or specific actors within it"
-- "Be able to add references appropriately"
-- "Be able to compare process of editing to process of editing/adding metadata in existing library information systems (ILS, IR)...?"
-- "Know what Identifiers are and how to add them to a satement"
-- "Connect to how this improves things for our patrons/users..." 
+- "Be familiar with some tools for editing, e.g. TABernacle, Wikidata Games, QuickStatements, Source MetaData or Author Disambiguator/Author resolver."
+- "Know community norms around Wikidata and why they are important."
+- "Be able to add references appropriately."
+- "Know what identifiers are and how to add them to a statement."
+- "Know different stable identifiers (e.g. ORCID for authors, DOI for works) and why makes sense to use them as properties."
+- "Know the correct use of properties."
 
 keypoints:
 - "First key point. (FIXME)"
@@ -35,5 +34,10 @@ Example of a scholorly article with citations: https://www.wikidata.org/wiki/Q52
 - DOI
 - ORCID
 - etc.
+
+## 4.5. Use cases for good practice
+
+- When to use "instance of"
+- uni-directional referencing
 
 {% include links.md %}
