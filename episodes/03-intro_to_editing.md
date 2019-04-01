@@ -5,10 +5,10 @@ exercises: 0
 questions:
 - "How to create and edit a Wikidata item?"
 objectives:
-- Be able to create and edit a Wikidata entry
-- Understand properties and relations, and where to find lists of approved properties and relations
-- Be able to add new statements that link to other items
-- Understand property constraints
+- "Be able to create and edit a Wikidata entry."
+- "Know properties and relations, and where to find lists of approved properties and relations."
+- "Be able to add new statements that link to other items."
+- "Be aware property constraints."
 
 keypoints:
 - "First key point. (FIXME)"
