@@ -7,9 +7,10 @@ questions:
 - "How does the Wikidata interface look like?"
 - "How is Wikidata linked to other Wiki projects?"
 objectives:
-- "Feel comfortable describing Wikidata to colleagues"
-- "Understand how Wikidata relates to other Wikimedia projects"
-- "Understand why linked open data is important in my work as a cataloging or teaching librarian"
+- "Feel comfortable describing Wikidata to colleagues."
+- "Know other Wikimedia projects (e.g. Wikipedia, WikiCommons) and Wikidata is related to them."
+- "Know why linked open data is important in my work as a cataloging or teaching librarian."
+- "Know able identify components of a Wikidata item page, how Wikidata is organized and how to navigate in it."
 keypoints:
 - "Item"
 - "Statement"
