@@ -71,7 +71,7 @@ from https://creativecommons.org/publicdomain/zero/1.0/
   the numbers the same in the different language? Visit the item in
   Wikidata.
 
-## 1.3 Relationship with other wiki projects ##
+## 1.3 Linking Wikidata to other Wiki resources ##
 - Link from Wikipedia to Wikidata
     - e.g. https://en.wikipedia.org/wiki/On_the_Origin_of_Species
         - => Follow the link "Wikidata item" on the left side under "tools"
