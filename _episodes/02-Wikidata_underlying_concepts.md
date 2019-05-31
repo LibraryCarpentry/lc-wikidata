@@ -13,48 +13,44 @@ keypoints:
 ---
 
 ## 2.1 Concepts foundations: ways of storing data.
-> There are many types of databases, the most common types are:
-> > ### 2.1.1 Relational databases:
- > > A relational database is a set of formally described related tables from which data can be accessed or reassembled.
- > > This model organizes data into one or more tables (or "relations") of columns and rows, with a unique key identifying each row. each table/relation represents one "entity type" and these entities are connected via constrained relationships.
- > > This model is fully structured and mostly uses SQL (Structured Query Language) to retrive and manuplate data.
- > > Examples: 
+There are many types of databases, the most common types are:  
+### 2.1.1 Relational databases:  
+A relational database is a set of formally described related tables from which data can be accessed or reassembled. This model organizes data into one or more tables (or "relations") of columns and rows, with a unique key identifying each row. each table/relation represents one "entity type" and these entities are connected via constrained relationships. This model is fully structured and mostly uses SQL (Structured Query Language) to retrive and manuplate data.  
+Examples: 
  
- > > <FIGURE>
+<FIGURE>
  
-> > ### 2.1.2 Graph / Sematic databases
-> > Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data.
-> > Most fundamentally RDF uses SPARQL (Simple Protocol and Rdf Query Language) to read stored data while relational databases uses SQL (Structured Query Language) to do so.
-> > In SQL relational database terms, RDF data can also be considered or viewed as a table with only three columns – the subject column, the predicate column, and the object column.
+### 2.1.2 Graph / Sematic databases  
+Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data. Most RDF fundamentally uses SPARQL (Simple Protocol and Rdf Query Language) to read stored data while relational databases uses SQL (Structured Query Language) to do so. In SQL relational database terms, RDF data can also be considered or viewed as a table with only three columns – the subject column, the predicate column, and the object column.  
  
-> > <FIGURE>
+<FIGURE>
 
 ## 2.2 Concepts foundations (RDF and RDF triples)
 
- - The RDF is a conceptual data model, It is based on the idea of making statements about resources in expressions of the form (subject–predicate–object), known as triples.
- - The subject denotes the resource, and the predicate denotes traits or aspects of the resource, and expresses a relationship between the subject and the object, for example: John-is-a person, John-born in-1980, John-works as-Engineer
- - RDF data are stored on containers known as triplestores.
+ - The RDF is a conceptual data model, It is based on the idea of making statements about resources in expressions of the form (subject–predicate–object), known as triples.  
+ - The subject denotes the resource, and the predicate denotes traits or aspects of the resource, and expresses a relationship between the subject and the object, for example: John-is-a person, John-born in-1980, John-works as-Engineer  
+ - RDF data are stored on containers known as triplestores.  
 
 - https://en.wikipedia.org/wiki/Semantic_triple
 
 ## 2.3 Underlying components
-> - Items
- > > Items represents subjects such Douglas Adams and have identifiers that starts with letter "Q" like: Q42 for Douglas Adams.
- > > Each item must have a name in one or more langauges, optionally have alternative names and descrition
-> - Properties
- > > Properties represents attributes of the subject such occupation and have identifiers that starts with letter "P" like: P106 for Occupation.
-> - Claims
- > > Claims are the triples, which combine the formation of Item and Property and a value such:
- > > Douglas Adams (Q42) - occupation (P106) - comedian
- > > Note: value can be already stored in wikidata, therefore the bot assigns the Q number of the value instead.
-> - Statement
- > > A Claim is a part of a statement, a statement also includes: References, Ranks, and Qualifiers
-> - References
- > > Used to store the source of the claim, using properties, such stated in, qoute, and etc.
-> - Ranks
- > > A useful component to mark outdated claims
-> - Qualifiers:
- > > Qualifiers are besicly properties but on claims rather than items
+- Items  
+Items represents subjects such Douglas Adams and have identifiers that starts with letter "Q" like: Q42 for Douglas Adams.  
+Each item must have a name in one or more langauges, optionally have alternative names and descrition.
+- Properties  
+Properties represents attributes of the subject such occupation and have identifiers that starts with letter "P" like: P106 for Occupation.  
+- Claims  
+Claims are the triples, which combine the formation of Item and Property and a value such:
+Douglas Adams (Q42) - occupation (P106) - comedian.  
+Note: value can be already stored in wikidata, therefore the bot assigns the Q number of the value instead.  
+- Statement  
+A Claim is a part of a statement, a statement also includes: References, Ranks, and Qualifiers.  
+- References  
+Used to store the source of the claim, using properties, such stated in, qoute, and etc.  
+- Ranks  
+A useful component to mark outdated claims.  
+ - Qualifiers  
+Qualifiers are besicly properties but on claims rather than items.  
 
 > ## Is data stored in the RDF triple format part of your work as a librarian? 
 >
