@@ -73,13 +73,6 @@ Qualifiers are besicly properties but on claims rather than items.
 > > ![Wikidata_Main_Page](../fig/Mae_Jemison_Wikidata.png)  
 > >  *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Q34091)*
 > >
-> > On Wikidata a subject is a Wikidata item, a predicate is a Property and an object is the value of the statement.
-> >
-> > subject -> Item
-> >
-> > predicate -> Property
-> >
-> > object -> value
 > {: .solution}
 {: .challenge}
 
@@ -90,12 +83,6 @@ Qualifiers are besicly properties but on claims rather than items.
 
 - https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata
 - https://lod-cloud.net/
-
-## DISCUSSION: ##
-* There are already clashes with the previous module
-* Option 1 set focus or on the usage of it for librarians
-* Option 2: merge this completely into Module 1
-* Option 3: Put to the end (later module)
 
 
 FIXME
