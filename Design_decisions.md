@@ -14,3 +14,6 @@ or the instructor has to pick/create for each participant a suiting
 item. Due to this we decided to rather start with the creation of new
 items in the Wikidata test instance (which needs only 4 fields to be
 filled out).
+
+# Keep lessons as simple as possible
+
