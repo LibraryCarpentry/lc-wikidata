@@ -1,25 +1,33 @@
 ---
-title: "Structure/Conceptual foundation/Mechanics"
+title: "Underlying concepts of WikiData"
 teaching: 0
 exercises: 0
 questions:
 - "Key question (FIXME)"
 objectives:
-- "Identify components of a Wikidata item page (DONE ABOVE)"
-- "Know where to find information on navigating Wikidata (AIM NOT CLEAR)"
-- "Define what's different about open data and why it's important (DIFFERENT TO WHAT?)"
-- "Understand what a triple is, and relate structure of a Wikidata statement to traditional metadata field structure"
-- "How linked data can create more context for patrons/users in library catalogs"
-- "How linked data can improve recall in library catalogs?"
+- "Know what a triple is, and relate structure of a Wikidata statement to traditional metadata field structure"
+- "Know how linked data can create more context for patrons/users in library catalogs"
+- "Know kow linked data can improve recall in library catalogs? (TODO: Check if we want to address this here)." 
 keypoints:
 - "First key point. (FIXME)"
 ---
 
-## 2.1 Concepts foundations (Semantic web  vs. relational database)
-- Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data.
-- A relational database is a set of formally described related tables from which data can be accessed or reassembled.
-- Most fundamentally RDF uses SPARQL (Simple Protocol and Rdf Query Language) to read stored data while relational databases uses SQL (Structured Query Language) to do so.
-- In SQL relational database terms, RDF data can also be considered or viewed as a table with only three columns – the subject column, the predicate column, and the object column.
+## 2.1 Concepts foundations: ways of storing data.
+> There are many types of databases, the most common types are:
+> > ### 2.1.1 Relational databases:
+ > > A relational database is a set of formally described related tables from which data can be accessed or reassembled.
+ > > This model organizes data into one or more tables (or "relations") of columns and rows, with a unique key identifying each row. each table/relation represents one "entity type" and these entities are connected via constrained relationships.
+ > > This model is fully structured and mostly uses SQL (Structured Query Language) to retrive and manuplate data.
+ > > Examples: 
+ 
+ > > <FIGURE>
+ 
+> > ### 2.1.2 Graph / Sematic databases
+> > Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data.
+> > Most fundamentally RDF uses SPARQL (Simple Protocol and Rdf Query Language) to read stored data while relational databases uses SQL (Structured Query Language) to do so.
+> > In SQL relational database terms, RDF data can also be considered or viewed as a table with only three columns – the subject column, the predicate column, and the object column.
+ 
+> > <FIGURE>
 
 ## 2.2 Concepts foundations (RDF and RDF triples)
 
