@@ -22,11 +22,6 @@ keypoints:
  
  > > <FIGURE>
  
-> > ### 2.1.2 Document stores
-> > This model organizes data into document oriented ... TBC
- 
-> > <FIGURE>
- 
 > > ### 2.1.2 Graph / Sematic databases
 > > Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data.
 > > Most fundamentally RDF uses SPARQL (Simple Protocol and Rdf Query Language) to read stored data while relational databases uses SQL (Structured Query Language) to do so.
