@@ -23,7 +23,7 @@ keypoints:
 
 ## 4.2 Citations link in Wikidata
         
-Example of a scholorly article with citations: https://www.wikidata.org/wiki/Q52641751
+Example of a scholarly article with citations: https://www.wikidata.org/wiki/Q52641751
 
 - some notes regarding the "cites" statement 
 
