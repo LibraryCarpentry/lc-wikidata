@@ -36,21 +36,21 @@ Semantic web is an extension of the World Wide Web standards, which promote comm
 ## 2.3 Underlying components
 - Items  
 Items represents subjects such Douglas Adams and have identifiers that starts with letter "Q" like: Q42 for Douglas Adams.  
-Each item must have a name in one or more langauges, optionally have alternative names and descrition
+Each item must have a name in one or more langauges, optionally have alternative names and descrition.
 - Properties  
 Properties represents attributes of the subject such occupation and have identifiers that starts with letter "P" like: P106 for Occupation.  
 - Claims  
 Claims are the triples, which combine the formation of Item and Property and a value such:
-Douglas Adams (Q42) - occupation (P106) - comedian  
+Douglas Adams (Q42) - occupation (P106) - comedian.  
 Note: value can be already stored in wikidata, therefore the bot assigns the Q number of the value instead.  
 - Statement  
-A Claim is a part of a statement, a statement also includes: References, Ranks, and Qualifiers  
+A Claim is a part of a statement, a statement also includes: References, Ranks, and Qualifiers.  
 - References  
 Used to store the source of the claim, using properties, such stated in, qoute, and etc.  
 - Ranks  
-A useful component to mark outdated claims  
+A useful component to mark outdated claims.  
  - Qualifiers  
-Qualifiers are besicly properties but on claims rather than items  
+Qualifiers are besicly properties but on claims rather than items.  
 
 > ## Is data stored in the RDF triple format part of your work as a librarian? 
 >
