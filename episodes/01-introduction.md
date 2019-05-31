@@ -65,7 +65,11 @@ from https://creativecommons.org/publicdomain/zero/1.0/
 
 ## 1.2 Play games to open ##
 
-- Visit the item page of the city you were born? Does it exist? What kind of information does it show you?
+- Visit the Wikipedia page of the city you were born in two languages
+  of you choice (you can choose different language version in the left
+  side of a Wikipedia page) and look the size of the population. Are
+  the numbers the same in the different language? Visit the item in
+  Wikidata.
 
 ## 1.3 Relationship with other wiki projects ##
 - Link from Wikipedia to Wikidata
