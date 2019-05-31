@@ -100,14 +100,33 @@ you are looking for.
 
 ### Showing labels to Q-numbers
 
-### Namespaces and Prefixes
 
-% What are Prefixes?
+
+### Namespaces and Prefixes
+Prefixes are short abbrevations in the Wikidata Query Service. Some prefixes in Wikidata are: wd, wdt, p, ps, bd, etc.
+
+Example:
+The below query does the following: It selects all the items (?item) that have the property(wdt:) = P31 with a value of entity(wd:) = Q5
+~~~
+SELECT ?item ?itemLabel WHERE {
+?item wdt:P31 wd:Q6. }
+~~~
+Items should be prefixed with wd: and properties with wdt: .
+
+
+Namespaces in Wikidata are:
+ - Main namespace
+ - Property
+ - Wikidata: it is for information and discussions about Wikidata itself.
+ etc.
 
 ### More conditions
 
 - publications from Addison-Wesley vs. books from Addison-Wesley vs. books authored by Richard Feynman from Addison-Wesley
 - LIMIT
+- ORDER
+- FILTER
+- OPTIONAL
 
 ### Exercises
 
