@@ -31,7 +31,7 @@ Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link
 
 ![Front Page of the test instance](../fig/l03-Screenshot_test_instance_front_page.png)  
 
-- Please fill the form. You can now add an entry about anything you want like a book, a research article or and author. We will generate an entry of the physisist Richard Feynman who is author of serveral important research articles but also text books and popular science books. You can also add yourself (if you feel famous enough). We choose "en" int the *Language* drop-down menue, write "Richard Feynman" in the *Label* field, "American theoretical physicist" in the *Description* field and "Richard Phillips Feynman" in the *Aliases* field.
+- Please fill the form. You can now add an entry about anything you want like a book, a research article or and author. We will generate an entry of [Mae Jemison](https://en.wikipedia.org/wiki/Mae_Jemison) an American engineer, physician and NASA astronaut. You can also add yourself (if you feel famous enough). We choose "en" int the *Language* drop-down menue, write "Mae Jemison" in the *Label* field, "an American engineer, physician and NASA astronaut." in the *Description* field and "Mae Carol Jemison" in the *Aliases* field.
 
 ![Empty create form of the test instance](../fig/l03-Screenshot_test_instance_empty_create_page.png)  
 
@@ -45,7 +45,7 @@ You can compare the entry that you have generated on the test instance with the 
 
 ![Wikidata Feyman](../fig/l03-Mae_Jemison_03_Official_Wikidata_entry_full.png)  
 
-That was fun - let's do this again but this time we create an entry for a book. Richard Feyman wrote several one. On of his most famous ones is is his autobiobliography "Surely You're Joking, Mr. Feynman!". We want to creat an entry for this . The procedure is the same as for the creation of the instance about Feynman himself:
+That was fun - let's do this again but this time we create an entry for a book. Richard Feyman wrote several one. On of his most famous ones is is his autobiobliography "". We want to creat an entry for this . The procedure is the same as for the creation of the instance about Feynman himself:
 
 - Use your web browser to go to the test instance at https://test.wikidata.org/ in case that you are not there.
 
