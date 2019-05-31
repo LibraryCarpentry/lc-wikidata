@@ -1,5 +1,5 @@
 ---
-title: "Structure/Conceptual foundation/Mechanics"
+title: "Underlying concepts of WikiData"
 teaching: 0
 exercises: 0
 questions:
@@ -12,7 +12,7 @@ keypoints:
 - "First key point. (FIXME)"
 ---
 
-## 2.1 Concepts foundations: ways of storing data (Models of Databases)
+## 2.1 Concepts foundations: ways of storing data.
 > There are many types of databases, the most common types are:
 > > ### 2.1.1 Relational databases:
  > > A relational database is a set of formally described related tables from which data can be accessed or reassembled.
