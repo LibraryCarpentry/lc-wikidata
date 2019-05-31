@@ -23,15 +23,15 @@ Here we will work in the test instance of Wikidata so you will not break anythin
 
 ## 3.2 Create new items
 
-In the following we will create new items. In order to avoid to fill Wikidata with test entries, we will used the test instance (https://test.wikidata.org/) and not the official, production version (https://wikidata.org/).
+In the following we will create new items. In order to avoid to fill Wikidata with test entries, we will use the test instance (https://test.wikidata.org/) and not the official, production version (https://wikidata.org/).
 
-Goto the test instance at https://test.wikidata.org/
+Go to the test instance at https://test.wikidata.org/
 
 Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link on the left site. You will see a form that looks like this:
 
 ![Front Page of the test instance](../fig/l03-Screenshot_test_instance_front_page.png)  
 
-- Please fill the form. You can now add an entry about anything you want like a book, a research article or and author. We will generate an entry of the physisist Richard Feynman who is author of serveral important research articles but also text books and popular science books. You can also add yourself (if you feel famous enough). We choose "en" int the *Language* drop-down menue, write "Richard Feynman" in the *Label* field, "American theoretical physicist" in the *Description* field and "Richard Phillips Feynman" in the *Aliases* field.
+- Please fill the form. You can now add an entry about anything you want like a book, a research article or and author. We will generate an entry of the physicist Richard Feynman who is author of several important research articles but also text books and popular science books. You can also add yourself (if you feel famous enough). We choose "en" int the *Language* drop-down menue, write "Richard Feynman" in the *Label* field, "American theoretical physicist" in the *Description* field and "Richard Phillips Feynman" in the *Aliases* field.
 
 ![Empty create form of the test instance](../fig/l03-Screenshot_test_instance_empty_create_page.png)  
 
@@ -45,7 +45,7 @@ You can compare the entry that you have generated on the test instance with the 
 
 ![Wikidata Feyman](../fig/l03-Mae_Jemison_03_Official_Wikidata_entry_full.png)  
 
-That was fun - let's do this again but this time we create an entry for a book. Richard Feyman wrote several one. On of his most famous ones is is his autobiobliography "Surely You're Joking, Mr. Feynman!". We want to creat an entry for this . The procedure is the same as for the creation of the instance about Feynman himself:
+That was fun - let's do this again but this time we create an entry for a book. Richard Feyman wrote several one. On of his most famous ones is his auto bibliography "Surely You're Joking, Mr. Feynman!". We want to create an entry for this . The procedure is the same as for the creation of the instance about Feynman himself:
 
 - Use your web browser to go to the test instance at https://test.wikidata.org/ in case that you are not there.
 
