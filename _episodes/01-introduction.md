@@ -16,14 +16,19 @@ keypoints:
 - "Statement"
 
 ---
-FIXME
 
-{% include links.md %}
+## What is Wikidata?
+
+Wikidata’s own [description](https://www.wikidata.org/wiki/Wikidata:Main_Page) says: “Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.” Wikidata is Wikipedia’s database with close to 50 Million data items. 
+
+Wikipedia’s own [description](https://en.wikipedia.org/wiki/Wikipedia:Introduction) says: “Wikipedia is a free encyclopedia, written collaboratively by the people who use it. It is a special type of website designed to make collaboration easy, called a wiki. Many people are constantly improving Wikipedia, making thousands of changes per hour. All of these changes are recorded in article histories and recent changes.”
+
+Wikidata contains various data types (e.g. text, images, quantities, coordinates, geographic shapes, dates). The data can be queried with SPARQL which will be covered later. Data is published under the Creative Commons Public Domain 1.0 license. It can be modified, copied, and distributed without permission.
+
+Wikidata also contains authority files, bibliographic data and other content normally managed in library databases.
+
 
 ## 1.1 Intro interface ##
-- What is Wikidata?
-  - Wikidatas own description says:
-  "Wikidata is a free and open knowledge base that can be read and edited by both humans and machines."
   - Let's try this out in the next section of this lesson and see if we as humans can simply read the data on Wikidata:
 - Explore a Wikidata Item page:
   - For this purpose go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. This is what you should see:
