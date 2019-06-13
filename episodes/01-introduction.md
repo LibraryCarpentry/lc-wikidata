@@ -31,7 +31,7 @@ Wikidata also contains authority files, bibliographic data and other content nor
 ## 1.1 Intro interface ##
   - Let's try this out in the next section of this lesson and see if we as humans can simply read the data on Wikidata:
 - Explore a Wikidata Item page:
-  - For this purpose go to [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. This is what you should see:
+  - Start by going to the [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. This is what you should see:
 
   ![Wikidata_Main_Page](../fig/Wikidata_Main_Page.png)  
   *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
