@@ -23,7 +23,7 @@ Wikidata’s own [description](https://www.wikidata.org/wiki/Wikidata:Main_Page)
 
 Wikipedia’s own [description](https://en.wikipedia.org/wiki/Wikipedia:Introduction) says: “Wikipedia is a free encyclopedia, written collaboratively by the people who use it. It is a special type of website designed to make collaboration easy, called a wiki. Many people are constantly improving Wikipedia, making thousands of changes per hour. All of these changes are recorded in article histories and recent changes.”
 
-Wikidata contains various data types (e.g. text, images, quantities, coordinates, geographic shapes, dates). The data can be queried with SPARQL which will be covered later. Data is published under the Creative Commons Public Domain 1.0 license. It can be modified, copied, and distributed without permission.
+Wikidata contains various data types (e.g. text, images, quantities, coordinates, geographic shapes, dates). The data can be queried via a query interface and language which will be covered later. Data is published under the Creative Commons Public Domain 1.0 license. It can be modified, copied, and distributed without permission.
 
 Wikidata also contains authority files, bibliographic data and other content normally managed in library databases.
 
