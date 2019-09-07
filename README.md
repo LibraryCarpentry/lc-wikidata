@@ -1,28 +1,38 @@
-# Library Carpentry Wikidata Lesson (work in progress!)
+# Maintainers for Library Carpentry: Wikidata
 
-[![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
+- [Till Sauerwein](https://github.com/Tillsa)
+- [Muhammad Elhossary](https://github.com/elhossary)
+- [Konrad Förstner](https://github.com/konrad)
+
+Lesson Maintainers communication is via the [team site (not available)]().
+
+## Library Carpentry
+
+[Library Carpentry](https://librarycarpentry.org) is a software and data skills training programme for people working in library- and information-related roles. It builds on the work of [Software Carpentry](http://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/). Library Carpentry is an official Lesson Program of [The Carpentries](https://carpentries.org/).
+
+## License
+
+All Software, Data, and Library Carpentry instructional material is made available under the [Creative Commons Attribution
+license](https://github.com/LibraryCarpentry/lc-wikidata/blob/gh-pages/LICENSE.md).
 
 ## Contributing
 
-We welcome all contributions to improve the lesson! Maintainers will do their best to help you if you have any
-questions, concerns, or experience any difficulties along the way.
+There are many ways to discuss and contribute to Library Carpentry lessons. Visit the lesson [discussion page](https://librarycarpentry.org/lc-wikidata/discuss/index.html) to learn more. Also see [Contributing](https://github.com/LibraryCarpentry/lc-wikidata/blob/gh-pages/CONTRIBUTING.md).
 
-We'd like to ask you to familiarize yourself with our [Contribution Guide](CONTRIBUTING.md) and have a look at
-the [more detailed guidelines][lesson-example] on proper formatting, ways to render the lesson locally, and even
-how to write new episodes.
+## Code of Conduct
 
-## Maintainer(s)
-
-* Muhammad Elhossary
-* Till Sauerwein
-* Konrad Förstner
+All participants should agree to abide by The Carpentries [Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html).
 
 ## Authors
 
-A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
+Library Carpentry is authored and maintained through issues, commits, and pull requests from the community.
 
 ## Citation
 
-To cite this lesson, please consult with [CITATION](CITATION)
+Cite as:
 
-[lesson-example]: https://carpentries.github.io/lesson-example
+Library Carpentry: Wikidata. September 2019. https://librarycarpentry.org/lc-wikidata.
+
+## Checking and Previewing the Lesson
+
+To check and preview a lesson locally, see [http://carpentries.github.io/lesson-example/07-checking/index.html](http://carpentries.github.io/lesson-example/07-checking/index.html).
