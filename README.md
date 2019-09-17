@@ -4,7 +4,7 @@
 - [Muhammad Elhossary](https://github.com/elhossary)
 - [Konrad Förstner](https://github.com/konrad)
 
-Lesson Maintainers communication is via the [team site (not available)]().
+Lesson Maintainers communication is via the [team site](https://github.com/orgs/LibraryCarpentry/teams/lc-wikidata).
 
 ## Library Carpentry
 
