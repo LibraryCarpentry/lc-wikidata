@@ -1,5 +1,5 @@
 ---
-title: "Underlying concepts of WikiData"
+title: "Underlying concepts of Wikidata"
 teaching: 0
 exercises: 0
 questions:
