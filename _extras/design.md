@@ -1,3 +1,6 @@
+**Warning: This is currently only the template of the Python Lesson from the appearance of the design.md
+The content is not yet adapted to the Wikidata Lesson**
+
 ---
 layout: page
 title: "Lesson Design"
