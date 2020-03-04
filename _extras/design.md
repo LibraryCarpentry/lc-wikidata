@@ -37,8 +37,10 @@ appropriate to the needs of the learners.
     * Code of conduct
     * Room logistics
     * Install/setup
-* 9:30 What is Python
-    * About Python and its uses in libraries
+* 9:30 What is Wikidata
+    * What are Items and Statements?
+    * How does the Wikidata interface look like?
+    * How is Wikidata linked to other Wiki projects?
     * Overview of the lesson
 
 ### Standard library (2 hours 30 min)
