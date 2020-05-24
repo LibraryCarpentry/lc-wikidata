@@ -22,7 +22,12 @@ understand how to perform a mass import into Wikidata.
 
 > ## Prerequisites
 >
-> FIXME
+>
+> 1. Learners need to understand what items and statements are,
+>    what a working directory is,
+>    and how to start a Python interpreter from a terminal window.
+>
+> 2. There is no need for pre installations.
 {: .prereq}
 
 {% include links.md %}
