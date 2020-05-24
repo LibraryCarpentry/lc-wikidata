@@ -3,7 +3,14 @@ layout: lesson
 root: .  # Is the only page that don't follow the partner /:path/index.html
 permalink: index.html  # Is the only page that don't follow the partner /:path/index.html
 ---
-FIXME: home page introduction
+This Library Carpentry lesson introduces librarians to Wikidata.
+At the conclusion of the lesson you will: know what the Wikidata interface looks like;
+know how Wikidata is linked to other Wiki projects;
+know the underlying concepts of Wikidata;
+create and develop Wikidata items yourself;
+add references to Wikidata;
+create a search query in Wikidata using the query language SPARQL;
+understand how to perform a mass import into Wikidata.
 
 > ## Under Design
 >
