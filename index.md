@@ -25,7 +25,9 @@ understand how to perform a mass import into Wikidata.
 >
 > 1. Learners need to understand what items and statements are.
 >
-> 2. There is no need for pre installations.
+> 2. Learners need a proper internet connection.
+>
+> 3. There is no need for pre installations.
 {: .prereq}
 
 {% include links.md %}
