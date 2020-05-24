@@ -11,6 +11,7 @@ objectives:
 keypoints:
 - "First key point. (FIXME)"
 ---
+{% include links.md %}
 
 ## Concepts foundations: ways of storing data.
 There are many types of databases, the most common types are:  
