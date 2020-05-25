@@ -7,19 +7,19 @@ questions:
 objectives:
 - "Know what a triple is, and relate structure of a Wikidata statement to traditional metadata field structure"
 - "Know how linked data can create more context for patrons/users in library catalogs"
-- "Know kow linked data can improve recall in library catalogs? (TODO: Check if we want to address this here)." 
+- "Know how linked data can improve recall in library catalogs? (TODO: Check if we want to address this here)." 
 keypoints:
 - "First key point. (FIXME)"
 ---
-{% include links.md %}
 
 ## Concepts foundations: ways of storing data.
-There are many types of databases, the most common types are:  
+There are many types of databases, the most common types are:
+
 ### 2.1.1 Relational databases:  
 A relational database is a set of formally described related tables from which data can be accessed or reassembled. This model organizes data into one or more tables (or "relations") of columns and rows, with a unique key identifying each row. each table/relation represents one "entity type" and these entities are connected via constrained relationships. This model is fully structured and mostly uses SQL (Structured Query Language) to retrive and manuplate data.  
 Examples: 
  
-<FIGURE>
+![Relational_database in Wikipedia](https://en.wikipedia.org/wiki/Relational_database#/media/File:Relational_database_terms.svg)
  
 ### 2.1.2 Graph / Sematic databases  
 Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data. Most RDF fundamentally uses SPARQL (Simple Protocol and Rdf Query Language) to read stored data while relational databases uses SQL (Structured Query Language) to do so. In SQL relational database terms, RDF data can also be considered or viewed as a table with only three columns – the subject column, the predicate column, and the object column.  
