@@ -3,7 +3,9 @@ title: "Introduction to querying"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- What is SPARQL?
+- How to use SPARQL to query Wikidata?
+- How to use Wikidata querying tools?
 objectives:
  - "Know what a query language is, and how SPARQL differs SQL."
  - "Be able to use SPARQL to query Wikidata."
