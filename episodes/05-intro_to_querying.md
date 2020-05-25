@@ -9,7 +9,7 @@ questions:
 objectives:
  - "Know what a query language is, and how SPARQL differs SQL."
  - "Be able to use SPARQL to query Wikidata."
- - "Potentially be able to use a tool like [TABernacle](https://tools.wmflabs.org/tabernacle) to edit based on a query."
+ - "Potentially be able to use a tool like [TABernacle](https://tools.wmflabs.org/tabernacle/#/) to edit based on a query."
  - "Have a cursory knowledge of the plethora of Wikidata querying tools and how they can be used by librarians."
  - "Know the purpose and usefulness of maintenance queries for identifying missing information."
  - "Be able to create maintenance queries."
