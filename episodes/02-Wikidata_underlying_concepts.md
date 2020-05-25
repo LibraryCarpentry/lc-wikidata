@@ -3,7 +3,8 @@ title: "Underlying concepts of Wikidata"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- What is a RDF triple?
+- What are the underlying components of RDF?
 objectives:
 - "Know what a triple is, and relate structure of a Wikidata statement to traditional metadata field structure"
 - "Know how linked data can create more context for patrons/users in library catalogs"
