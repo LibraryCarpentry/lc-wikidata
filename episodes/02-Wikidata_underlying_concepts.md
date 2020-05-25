@@ -19,12 +19,12 @@ There are many types of databases, the most common types are:
 A relational database is a set of formally described related tables from which data can be accessed or reassembled. This model organizes data into one or more tables (or "relations") of columns and rows, with a unique key identifying each row. each table/relation represents one "entity type" and these entities are connected via constrained relationships. This model is fully structured and mostly uses SQL (Structured Query Language) to retrive and manuplate data.  
 Examples: 
  
-![Relational_database in Wikipedia](https://en.wikipedia.org/wiki/Relational_database#/media/File:Relational_database_terms.svg)
+https://en.wikipedia.org/wiki/Relational_database#/media/File:Relational_database_terms.svg
  
 ### 2.1.2 Graph / Sematic databases  
 Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data. Most RDF fundamentally uses SPARQL (Simple Protocol and Rdf Query Language) to read stored data while relational databases uses SQL (Structured Query Language) to do so. In SQL relational database terms, RDF data can also be considered or viewed as a table with only three columns – the subject column, the predicate column, and the object column.  
  
-<FIGURE>
+https://en.wikipedia.org/wiki/Conceptual_schema#/media/File:Data_Structure_Diagram.jpg
 
 ## 2.2 Concepts foundations (RDF and RDF triples)
 
