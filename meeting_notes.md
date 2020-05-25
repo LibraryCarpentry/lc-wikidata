@@ -1,3 +1,22 @@
+# **2019-04-01 Library Carpentry - Wikidata Lesson Sprint**
+
+* **Aim of the Sprint:**
+     * Further develop the lesson in detail
+    * The previous work of the **last session** that took place on  2019-03-12 can be found at https://hackmd.io/T9E1Q-QZRdu-pN8ubyi4-w?both#. 
+    The work included developping the LC wikidata lesson GitHub page: https://github.com/LibraryCarpentry/lc-wikidata
+
+
+* **Participants** (please add your name):
+    * Konrad Förstner (foerstner@zbmed.de)
+    * Till Sauerwein (sauerwein@zbmed.de)
+    * Muhammad Elhossary (elhossary@zbmed.de)
+    * Alexandra Provo (alexandra.provo@nyu.edu)
+    * Mairelys Lemus-Rojas (mlemusro@iupui.edu)
+
+* **Data model - Marie Curie**
+Spanish - https://commons.wikimedia.org/wiki/File:Datamodel_in_Wikidata_Marie_Curie_es.svg
+English - https://commons.wikimedia.org/wiki/File:Datamodel_in_Wikidata_Marie_Curie_en.svg
+
 # **2019-01-21 Library Carpentry - Wikidata Lesson Sprint**
 
 * **Participants** (please add your name):
