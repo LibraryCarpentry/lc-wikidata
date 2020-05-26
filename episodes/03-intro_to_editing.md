@@ -11,7 +11,8 @@ objectives:
 - "Be aware of property constraints."
 
 keypoints:
-- "First key point. (FIXME)"
+- create new items
+- add new statements
 ---
 
 
