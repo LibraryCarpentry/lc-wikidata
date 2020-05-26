@@ -15,27 +15,31 @@ objectives:
 keypoints:
 - "First key point. (FIXME)"
 ---
+## 4.1 Introduction
+Why Wikidata uses references:
+Like in Wikipedia it is important that content can be verified by others to make sure it is correct and comes from a reliable source of information, such as a book, scientific publication, or newspaper article.
+A Reference (or source) is used to point to specific sources that back up a claim in Wikidata. A reference can be a link to a URL or an item; for example, a book. Wikidata does not aim to answer the question of whether a statement is correct, but only whether the statement appears in a reference.
 
-## 4.1 Adding references
+## 4.2 Adding references
 
 - Support a statement by reference
 - TODO - find example; Backup solution use the "origin of species example"
 
-## 4.2 Citations link in Wikidata
+## 4.3 Citations link in Wikidata
         
 Example of a scholarly article with citations: https://www.wikidata.org/wiki/Q52641751
 
 - some notes regarding the "cites" statement 
 
-## 4.3 Norms
+## 4.4 Norms
 - good practices
 
-## 4.4 Finding stable identifiers
+## 4.5 Finding stable identifiers
 - DOI
 - ORCID
 - etc.
 
-## 4.5. Use cases for good practice
+## 4.6 Use cases for good practice
 
 - When to use "instance of"
 - uni-directional referencing
