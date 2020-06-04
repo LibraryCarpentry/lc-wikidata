@@ -1,7 +1,7 @@
 ---
 title: "What is Wikidata?"
-teaching: 20 min
-exercises: 10 min
+teaching: 20
+exercises: 10
 questions:
 - "What are Items and Statements?"
 - "How does the Wikidata interface look like?"
