@@ -40,13 +40,13 @@ Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link
 
 - Once we are done we click click "Create". You should see you newly created article. The URL, the adress shown in your web browser, should contain "Q" and some number that is unique for this entry at the end.
 
-![Freshly created Item of Richard Feynman](../fig/l03-Mae_Jemison_02_Newly_created_page.png)  
+![Freshly created Item of Mae Jemison](../fig/l03-Mae_Jemison_02_Newly_created_page.png)  
 
-You can compare the entry that you have generated on the test instance with the current version of the item in Wikidata ([Q39246](https://www.wikidata.org/wiki/Q39246)).
+You can compare the entry that you have generated on the test instance with the current version of the item in Wikidata ([Q34091](https://www.wikidata.org/wiki/Q34091)).
 
-![Wikidata Feyman](../fig/l03-Mae_Jemison_03_Official_Wikidata_entry_full.png)  
+![Wikidata Jemison](../fig/l03-Mae_Jemison_03_Official_Wikidata_entry_full.png)  
 
-That was fun - let's do this again but this time we create an entry for a book. Mae_Jemison wrote several one. TODO. We want to create an entry for this . The procedure is the same as for the creation of the instance.
+That was fun - let's do this again but this time we create an entry for a book. Mae Jemison wrote several one. TODO. We want to create an entry for this . The procedure is the same as for the creation of the instance.
 
 - Use your web browser to go to the test instance at https://test.wikidata.org/ in case that you are not there.
 
@@ -54,15 +54,15 @@ That was fun - let's do this again but this time we create an entry for a book. 
 
 - Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link on the left site.
 
-![Wikidata Feyman](../fig/l03-Mae_Jemison_04_Enter_in_form_book.png)  
+![Wikidata Jemison](../fig/l03-Mae_Jemison_04_Enter_in_form_book.png)  
 
-- Fill the form -  We choose "en" int the *Language* drop-down menue, write "Surely You're Joking, Mr. Feynman!" in the *Label* field, "book by Richard Feynman" in the *Description* field and leave the *Alias* field blank
+- Fill the form -  We choose "en" int the *Language* drop-down menue, write "Find Where The Wind Goes" in the *Label* field, "book by Mae Jemison" in the *Description* field and leave the *Alias* field blank
 
 
 
 - Once we are done we click click "Create". You should see something like his:
 
-![Wikidata Feyman](../fig/l03-Mae_Jemison_05_Newly_created_book.png)  
+![Wikidata Jemison](../fig/l03-Mae_Jemison_05_Newly_created_book.png)  
 
 Again you can compare to version in Wikidata
 
