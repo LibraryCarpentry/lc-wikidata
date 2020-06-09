@@ -36,7 +36,7 @@ Here is the template for your schedule:
 | 4        |        | Use cases for good practice                |               |         |
 | 5        | 10 min | What is SPARQL?                            | Presentation  |         |
 | 5        | 10 min | How to query                               | Live Coding   |         |
-| 5        | 10 min | Query on Origin of Species                 | Exercise      |         |
+| 5        | 10 min | Query on "The Meaning of It All"           | Exercise      |         |
 | 6        |        | Intro                                      | Presentation  |         |
 | 6        |        | Bulk upload/harvests                       |               |         |
 | 6        |        | Bulk edits                                 |               |         |
