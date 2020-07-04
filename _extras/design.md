@@ -75,7 +75,7 @@ appropriate to the needs of the learners.
     * Finding stable identifiers
     * Use cases for good practice
 
-### Wikidata-Hands-on-Introduction Part 1 (1 1/2 hour)
+### Wikidata-Hands-on-Introduction Part 2 (1 1/2 hour)
 * 12:15 Episode 5 (45 min)
     * What is SPARQL? 
     * How to query
