@@ -1,6 +1,3 @@
-**Warning: This is currently only the template of the Python Lesson from the appearance of the design.md
-The content is not yet adapted to the Wikidata Lesson**
-
 ---
 layout: page
 title: "Lesson Design"
@@ -34,18 +31,15 @@ appropriate to the needs of the learners.
 
 ### Possible paths through the lesson
 
-#### Slow morning OR afternoon
-* Startup + standard library
-* Startup + pandas 
+#### Only teaching the basics
+* Startup
+* Episode 1: What is Wikidata?
+* Epidose 2: Underlying concepts of Wikidata
+* Episode 3: Introduction into editing
+* Episode 5: Introduction to querying
 
-#### Average speed morning OR afternoon            
-* Startup + standard library + pandas
-* Startup + standard library + standard library stretch
-* Startup + pandas + pandas stretch
-        
 #### Full day option
-* Startup + standard library + standard library stretch + lunch + pandas + pandas stretch
-
+* Startup + What is Wikidata + Underlying concepts + Intro into editing + advanced editing + lunch + intro to querying + advanced bulk updating, bots 
 
 ## Modules and suggested timing
 
@@ -55,56 +49,43 @@ appropriate to the needs of the learners.
     * Code of conduct
     * Room logistics
     * Install/setup
-* 9:30 What is Wikidata
-    * What are Items and Statements?
-    * How does the Wikidata interface look like?
+    * Introducing to eachother
+
+### Wikidata-Hands-on-Introduction Part 1 (2 hours)
+* 9:45 Episode 1 (30 min)
+    * What is Wikidata?
+    * Introduction into interface
+    * Wikidata Game
     * How is Wikidata linked to other Wiki projects?
-    * Overview of the lesson
+* 10:15: Episode 2 (30 min)
+    * Concepts foundations
+    * RDF triple in work of a librarian
+    * RDF triple example
+    * How Wikidata compares with other data sets
+* 10:45: Coffee (15 min)
+* 11:00: Episode 3 (30 min)
+    * Intro 
+    * Create a new item
+    * Add new statements
+    * Questions    
+* 11:30: Episode 4 (45 min)
+    * Add references
+    * Citation link in Wikidata
+    * Norms
+    * Finding stable identifiers
+    * Use cases for good practice
 
-### Standard library (2 hours 30 min)
-* 9:45: Understanding the environment and basic Python types and methods (15 min)
-    * Familiarization with the IDE 
-    * Starting/stopping the IDE run or app
-    * Print statements & evaluation
-    * Strings
-    * Variables
-* 10:00: Introduction to scripts (15 min)
-    * Examine an example script
-    * Tracing the control flow
-    * Using help commands to look up functions
-    * Anticipate output and test
-    * Modify output and test
-* 10:15: csv module (15 min)
-    * Using the csv module to open a file
-    * Two-dimensional list data representation
-    * `if` statements, for filtering
-* 10:30: Coffee (15 min)
-* 10:45: Working with data from the csv (15 min)
-    * Accumulator patterns, for collecting strings from the data
-    * Filtering rows and creating lists from the data
-* 11:00 (stretch content) (15 min)
-    * Accumulating lists of data for csv output
-    * Transforming a script to run on multiple files using glob
+### Pandas (1 1/2 hour)
+* 12:15 Episode 5 (45 min)
+    * What is SPARQL? 
+    * How to query
+    * Query on example
+* 13:00 Episode 6 (45 min)
+    * Intro
+    * Bulk upload/harvests
+    * Bulk edits
+    * Bulk creation/harvesting
+    * Performance
 
-### Pandas (1 hour)
-* 11:15 Introduction to pandas and Jupyter (15 min)
-    * Importing pandas 
-    * How pandas is often used
-    * Using Jupyter notebooks
-    * Jupyter gotchas and good practices
-* 11:30 Reading a csv into a DataFrame (15 min)
-    * `read_csv` and formatting options
-    * Viewing a DataFrame
-    * Evaluation vs. print() in Jupyter
-    * Modifying data using pandas
-* 11:45 Working with DataFrames (15 min)
-    * Column data types
-    * `NaN`s and essential cleaning checks
-    * Filtering data into a new DataFrame
-    * Saving data as a new CSV file
-* 12:00 (stretch content) (15 min)
-    * Aggregation and summaries
-    * Quick plots of a DataFrame
-    * Transformations of a DataFrame, such as transposing
 
-### Wrap-Up and Feedback (15 min)
+### Wrap-Up and Feedback (30 min)
