@@ -8,6 +8,11 @@ root: ..
 Sometime there is more than one way to do something. Here are some
 reason why we did certain things in a certain manner.
 
+## Write what you decide
+
+In lesson development, many decisions are made within group discussions, sprints or conferences. In order to be able to track these, it is useful to store a meeting_notes.md in the repo.
+This md file documents all discussions that have been held and all decisions that have been made, to make the development easier to understand for newcomers.
+
 ## Edit first vs. create first
 
 In order to lower the hurdle for first edit the idea was suggested on
