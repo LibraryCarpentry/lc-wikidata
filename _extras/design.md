@@ -3,15 +3,15 @@ layout: page
 title: "Lesson Design"
 root: ..
 ---
-## Design decision
+## Design decision :bulb:
 
 Sometime there is more than one way to do something. Here are some
 reason why we did certain things in a certain manner.
 
-## Write what you decide
+## Write what you decide :pencil2:
 
 In lesson development, many decisions are made within group discussions, sprints or conferences. In order to be able to track these, it is useful to store a meeting_notes.md in the repo.
-This md file documents all discussions that have been held and all decisions that have been made, to make the development easier to understand for newcomers.
+This md file documents all discussions that have been held and all decisions that have been made, to make the development easier to understand for newcomers. To make such a meeting_notes.md file was also one decision at a certain time and now is also tracked! :+1:
 
 ## Edit first vs. create first
 
