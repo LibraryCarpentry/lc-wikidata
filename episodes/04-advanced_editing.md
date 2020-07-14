@@ -18,14 +18,15 @@ The tools are under heavy development and due to that they might change or don't
 So now we will work in the productive version. We will use DOI to automatically put an article into Wikidata via sourcemd. If you are familiar in Life Science you can use our example with PubMed for finding DOIs of new article, optional you can choose an journal related to your scientific field.
 Sourcemd gets it metadata from [Crossref](https://de.wikipedia.org/wiki/Crossref), also look to [sourcemd:instructions](https://www.wikidata.org/wiki/Wikidata:SourceMD/instructions)
 
+Potential open access journal:
+- [PLOS One](https://plos.org/)
+- [Beilstein Journal of Organic Chemistry (BJOC)](https://www.beilstein-journals.org/bjoc/articles/16/138)
+
 ## 4.3 Adding statements via sourcemd and quickstatements
 
 Go to [pubmed](https://pubmed.ncbi.nlm.nih.gov/), scroll down to "latest literature" and select an article: 
 ![latest_articles](../fig/episode_04_screenshot_01_latest_articles.png)
 
-Potential open access journal:
-- [PLOS One](https://plos.org/)
-- [Beilstein Journal of Organic Chemistry (BJOC)](https://www.beilstein-journals.org/bjoc/articles/16/138)
 
 Save the DOI, PMID or PMCID of the article:
 
