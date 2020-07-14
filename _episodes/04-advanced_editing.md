@@ -18,6 +18,10 @@ The tools are under heavy development and due to that they might change or don't
 Go to [pubmed](https://pubmed.ncbi.nlm.nih.gov/), scroll down to "latest literature" and select an article: 
 ![latest_articles](../fig/episode_04_screenshot_01_latest_articles.png)
 
+Potential open access journal:
+- [PLOS One](https://plos.org/)
+- [Beilstein Journal of Organic Chemistry (BJOC)](https://www.beilstein-journals.org/bjoc/articles/16/138)
+
 Save the DOI, PMID or PMCID of the article:
 
 ![choose_doi](../fig/episode_04_screenshot_02_choose_doi.png)
