@@ -34,5 +34,10 @@ A new window with QuickStatements will pop up. Now you'll get an overview of the
 
 ![run_editing](../fig/episode_04_screenshot_05_run_editing.png)
 
+## 4.3 Further Information
+
+- [how sourcemd gets metadata](https://www.wikidata.org/wiki/Wikidata:SourceMD/instructions)
+  - via Crossref (also explain what is [Crossref](https://de.wikipedia.org/wiki/Crossref)
+
 
 {% include links.md %}
