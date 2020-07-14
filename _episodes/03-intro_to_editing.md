@@ -100,11 +100,6 @@ Have a look again at Origin of Species to get inspiration: https://www.wikidata.
 ![Add](../fig/l03-Mae_Jemison_11_Hoover_link.png)  
 
 
-## 4.1 Introduction
-Why Wikidata uses references:
-Like in Wikipedia it is important that content can be verified by others to make sure it is correct and comes from a reliable source of information, such as a book, scientific publication, or newspaper article.
-A Reference (or source) is used to point to specific sources that back up a claim in Wikidata. A reference can be a link to a URL or an item; for example, a book. Wikidata does not aim to answer the question of whether a statement is correct, but only whether the statement appears in a reference.
-
 ## 3.4 Adding references
 Why Wikidata uses references:
 Like in Wikipedia it is important that content can be verified by others to make sure it is correct and comes from a reliable source of information, such as a book, scientific publication, or newspaper article.
