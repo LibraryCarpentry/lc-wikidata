@@ -68,10 +68,20 @@ Task:
   
 ## 3.4 Add Statements - Add ID to Mae Jemison
 
+
+Task:
+Support a person by it's IDs. Give the participtants the identifiers and source page for an ID and let them add it on the Mae Jemison item on the test instance of Wikidata:
+  
 - ORCID
-- VIAF
+- VIAF ID
+  - identifier: 33699121
+  - source page: https://viaf.org/viaf/33699121/
 - Library of Congress authority ID
+  - identfier: n95004729
+  - source page: http://id.loc.gov/authorities/names/n95004729.html
 - IMDb ID
+  - identifier: nm0420648
+  - source page: https://www.imdb.com/name/nm0420648/
 
 
 ## 3.6 Norms and good practices
