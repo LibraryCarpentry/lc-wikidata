@@ -71,6 +71,7 @@ Task:
 - ORCID
 - VIAF
 - Library of Congress authority ID
+- IMDb ID
 
 
 ## 3.5 Citations link in Wikidata
