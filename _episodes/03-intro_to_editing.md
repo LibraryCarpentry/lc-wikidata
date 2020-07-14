@@ -84,7 +84,7 @@ Support a person by it's IDs. Give the participtants the identifiers and source 
   - source page: https://www.imdb.com/name/nm0420648/
 
 
-## 3.6 Norms and good practices
+## 3.5 Norms and good practices
 
 * Customization of languages for user interface
 * Wikidata "item" vs. "article" vs. "entry"
