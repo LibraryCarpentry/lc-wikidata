@@ -68,9 +68,9 @@ Task:
   
 ## 3.4 Add Statements - Add ID to Mae Jemison
 
-
-
-## 3.4 Adding references
+- ORCID
+- VIAF
+- Library of Congress authority ID
 
 
 ## 3.5 Citations link in Wikidata
@@ -80,12 +80,16 @@ Example of a scholarly article with citations: https://www.wikidata.org/wiki/Q52
 - some notes regarding the "cites" statement 
 
 ## 3.6 Norms and good practices
-- good practices
 
-## 3.7 Finding stable identifiers
-- DOI
-- ORCID
-- etc.
+* Customization of languages for user interface
+* Wikidata "item" vs. "article" vs. "entry"
+* Policies for
+  * [Labels](https://www.wikidata.org/wiki/Special:MyLanguage/Help:Label)
+  * [Descriptions](https://www.wikidata.org/wiki/Special:MyLanguage/Help:Description)
+* Books
+  * [Data model](https://www.wikidata.org/wiki/Wikidata:WikiProject_Books)
+  * [Inventaire](https://inventaire.io/welcome)
+
 
 ![Add](../fig/l03-Mae_Jemison_07_Added_instance_of.png)  
 ![Add](../fig/l03-Mae_Jemison_08_Form_adding_publication_date.png)  
