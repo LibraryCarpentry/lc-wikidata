@@ -54,40 +54,8 @@ You can compare the entry that you have generated on the test instance with the 
 
 ![Wikidata Jemison](../fig/l03-Mae_Jemison_03_Official_Wikidata_entry_full.png)  
 
+## 3.3 Add Statements - birth reference
 
-## 3.3 Add statements
-
-Once you have created entry you can extend it by further statement. 
-
-- Data types: 
-    - String
-    - Properties
-    - Quantity
-    - Time
-    - URL
-    - And many more https://www.wikidata.org/wiki/Help:Data_type
-
-- Click on the "+ add statement" link
-
-
-
-- Fill a property and a values
-
-- Some suggestions for statements:
-    - "instance of" (P82) - "book", "scholarly article"
-    -  "date of publication" (P151) 
-
-Have a look again at Origin of Species to get inspiration: https://www.wikidata.org/wiki/Q20124
-
-![Add](../fig/l03-Mae_Jemison_07_Added_instance_of.png)  
-![Add](../fig/l03-Mae_Jemison_08_Form_adding_publication_date.png)  
-![Add](../fig/l03-Mae_Jemison_09_Added_publication_date.png)  
-![Add](../fig/l03-Mae_Jemison_10_Added_authors.png)  
-![Add](../fig/l03-Mae_Jemison_10_Form_adding_authors.png)  
-![Add](../fig/l03-Mae_Jemison_11_Hoover_link.png)  
-
-
-## 3.4 Adding references
 Why Wikidata uses references:
 Like in Wikipedia it is important that content can be verified by others to make sure it is correct and comes from a reliable source of information, such as a book, scientific publication, or newspaper article.
 A Reference (or source) is used to point to specific sources that back up a claim in Wikidata. A reference can be a link to a URL or an item; for example, a book. Wikidata does not aim to answer the question of whether a statement is correct, but only whether the statement appears in a reference.
@@ -97,6 +65,13 @@ Task:
 
   - Add the birth date (October 17, 1965) of Mae Jemison as a statement using property P569 "date of birth" to the "Mae X Jemison" item you created above.
   - Afterwards add a reference to the satement with the following url as the source: https://www.biography.com/astronaut/mae-c-jemison 
+  
+## 3.4 Add Statements - Add ID to Mae Jemison
+
+
+
+## 3.4 Adding references
+
 
 ## 3.5 Citations link in Wikidata
         
@@ -112,3 +87,9 @@ Example of a scholarly article with citations: https://www.wikidata.org/wiki/Q52
 - ORCID
 - etc.
 
+![Add](../fig/l03-Mae_Jemison_07_Added_instance_of.png)  
+![Add](../fig/l03-Mae_Jemison_08_Form_adding_publication_date.png)  
+![Add](../fig/l03-Mae_Jemison_09_Added_publication_date.png)  
+![Add](../fig/l03-Mae_Jemison_10_Added_authors.png)  
+![Add](../fig/l03-Mae_Jemison_10_Form_adding_authors.png)  
+![Add](../fig/l03-Mae_Jemison_11_Hoover_link.png)  
