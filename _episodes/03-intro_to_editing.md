@@ -72,7 +72,7 @@ Task:
 Task:
 Support a person by it's IDs. Give the participtants the identifiers and source page for an ID and let them add it on the Mae Jemison item on the test instance of Wikidata:
   
-- ORCID
+
 - VIAF ID
   - identifier: 33699121
   - source page: https://viaf.org/viaf/33699121/
@@ -82,7 +82,8 @@ Support a person by it's IDs. Give the participtants the identifiers and source 
 - IMDb ID
   - identifier: nm0420648
   - source page: https://www.imdb.com/name/nm0420648/
-
+Site note: 
+- ORCID is an often used ID, in this case Mae Jemison doesn't have one, but it's good to mention ORCID anyway.
 
 ## 3.5 Norms and good practices
 
