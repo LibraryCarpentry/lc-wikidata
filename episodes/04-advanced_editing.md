@@ -17,6 +17,8 @@ keypoints:
 ---
 ## 4.1 Adding statements via sourcemd and quickstatements
 
+Go to [pubmed](https://pubmed.ncbi.nlm.nih.gov/), scroll down to latest literature and select an article and save the DOI or PMID
+
 ![latest_articles](../fig/episode_04_screenshot_01_latest_articles.png)
 
 ![choose_doi](../fig/episode_04_screenshot_02_choose_doi.png)
