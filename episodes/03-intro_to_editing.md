@@ -91,9 +91,3 @@ Example of a scholarly article with citations: https://www.wikidata.org/wiki/Q52
   * [Inventaire](https://inventaire.io/welcome)
 
 
-![Add](../fig/l03-Mae_Jemison_07_Added_instance_of.png)  
-![Add](../fig/l03-Mae_Jemison_08_Form_adding_publication_date.png)  
-![Add](../fig/l03-Mae_Jemison_09_Added_publication_date.png)  
-![Add](../fig/l03-Mae_Jemison_10_Added_authors.png)  
-![Add](../fig/l03-Mae_Jemison_10_Form_adding_authors.png)  
-![Add](../fig/l03-Mae_Jemison_11_Hoover_link.png)  
