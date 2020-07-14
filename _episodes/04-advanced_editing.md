@@ -15,7 +15,7 @@ objectives:
 keypoints:
 - "First key point. (FIXME)"
 ---
-## 4.
+## 4.1 Adding statements via sourcemd and quickstatements
 
 ![latest_articles](../fig/episode_04_screenshot_01_latest_articles.png)
 
@@ -26,7 +26,6 @@ keypoints:
 ![open quickstatements](../fig/episode_04_screenshot_04_open_quickstatements.png)
 
 ![run_editing](../fig/episode_04_screenshot_05_run_editing.png)
-
 
 
 {% include links.md %}
