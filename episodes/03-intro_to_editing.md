@@ -74,12 +74,6 @@ Task:
 - IMDb ID
 
 
-## 3.5 Citations link in Wikidata
-        
-Example of a scholarly article with citations: https://www.wikidata.org/wiki/Q52641751
-
-- some notes regarding the "cites" statement 
-
 ## 3.6 Norms and good practices
 
 * Customization of languages for user interface
