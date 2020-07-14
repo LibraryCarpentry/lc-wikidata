@@ -13,7 +13,12 @@ keypoints:
 ## 4.1 Disclaimer
 The tools are under heavy development and due to that they might change or don't work as expected. If that happens just move on to the next episode.
 
-## 4.2 Adding statements via sourcemd and quickstatements
+## 4.2 Introduction
+
+So now we will work in the productive version. We will use DOI to automatically put an article into Wikidata via sourcemd. If you are familiar in Life Science you can use our example with PubMed for finding DOIs of new article, optional you can choose an journal related to your scientific field.
+Sourcemd gets it metadata from [Crossref](https://de.wikipedia.org/wiki/Crossref), also look to [sourcemd:instructions](https://www.wikidata.org/wiki/Wikidata:SourceMD/instructions)
+
+## 4.3 Adding statements via sourcemd and quickstatements
 
 Go to [pubmed](https://pubmed.ncbi.nlm.nih.gov/), scroll down to "latest literature" and select an article: 
 ![latest_articles](../fig/episode_04_screenshot_01_latest_articles.png)
@@ -38,10 +43,9 @@ A new window with QuickStatements will pop up. Now you'll get an overview of the
 
 ![run_editing](../fig/episode_04_screenshot_05_run_editing.png)
 
-## 4.3 Further Information
 
-- [how sourcemd gets metadata](https://www.wikidata.org/wiki/Wikidata:SourceMD/instructions)
-  - via Crossref (also explain what is [Crossref](https://de.wikipedia.org/wiki/Crossref)
+
+
 
 
 {% include links.md %}
