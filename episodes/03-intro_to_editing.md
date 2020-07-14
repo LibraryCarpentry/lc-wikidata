@@ -54,27 +54,6 @@ You can compare the entry that you have generated on the test instance with the 
 
 ![Wikidata Jemison](../fig/l03-Mae_Jemison_03_Official_Wikidata_entry_full.png)  
 
-That was fun - let's do this again but this time we create an entry for a book. Mae Jemison wrote several one. TODO. We want to create an entry for this . The procedure is the same as for the creation of the instance.
-
-- Use your web browser to go to the test instance at https://test.wikidata.org/ in case that you are not there.
-
-![Front Page of the test instance](../fig/l03-Screenshot_test_instance_front_page.png)  
-
-- Click "[Create a new Item](https://test.wikidata.org/wiki/Special:NewItem)" link on the left site.
-
-![Wikidata Jemison](../fig/l03-Mae_Jemison_04_Enter_in_form_book.png)  
-
-- Fill the form -  We choose "en" int the *Language* drop-down menue, write "Find Where The Wind Goes" in the *Label* field, "book by Mae Jemison" in the *Description* field and leave the *Alias* field blank
-
-
-
-- Once we are done we click click "Create". You should see something like his:
-
-![Wikidata Jemison](../fig/l03-Mae_Jemison_05_Newly_created_book.png)  
-
-Again you can compare to version in Wikidata
-
-https://www.wikidata.org/wiki/Q2743592
 
 ## 3.3 Add statements
 
@@ -125,7 +104,7 @@ Example of a scholarly article with citations: https://www.wikidata.org/wiki/Q52
 
 - some notes regarding the "cites" statement 
 
-## 3.6 Norms
+## 3.6 Norms and good practices
 - good practices
 
 ## 3.7 Finding stable identifiers
@@ -133,7 +112,3 @@ Example of a scholarly article with citations: https://www.wikidata.org/wiki/Q52
 - ORCID
 - etc.
 
-## 3.8 Use cases for good practice
-
-- When to use "instance of"
-- uni-directional referencing
