@@ -9,6 +9,14 @@ objectives:
 - "Know properties and relations, and where to find lists of approved properties and relations."
 - "Be able to add new statements that link to other items."
 - "Be aware of property constraints."
+- "Know community norms around Wikidata and why they are important."
+- "Be able to add references appropriately."
+- "Know what identifiers are and how to add them to a statement."
+- "Know different stable identifiers (e.g. ORCID for authors, DOI for works) and why makes sense to use them as properties."
+- "Know the correct use of properties."
+
+
+
 
 keypoints:
 - create new items
