@@ -1,3 +1,50 @@
+## CC@Home: Library Carpentry Wikidata lesson sprint
+## 2020-07-14, 8:00 UTC
+
+### Roll call + Check in:
+
+Niklas zimmer / niklas.zimmer@uct.ac.za / he, him, his / @niklaszimmer
+Wangui Mwangi / mwangiwangui25@gmail.com/ she and her/ @essmarie_1
+Serah Rono / serah@carpentries.org / she, her, hers / @serahrono
+Till Sauerwein / sauerwein@zbmed.de / he / @TillSauerwein
+Rabea Müller / mueller@zbmed.de / she/her / @MueRabea
+Konrad Förstner / foerstner@zbmed.de, him/her | @konradfoerstner
+Chris Erdmann / erdmannc@renci.org, he, him, his / @libcce
+
+### Notes:
+Episodes 4 and 6 need to be worked on
+Episodes 1,2,3 and 5 are almost done. Proofreading?
+
+- Add Episode/Set-Up disclaimer that attendees need to make a Wikidata account at least 4(!!) Days in advance. Editing on Wikidata is limited for new user accounts. Caution: Multiple accounts might not be possilbe to be created from the same IP
+
+### History:
+discussions around this lesson started in november 2018 in Berkeley at a Wikicite conference
+the lesson was then set up, but active work started once Rabea came on board
+it is now in a 'ready to use' state
+
+### Quick overview
+Human and machine readable knowledge base
+coming from Wikimedia universe, all content is open (CC-BY, CC-0 license) that is editable
+editing and reuse is relatively easy for all, by design
+unmaintained versions of wikipedia, i.e. those run by smaller communities (languages not used by many), ---- (ask Konrad to expound here)
+
+### TODO suggestions:
+Niklas
+Maps out of copyright, video, audio … unpublished material, possibly with links to published materials or other kinds of ‘public’ ‘products’
+Also as a registry of identifiers for authors across the institution, so we don’t keep duplicating ‘person’ in our various databases
+One example where we focus on building academic profiles: Zimmer, Niklas; Muftic, Sanjin; Slingsby, Thomas (2020): Setting up and linking your academic profiles online. University of Cape Town. Presentation. https://doi.org/10.25375/uct.9725393.v1
+- add motivation and why to use wikidata as an librarian in episode
+- add registration for participants two weeks earlier
+- WikiProject: Women in Redhttps://blog.wikimedia.org/2018/03/29/increasing-visibility-women-with-wikidata/ 
+- add as game later on (episode 5, after introduction into querying)
+-source for getting DOIS
+- find your own preferred example or you use or example
+- PLOS ONE as example
+- using test instance for editing Mae Jemison 
+- use the initials of the participants to keep them different
+- and then also use for reference example
+- give link to the participants and tell them to add birth with reference
+- https://www.britannica.com/biography/Mae-Jemison for searching on reference
 # **2019-04-01 Library Carpentry - Wikidata Lesson Sprint**
 
 * **Aim of the Sprint:**
