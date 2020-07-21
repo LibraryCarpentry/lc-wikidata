@@ -3,6 +3,7 @@
 - [Till Sauerwein](https://github.com/Tillsa)
 - [Muhammad Elhossary](https://github.com/elhossary)
 - [Konrad Förstner](https://github.com/konrad)
+- [Rabea Müller](https://github.com/RabeaMue)
 
 Lesson Maintainers communication is via the [team site](https://github.com/orgs/LibraryCarpentry/teams/lc-wikidata).
 
