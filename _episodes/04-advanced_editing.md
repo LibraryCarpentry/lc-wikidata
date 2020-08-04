@@ -47,7 +47,7 @@ A new window with QuickStatements will pop up. Now you'll get an overview of the
 ## 4.4 (OPTIONAL) Converting "author strings" to "author"
 
 [Find Author Strings](https://github.com/foerstner-lab/Publication_list/blob/master/Query_Strings_for_Wikidata.md)
-
+[Author Disambiguator](https://author-disambiguator.toolforge.org/)
 
 
 {% include links.md %}
