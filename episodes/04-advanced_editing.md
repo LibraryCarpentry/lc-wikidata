@@ -44,8 +44,9 @@ A new window with QuickStatements will pop up. Now you'll get an overview of the
 
 ![run_editing](../fig/episode_04_screenshot_05_run_editing.png)
 
+## 4.4 (OPTIONAL) Converting "author strings" to "author"
 
-
+[Find Author Strings](https://github.com/foerstner-lab/Publication_list/blob/master/Query_Strings_for_Wikidata.md)
 
 
 
