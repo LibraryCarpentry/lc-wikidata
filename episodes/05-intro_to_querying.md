@@ -108,10 +108,13 @@ you are looking for.
 Prefixes are short abbrevations in the Wikidata Query Service. Some prefixes in Wikidata are: wd, wdt, p, ps, bd, etc.
 
 Example:
-The below query does the following: It selects all the items (?item) that have the property(wdt:) = P31 with a value of entity(wd:) = Q5
-~~~
-SELECT ?item ?itemLabel WHERE {
-?item wdt:P31 wd:Q6. }
+
+SELECT ?item ?itemLabel 
+WHERE 
+{
+  ?item wdt:P50 wd:Q23434.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
 ~~~
 Items should be prefixed with wd: and properties with wdt: .
 
