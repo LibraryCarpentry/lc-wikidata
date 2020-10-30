@@ -22,7 +22,7 @@ Examples:
  
 ![relational database](../fig/Relational_database_terms.svg.png)
  
-### 2.1.2 Graph / Sematic databases  
+### 2.1.2 Graph / Semantic databases  
 Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data. Most RDF fundamentally uses SPARQL (Simple Protocol and Rdf Query Language) to read stored data while relational databases uses SQL (Structured Query Language) to do so. In SQL relational database terms, RDF data can also be considered or viewed as a table with only three columns – the subject column, the predicate column, and the object column.  
  
 ![data structure diagram](../fig/Data_Structure_Diagram.jpg)
