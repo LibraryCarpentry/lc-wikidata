@@ -19,13 +19,15 @@ keypoints:
 
 ## What is Wikidata?
 
-Wikidata’s own [description](https://www.wikidata.org/wiki/Wikidata:Main_Page) says: “Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.” Wikidata is Wikipedia’s database with close to 50 Million data items. 
+Wikidata’s [description](https://www.wikidata.org/wiki/Wikidata:Main_Page) explains that “Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.” Wikidata functions as the central database for a variety of Wiki projects, including Wikipedia, Wiktionary, and Wikisource, among others. 
 
-Wikipedia’s own [description](https://en.wikipedia.org/wiki/Wikipedia:Introduction) says: “Wikipedia is a free encyclopedia, written collaboratively by the people who use it. It is a special type of website designed to make collaboration easy, called a wiki. Many people are constantly improving Wikipedia, making thousands of changes per hour. All of these changes are recorded in article histories and recent changes.”
+Most users will be familiar with Wikpedia, which [describes itself](https://en.wikipedia.org/wiki/Wikipedia:Introduction) as "a free encyclopedia, written collaboratively by the people who use it. It is a special type of website designed to make collaboration easy, called a wiki. Many people are constantly improving Wikipedia, making thousands of changes per hour. All of these changes are recorded in article histories and recent changes.”
 
-Wikidata contains various data types (e.g. text, images, quantities, coordinates, geographic shapes, dates). The data can be queried via a query interface and language which will be covered later. Data is published under the Creative Commons Public Domain 1.0 license. It can be modified, copied, and distributed without permission.
+Wikidata contains various data types (e.g. text, images, quantities, coordinates, geographic shapes, dates). The data can be queried via a query interface called SPARQL, which we will cover later in this lesson. Data is published under the Creative Commons Public Domain 1.0 license. It can be modified, copied, and distributed without permission.
 
-Wikidata also contains authority files, bibliographic data and other content normally managed in library databases.
+Wikidata also contains authority files, bibliographic data, and other content normally managed in library databases.
+
+Importantly, Wikidata can be [interlinked](https://www.wikidata.org/wiki/Wikidata:Data_access#How_can_I_get_data_out_of_Wikidata?) to other open data sets on the linked data web.
 
 
 ## 1.1 Intro interface ##
