@@ -35,6 +35,9 @@ Semantic web is an extension of the World Wide Web standards, which promote comm
 
 - https://en.wikipedia.org/wiki/Semantic_triple
 
+![RDF Tripe](../fig/RDF_subject_predicate_object.jpg)
+
+
 ## 2.3 Underlying components
 - Items  
 Items represents subjects such Douglas Adams and have identifiers that starts with letter "Q" like: Q42 for Douglas Adams.  
