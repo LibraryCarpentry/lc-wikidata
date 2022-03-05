@@ -1,6 +1,9 @@
 ---
 title: "Instructor Notes"
 ---
+## Editing Wikidata items with learners
+If you want your learners to edit Wikidata items in the real instance, note that participants need to be registrated in Wikidata for four days to be able to edit wikidata items. If they are not registered they can use the [wikidata test instance](https://test.wikidata.org/wiki/Wikidata:Main_Page) 
+
 ## Organize your lesson with your instructors
 
 If you do the lesson together with other instructors, it can be helpful to divide the individual sections of the lesson among themselves and thus create a schedule. This could look like this:
