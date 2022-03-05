@@ -136,8 +136,101 @@ Namespaces in Wikidata are:
 ### Exercises
 
 
-## 5.3 Try examples (research published that week?)
+## 5.3 Try examples 
 
+**Cats example**
+```
+SELECT ?item ?itemLabel 
+WHERE 
+{
+  ?item wdt:P31 wd:Q146. # Must be of a cat
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
+}
+```
+**Map of libraries**
+```
+SELECT distinct * WHERE {
+  ?item wdt:P31/wdt:P279* wd:Q7075;
+        wdt:P625 ?geo .
+}
+```
+**scholarly articles by Alex Bateman**
+```
+SELECT ?item ?itemLabel ?journalLabel
+WHERE 
+{
+  ?item wdt:P31 wd:Q13442814.
+  ?item wdt:P50 wd:Q18921408.
+  ?item wdt:P1433 ?journal.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+}
+```
+
+**Russian poets**
+```
+SELECT ?item ?itemLabel ?place ?placeLabel ?coord
+WHERE 
+{
+  ?item wdt:P31 wd:Q5.
+  ?item wdt:P106 wd:Q49757.
+  ?item wdt:P19 ?place.
+  ?place wdt:P17 wd:Q159.
+  ?place wdt:P625 ?coord
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+**chemicals example**
+```
+SELECT ?item ?itemLabel WHERE {
+  
+  ?item wdt:P31 wd:Q11173, wd:Q12140.
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+}
+```
+```
+SELECT ?item ?itemLabel ?struc ?formula
+
+WHERE {
+  
+  ?item wdt:P31 wd:Q11173, wd:Q12140.
+  ?item wdt:P117 ?struc.
+  ?item wdt:P274 ?formula
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  
+}
+```
+```
+SELECT ?item ?itemLabel ?formula ?mass ?struc
+
+WHERE {
+  
+  ?item wdt:P31 wd:Q11173, wd:Q12140.
+  ?item wdt:P117 ?struc.
+  ?item wdt:P274 ?formula.
+  ?item wdt:P2067 ?mass.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  
+}
+
+ORDER BY DESC(?mass)
+LIMIT 10
+```
+**Nach Jahr gefiltert**
+```
+SELECT ?item ?itemLabel ?dob
+WHERE 
+{
+  ?item wdt:P31 wd:Q5.
+  ?item wdt:P19 wd:Q64.
+  ?item wdt:P569 ?dob.
+  
+  FILTER(YEAR(?dob) = 1970)
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
 ## 5.4 More Advanced queries
 
 further links
