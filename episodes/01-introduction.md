@@ -78,7 +78,19 @@ from https://creativecommons.org/publicdomain/zero/1.0/
   the numbers the same in the different language? Visit the item in
   Wikidata.
 
-## 1.3 Linking Wikidata to other Wiki resources ##
+## 1.3 Wikidata Item Eastereggs
+
+- [Q1 - Universe](https://www.wikidata.org/wiki/Q1)
+- [Q2 - Earth](https://www.wikidata.org/wiki/Q2)
+- [Q3 - Life](https://www.wikidata.org/wiki/Q3)
+- [Q4 - Death](https://www.wikidata.org/wiki/Q4)
+- [Q5 - Human](https://www.wikidata.org/wiki/Q5)
+- [Q13 - Fear of the number 13](https://www.wikidata.org/wiki/Q13)
+- [Q42 - Douglas Adams (The Hitchhiker's Guide to the Galaxy)](https://www.wikidata.org/wiki/Q42)
+- [Q666 - Number of the beast](https://www.wikidata.org/wiki/Q666)
+- [Q12345 - Count von Count, Characzer on Sesame Street](https://www.wikidata.org/wiki/Q12345)
+
+## 1.4 Linking Wikidata to other Wiki resources ##
 - Link from Wikipedia to Wikidata
     - e.g. https://en.wikipedia.org/wiki/On_the_Origin_of_Species
         - => Follow the link "Wikidata item" on the left side under "tools"
