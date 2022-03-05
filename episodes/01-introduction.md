@@ -88,7 +88,7 @@ from https://creativecommons.org/publicdomain/zero/1.0/
 - [Q13 - Fear of the number 13](https://www.wikidata.org/wiki/Q13)
 - [Q42 - Douglas Adams (The Hitchhiker's Guide to the Galaxy)](https://www.wikidata.org/wiki/Q42)
 - [Q666 - Number of the beast](https://www.wikidata.org/wiki/Q666)
-- [Q12345 - Count von Count, Characzer on Sesame Street](https://www.wikidata.org/wiki/Q12345)
+- [Q12345 - Count von Count, Character on Sesame Street](https://www.wikidata.org/wiki/Q12345)
 
 ## 1.4 Linking Wikidata to other Wiki resources ##
 - Link from Wikipedia to Wikidata
