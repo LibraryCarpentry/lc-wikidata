@@ -81,10 +81,18 @@ Qualifiers are besicly properties but on claims rather than items.
 > {: .solution}
 {: .challenge}
 
-## 2.4 Wikidata one pager
+## 2.4 Scholia - a webserive with Wikidata as underlying database
+
+- Introduction with [The Linked Open Data Cloud](https://www.lod-cloud.net/)
+- the structure enables queries
+- reference to DBPedia
+- you can build your own web services with Wikidata as database > [Scholia](https://scholia.toolforge.org/)
+  - e.g. search for Alex Bateman
+
+## 2.5 Wikidata one pager
 - https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf
 
-## 2.4 How Wikidata compares with other data sets 
+## 2.6 How Wikidata compares with other data sets 
 
 - https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata
 - https://lod-cloud.net/
