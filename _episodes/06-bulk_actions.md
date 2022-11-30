@@ -28,6 +28,9 @@ FIXME
 * Understand how to write a good queries in terms of performance
 * 
 ## 6.1 Bulk uploads/harvests (lead to OpenRefine modules)
+
+Test test test
+
 ## 6.2 Bulk edits
 ## 6.3 Bulk creation/harvesting
 ## 6.4 Performance 
