@@ -9,7 +9,7 @@ Lesson Maintainers communication is via the [team site](https://github.com/orgs/
 
 ## Library Carpentry
 
-[Library Carpentry](https://librarycarpentry.org) is a software and data skills training programme for people working in library- and information-related roles. It builds on the work of [Software Carpentry](http://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/). Library Carpentry is an official Lesson Program of [The Carpentries](https://carpentries.org/).
+[Library Carpentry](https://librarycarpentry.org) is a software and data skills training programme for people working in library- and information-related roles. It builds on the work of [Software Carpentry](https://software-carpentry.org/) and [Data Carpentry](https://www.datacarpentry.org/). Library Carpentry is an official Lesson Program of [The Carpentries](https://carpentries.org/).
 
 ## License
 
@@ -32,8 +32,10 @@ Library Carpentry is authored and maintained through issues, commits, and pull r
 
 Cite as:
 
-Library Carpentry: Wikidata. September 2019. https://librarycarpentry.org/lc-wikidata.
+Library Carpentry: Wikidata. September 2019. [https://librarycarpentry.org/lc-wikidata](https://librarycarpentry.org/lc-wikidata).
 
 ## Checking and Previewing the Lesson
 
-To check and preview a lesson locally, see [http://carpentries.github.io/lesson-example/07-checking/index.html](http://carpentries.github.io/lesson-example/07-checking/index.html).
+To check and preview a lesson locally, see [http://carpentries.github.io/lesson-example/07-checking/index.html](https://carpentries.github.io/lesson-example/07-checking/index.html).
+
+
