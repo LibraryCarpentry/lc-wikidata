@@ -31,10 +31,16 @@
     <loc>https://librarycarpentry.github.io/lc-wikidata/Topic_list_brainstorming.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-wikidata/aio.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-wikidata/design.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-wikidata/discuss.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-wikidata/images.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-wikidata/index.html</loc>
@@ -70,13 +76,25 @@
     <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/Topic_list_brainstorming.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/design.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/discuss.html</loc>
   </url>
   <url>
+    <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/meeting_notes.html</loc>
@@ -86,6 +104,12 @@
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-wikidata/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-wikidata/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://librarycarpentry.github.io/lc-wikidata/key-points.html</loc>
   </url>
   <url>
     <loc>https://librarycarpentry.github.io/lc-wikidata/meeting_notes.html</loc>
