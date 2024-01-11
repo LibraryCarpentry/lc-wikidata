@@ -64,7 +64,7 @@ Task:
 
 - Support a statement by reference
   
-  - Add the birth date (October 17, 1965) of Mae Jemison as a statement using property P569 "date of birth" to the "Mae X Jemison" item you created above.
+  - Add the birth date (October 17, 1956) of Mae Jemison as a statement using property P569 "date of birth" to the "Mae X Jemison" item you created above.
   - Afterwards add a reference to the satement with the following url as the source: [https://www.biography.com/astronaut/mae-c-jemison](https://www.biography.com/astronaut/mae-c-jemison)
 
 ## 3\.4 Add Statements - Add ID to Mae Jemison
