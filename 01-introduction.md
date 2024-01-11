@@ -96,7 +96,9 @@ Importantly, Wikidata can be [interlinked](https://www.wikidata.org/wiki/Wikidat
 - [Q4 - Death](https://www.wikidata.org/wiki/Q4)
 - [Q5 - Human](https://www.wikidata.org/wiki/Q5)
 - [Q13 - Fear of the number 13](https://www.wikidata.org/wiki/Q13)
+- [Q24 - Jack Bauer](https://www.wikidata.org/wiki/Q24)
 - [Q42 - Douglas Adams (The Hitchhiker's Guide to the Galaxy)](https://www.wikidata.org/wiki/Q42)
+- [Q404 - HTTP 404](https://www.wikidata.org/wiki/Q404)
 - [Q666 - Number of the beast](https://www.wikidata.org/wiki/Q666)
 - [Q12345 - Count von Count, Character on Sesame Street](https://www.wikidata.org/wiki/Q12345)
 
