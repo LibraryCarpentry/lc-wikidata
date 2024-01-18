@@ -177,36 +177,42 @@ SELECT ?item ?itemLabel ?itemPic
 #  Show me the item, label and the picture of it.
 #  The result list will look like this (wd:Q123185365/senior cats/ commons:Оредеж, Железнодорожная 9, кот (cropped).jpg)
 
-
 WHERE 
 {
-  ?item wdt:P31 wd:Q146.
-# The item of this search is a cat.
-  ?item wdt:P18 ?itemPic
-#  Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function    in front.
+  ?item wdt:P31 wd:Q146.   #  The item of this search is a cat.
+  ?item wdt:P18 ?itemPic.  #  Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front.
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-# Helps get the label in your language, if not, then en(english) language
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+#  Helps get the label in your language, if not, then en(glish) language
 }
 ```
 ![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
 
 **Books weight by genre**
-Number of avi. books weighted by genre.
+Number of available books weighted by genre.
 ```
-#Number of books weighted by genre.
+#Display the results as a Bubble Chart
 #defaultView:BubbleChart
+
 SELECT ?genre ?genreLabel  (COUNT(?book) as ?bookCount)
+#  Show me the genre, the genre label, and count the available books as a new label ?bookCount
+#  The result list will look like this (wd:Q213051/ Non-Fiction/ 252)
+
 WHERE {
- ?book wdt:P31 wd:Q571.
- ?book wdt:P136 ?genre.
+ ?book wdt:P31 wd:Q571. #  ?item is a book
+ ?book wdt:P136 ?genre. #  Get the attribute genre form item
 
-
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+#  Helps get the label in your language, if not, then english is selected as language
 }
+
 GROUP BY ?genre ?genreLabel
+#  Aggregate with the group function
+ 
 LIMIT 15
+#  Limit the  shown results down to 15.
 ```
+
 ![](fig/episode_05_Bubblechart.png){alt='Example of displaying cats in grid format'}
 
 
@@ -240,28 +246,29 @@ WHERE
 
 ```
 #Number of participants in NFDI consortia
-#defaultView:BarChart #<---Use the bar chart as the visualization type and give me the results immediately in the form of a bar chart.
+#defaultView:BarChart
+#  Use the bar chart as the visualization type and give me the results immediately in the form of a bar chart.
 
 SELECT DISTINCT ?NFDIKLabel  (COUNT(DISTINCT ?participants ) as ?participantsCount)
-#Give me the unique (no double entries) names of the accepted NFDIK consortia.
-#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.
+#  Give me the unique (no double entries) names of the accepted NFDIK consortia.
+#  Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.         
 
 WHERE 
 {
 ?NFDIK wdt:P31 wd:Q98270496. #Give me all accepted NFDI consortia.
 ?NFDIK wdt:P710 ?participants. #Show me the all participants of this NFDI consortium.
-#Attention: Not all consortia are listed here, but only those that have an entry participants in Wikidata.
-#Participants can be researchers, research institutions, universities, companies and many more.
+#  Attention: Not all consortia are listed here, but only those that have an entry participants in Wikidata.
+#  Participants can be researchers, research institutions, universities, companies and many more.
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
-# Helps to get the label in your language, if not, then english language
+#  Helps to get the label in your language, if not, then english language is selected
 
 }
 GROUP BY ?NFDIKLabel
-#Group by NFDIK
+#  Group by NFDIK
 
 HAVING (?participantsCount > 4)
-#Show me only consortia that have more than four registered participants.
+#  Show me only NFDI consortia that have more than four registered participants.
 
 ```
 
