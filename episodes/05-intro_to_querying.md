@@ -165,17 +165,28 @@ WHERE
 ```
 **Cats pictures**
 
-In the first step we searched for cats. It is also possible to search for images in Wikidata if they are available. The wikidata query service offers a range of visualization types. For the representation of images the image grid is suitable.
+In the first step we searched for cats. It is also possible to search for images in Wikidata if they are available. The Wikidata Query Service offers a range of visualization types. For the representation of images the image grid is suitable.
 
 
 ```
+##Normally, the default output is in a table form, but with the DefaultView we can directly specify that the results should be displayed in a grid
 #defaultView:ImageGrid
-SELECT ?item ?itemLabel ?pic # Show me the item and the label and the picture of it.
+
+
+SELECT ?item ?itemLabel ?itemPic
+#  Show me the item, label and the picture of it.
+#  The result list will look like this (wd:Q123185365/senior cats/ commons:Оредеж, Железнодорожная 9, кот (cropped).jpg)
+
+
 WHERE 
 {
-  ?item wdt:P31 wd:Q146. # The item of this search is a cat.
-  ?item wdt:P18 ?pic  #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{ ?item wdt:P18 ?pic} function in front of it. 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
+  ?item wdt:P31 wd:Q146.
+# The item of this search is a cat.
+  ?item wdt:P18 ?itemPic
+#  Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function    in front.
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+# Helps get the label in your language, if not, then en(english) language
 }
 ```
 ![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
