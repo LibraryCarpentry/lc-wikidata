@@ -256,6 +256,28 @@ HAVING (?participantsCount > 4)
 
 ![](fig/episode_05_Barchart.png){alt='Number of participants in NFDI consortia visualized'}
 
+**NFDI Consortia in Berlin, Germany**
+
+```
+#defaultView:Graph
+SELECT ?affiliate ?affiliateLabel ?affiliatepicture ?NFDIK ?NFDIKLabel ?NFDIKpicture  
+WHERE 
+{
+  ?NFDIK wdt:P31 wd:Q98270496 . 
+  ?NFDIK wdt:P1416 ?affiliate .
+  ?affiliate wdt:P131 ?location.
+
+  
+  FILTER(?location = wd:Q64)
+  
+  OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+} 
+
+```
+
+![](fig/episode_05_Graph.png){alt='Number of participants in NFDI consortia visualized'}
+
 **Map of libraries**
 
 ```
