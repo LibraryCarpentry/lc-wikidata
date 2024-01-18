@@ -163,7 +163,21 @@ WHERE
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
 }
 ```
+**Cats pictures**
 
+In the first step we searched for cats. It is also possible to search for images in Wikidata if they are available. The wikidata query service offers a range of visualization types. For the representation of images the image grid is suitable.
+![](fig/episode_5_Imagegrid.jpg){alt='Example for the knowledge graph spanned by one Wikidata item'}
+
+```
+#defaultView:ImageGrid
+SELECT ?item ?itemLabel ?pic # Show me the item and the label and the picture of it.
+WHERE 
+{
+  ?item wdt:P31 wd:Q146. # The item of this search is a cat.
+  ?item wdt:P18 ?pic  #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{ ?item wdt:P18 ?pic} function in front of it. 
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
+}
+```
 **Map of libraries**
 
 ```
