@@ -221,7 +221,9 @@ WHERE
 ```
 ![](fig/episode_05_Map.jpg){alt='Example of displaying cats in grid format'}
 
-![](fig/episode_05_Map_CloseUp.png){alt='Example of displaying cats in grid format'}
+
+![](fig/episode_05_Map_CloseUp.png){alt='Close up'}
+
 
 **Map of libraries**
 
