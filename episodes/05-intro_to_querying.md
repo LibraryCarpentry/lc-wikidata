@@ -225,7 +225,8 @@ LIMIT 15
 SELECT DISTINCT ?affiliateLabel ?affiliatepicture ?NFDILabel ?coordinates  ( ?NFDILabel AS ?layer)
 #Show me the label, image, and coordinates of the affiliate parties.
 #Show me the NFDI label as well, using the NFDILabel as a layer filter.
-
+#The layer filter lets you choose which NFDI to display on the map.
+#The result list will look like this (Deutsche Nationalbibliothek/commons:DNB.svg/	NFDI4Culture/Point(8.683333333 50.131111111))
 
 WHERE 
 {
@@ -243,10 +244,10 @@ WHERE
  #Helps get the label in your language, if not, then english is selected as language
 }
 ```
-![](fig/episode_05_Map.jpg){alt='Example of displaying cats in grid format'}
+![](fig/episode_05_Map.jpg){alt='Map of NFDI Consortia in Germany'}
 
 
-![](fig/episode_05_Map_CloseUp.png){alt='Close up'}
+![](fig/episode_05_Map_CloseUp.png){alt='Close up look'}
 
 
 **Number of participants in NFDI consortia**
@@ -301,7 +302,7 @@ WHERE
 
 ```
 
-![](fig/episode_05_Graph.png){alt='Number of participants in NFDI consortia visualized'}
+![](fig/episode_05_Graph.png){alt='NFDI Consortia in Berlin, Germany'}
 
 **Map of libraries**
 
