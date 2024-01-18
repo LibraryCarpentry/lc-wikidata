@@ -170,21 +170,22 @@ In the first step we searched for cats. It is also possible to search for images
 
 ```
 #defaultView:ImageGrid
-#  Normally, the default output is a table, but with the DefaultView we can directly specify that the results should be   displayed in a grid
+#Normally, the default output is a table, but with the DefaultView we can directly specify that the results should be   displayed in a grid
 
 SELECT ?item ?itemLabel ?itemPic
-#  Show me the item, label and the picture of it.
-#  The result list will look like this (wd:Q123185365/senior cats/ commons:Оредеж, Железнодорожная 9, кот (cropped).jpg)
+#Show me the item, label and the picture of it.
+#The result list will look like this (wd:Q123185365/senior cats/ commons:Оредеж, Железнодорожная 9, кот (cropped).jpg)
 
-WHERE 
-{
-  ?item wdt:P31 wd:Q146.   #  The item of this search is a cat.
-  ?item wdt:P18 ?itemPic.  #  Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front.
+WHERE {
+  ?item wdt:P31 wd:Q146.       #The item of this search is a cat.
+  ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front.
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-#  Helps get the label in your language, if not, then en(glish) language
+#Helps get the label in your language, if not, then en(glish) language
 }
+
 ```
+
 ![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
 
 **Books weight by genre**
@@ -193,24 +194,23 @@ Number of available books weighted by genre.
 #defaultView:BubbleChart
 #Display the results as a Bubble Chart
 
-
 SELECT ?genre ?genreLabel  (COUNT(?book) as ?bookCount)
-#  Show me the genre, the genre label, and count the available books as a new label ?bookCount
-#  The result list will look like this (wd:Q213051/ Non-Fiction/ 252)
+#Show me the genre, the genre label, and count the available books as a new label ?bookCount
+#The result list will look like this (wd:Q213051/Non-Fiction/252)
 
 WHERE {
- ?book wdt:P31 wd:Q571. #  ?item is a book
- ?book wdt:P136 ?genre. #  Get the attribute genre form item
+  ?book wdt:P31 wd:Q571.            #Searched item is a book
+  ?book wdt:P136 ?genre.            #Get the attribute genre form item
 
-SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-#  Helps get the label in your language, if not, then english is selected as language
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  #Helps get the label in your language, if not, then english is selected as language
 }
 
 GROUP BY ?genre ?genreLabel
-#  Aggregate with the group function
+#Aggregate with the group function
  
 LIMIT 15
-#  Limit the  shown results down to 15.
+#Limit the shown results down to 15.
 ```
 
 ![](fig/episode_05_Bubblechart.png){alt='Example of displaying cats in grid format'}
@@ -226,22 +226,22 @@ SELECT DISTINCT ?affiliateLabel ?affiliatepicture ?coordinates ?NFDILabel (?NFDI
 #Show me the label, image, and coordinates of the affiliate parties.
 #Show me the NFDI label as well, using the NFDILabel as a layer filter.
 #The layer filter lets you choose which NFDI to display on the map.
-#The result list will look like this (Deutsche Nationalbibliothek/commons:DNB.svg/	NFDI4Culture/Point(8.683333333 50.131111111))
+#The result list will look like this (Deutsche Nationalbibliothek/commons:DNB.svg/NFDI4Culture/Point(8.683333333 50.131111111))
 
 WHERE 
 {
   ?NFDI wdt:P31 wd:Q98270496.       #Searched item is an accepted NFDI
-  ?NFDI wdt:P1416 ?affiliate.       #get the affiliates of the accepted NFDI.
-  ?affiliate wdt:P625 ?coordinates. #get the coordinates of the affiliate parties
+  ?NFDI wdt:P1416 ?affiliate.       #Get the affiliates of the accepted NFDI.
+  ?affiliate wdt:P625 ?coordinates. #Get the coordinates of the affiliate parties
 
-  OPTIONAL { ?affiliate wdt:P17 ?country }           #get attribute country if available
-  OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture } #get attribute picture if available
+  OPTIONAL { ?affiliate wdt:P17 ?country }           #Get attribute country if available
+  OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture } #Get attribute picture if available
 
   FILTER(?country = wd:Q183)        #Use Filter to set country to wd:Q183(Germany)
  
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
- #Helps get the label in your language, if not, then english is selected as language
+  #Helps get the label in your language, if not, then english is selected as language
 }
 ```
 ![](fig/episode_05_Map.jpg){alt='Map of NFDI Consortia in Germany'}
@@ -255,28 +255,27 @@ WHERE
 ```
 #Number of participants in NFDI consortia
 #defaultView:BarChart
-#  Use the bar chart as the visualization type and give me the results immediately in the form of a bar chart.
+#Use the bar chart as the visualization type and give me the results immediately in the form of a bar chart.
 
 SELECT DISTINCT ?NFDIKLabel  (COUNT(DISTINCT ?participants ) as ?participantsCount)
-#  Give me the unique (no double entries) names of the accepted NFDIK consortia.
-#  Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.         
+#Give me the unique (no double entries) names of the accepted NFDIK consortia.
+#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.         
+WHERE {
+  ?NFDIK wdt:P31 wd:Q98270496.       #Give me all accepted NFDI consortia.
+  ?NFDIK wdt:P710 ?participants.     #Show me the all participants of this NFDI consortium.
 
-WHERE 
-{
-?NFDIK wdt:P31 wd:Q98270496. #Give me all accepted NFDI consortia.
-?NFDIK wdt:P710 ?participants. #Show me the all participants of this NFDI consortium.
-#  Attention: Not all consortia are listed here, but only those that have an entry participants in Wikidata.
-#  Participants can be researchers, research institutions, universities, companies and many more.
+#Attention: Not all consortia are listed here, but only those that have an entry participants in Wikidata.
+#Participants can be researchers, research institutions, universities, companies and many more.
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
-#  Helps to get the label in your language, if not, then english language is selected
-
+#Helps to get the label in your language, if not, then english language is selected
 }
+
 GROUP BY ?NFDIKLabel
-#  Group by NFDIK
+#Group by NFDIK
 
 HAVING (?participantsCount > 4)
-#  Show me only NFDI consortia that have more than four registered participants.
+#Show me only NFDI consortia that have more than four registered participants.
 
 ```
 
