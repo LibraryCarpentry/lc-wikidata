@@ -225,6 +225,37 @@ WHERE
 ![](fig/episode_05_Map_CloseUp.png){alt='Close up'}
 
 
+**Number of participants in NFDI consortia**
+
+```
+#Number of participants in NFDI consortia
+#defaultView:BarChart #<---Use the bar chart as the visualization type and give me the results immediately in the form of a bar chart.
+
+SELECT DISTINCT ?NFDIKLabel  (COUNT(DISTINCT ?participants ) as ?participantsCount)
+#Give me the unique (no double entries) names of the accepted NFDIK consortia.
+#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.
+
+WHERE 
+{
+?NFDIK wdt:P31 wd:Q98270496. #Give me all accepted NFDI consortia.
+?NFDIK wdt:P710 ?participants. #Show me the all participants of this NFDI consortium.
+#Attention: Not all consortia are listed here, but only those that have an entry participants in Wikidata.
+#Participants can be researchers, research institutions, universities, companies and many more.
+
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+# Helps to get the label in your language, if not, then english language
+
+}
+GROUP BY ?NFDIKLabel
+#Group by NFDIK
+
+HAVING (?participantsCount > 4)
+#Show me only consortia that have more than four registered participants.
+
+```
+
+![](fig/episode_05_Barchart.png){alt='Number of participants in NFDI consortia visualized'}
+
 **Map of libraries**
 
 ```
