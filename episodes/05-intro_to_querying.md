@@ -169,9 +169,8 @@ In the first step we searched for cats. It is also possible to search for images
 
 
 ```
-##Normally, the default output is in a table form, but with the DefaultView we can directly specify that the results should be displayed in a grid
 #defaultView:ImageGrid
-
+#  Normally, the default output is a table, but with the DefaultView we can directly specify that the results should be   displayed in a grid
 
 SELECT ?item ?itemLabel ?itemPic
 #  Show me the item, label and the picture of it.
@@ -191,8 +190,9 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
 **Books weight by genre**
 Number of available books weighted by genre.
 ```
-#Display the results as a Bubble Chart
 #defaultView:BubbleChart
+#Display the results as a Bubble Chart
+
 
 SELECT ?genre ?genreLabel  (COUNT(?book) as ?bookCount)
 #  Show me the genre, the genre label, and count the available books as a new label ?bookCount
@@ -220,20 +220,27 @@ LIMIT 15
 
 ```
 #defaultView:Map
-SELECT DISTINCT ?affiliateLabel ?affiliatepicture ?NFDILabel ?coordinates  ( ?NFDILabel AS ?layer) 
+#Display the results as a Map
+
+SELECT DISTINCT ?affiliateLabel ?affiliatepicture ?NFDILabel ?coordinates  ( ?NFDILabel AS ?layer)
+#Show me the label, image, and coordinates of the affiliate parties.
+#Show me the NFDI label as well, using the NFDILabel as a layer filter.
+
+
 WHERE 
 {
-  ?NFDI wdt:P31 wd:Q98270496 . 
-  ?NFDI wdt:P1416 ?affiliate.
-  ?affiliate wdt:P625 ?coordinates.
+  ?NFDI wdt:P31 wd:Q98270496.       #Searched item is an accepted NFDI
+  ?NFDI wdt:P1416 ?affiliate.       #get the affiliates of the accepted NFDI.
+  ?affiliate wdt:P625 ?coordinates. #get the coordinates of the affiliate parties
 
+  OPTIONAL { ?affiliate wdt:P17 ?country }           #get attribute country if available
+  OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture } #get attribute picture if available
 
-  OPTIONAL { ?affiliate wdt:P17 ?country }
-  OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture } 
-  FILTER(?country = wd:Q183)
+  FILTER(?country = wd:Q183)        #Use Filter to set country to wd:Q183(Germany)
  
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+ #Helps get the label in your language, if not, then english is selected as language
 }
 ```
 ![](fig/episode_05_Map.jpg){alt='Example of displaying cats in grid format'}
