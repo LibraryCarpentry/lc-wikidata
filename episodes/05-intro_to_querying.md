@@ -199,6 +199,30 @@ LIMIT 15
 ![](fig/episode_05_Bubblechart.png){alt='Example of displaying cats in grid format'}
 
 
+**Map of NFDI Consortia in Germany**
+
+```
+#defaultView:Map
+SELECT DISTINCT ?affiliateLabel ?affiliatepicture ?NFDILabel ?coordinates  ( ?NFDILabel AS ?layer) 
+WHERE 
+{
+  ?NFDI wdt:P31 wd:Q98270496 . 
+  ?NFDI wdt:P1416 ?affiliate.
+  ?affiliate wdt:P625 ?coordinates.
+
+
+  OPTIONAL { ?affiliate wdt:P17 ?country }
+  OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture } 
+  FILTER(?country = wd:Q183)
+ 
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+}
+```
+![](fig/episode_05_Map.jpg){alt='Example of displaying cats in grid format'}
+
+![](fig/episode_05_Map_CloseUp.png){alt='Example of displaying cats in grid format'}
+
 **Map of libraries**
 
 ```
@@ -207,7 +231,6 @@ SELECT distinct * WHERE {
         wdt:P625 ?geo .
 }
 ```
-
 **scholarly articles by Alex Bateman**
 
 ```
