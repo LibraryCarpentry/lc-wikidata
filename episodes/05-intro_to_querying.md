@@ -222,7 +222,7 @@ LIMIT 15
 #defaultView:Map
 #Display the results as a Map
 
-SELECT DISTINCT ?affiliateLabel ?affiliatepicture ?NFDILabel ?coordinates  ( ?NFDILabel AS ?layer)
+SELECT DISTINCT ?affiliateLabel ?affiliatepicture ?coordinates ?NFDILabel (?NFDILabel AS ?layer)
 #Show me the label, image, and coordinates of the affiliate parties.
 #Show me the NFDI label as well, using the NFDILabel as a layer filter.
 #The layer filter lets you choose which NFDI to display on the map.
