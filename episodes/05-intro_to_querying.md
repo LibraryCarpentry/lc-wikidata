@@ -166,7 +166,7 @@ WHERE
 **Cats pictures**
 
 In the first step we searched for cats. It is also possible to search for images in Wikidata if they are available. The wikidata query service offers a range of visualization types. For the representation of images the image grid is suitable.
-![](fig/episode_5_Imagegrid.jpg){alt='Example for the knowledge graph spanned by one Wikidata item'}
+
 
 ```
 #defaultView:ImageGrid
@@ -178,6 +178,8 @@ WHERE
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
 }
 ```
+![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
+
 **Map of libraries**
 
 ```
