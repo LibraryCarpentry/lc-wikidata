@@ -180,6 +180,25 @@ WHERE
 ```
 ![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
 
+**Books weight by genre**
+Number of avi. books weighted by genre.
+```
+#Number of books weighted by genre.
+#defaultView:BubbleChart
+SELECT ?genre ?genreLabel  (COUNT(?book) as ?bookCount)
+WHERE {
+ ?book wdt:P31 wd:Q571.
+ ?book wdt:P136 ?genre.
+
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+GROUP BY ?genre ?genreLabel
+LIMIT 15
+```
+![](fig/episode_05_Bubblechart.png){alt='Example of displaying cats in grid format'}
+
+
 **Map of libraries**
 
 ```
