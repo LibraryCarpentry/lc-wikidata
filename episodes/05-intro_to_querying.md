@@ -259,7 +259,9 @@ WHERE
 
 SELECT DISTINCT ?NFDIKLabel  (COUNT(DISTINCT ?participants ) as ?participantsCount)
 #Give me the unique (no double entries) names of the accepted NFDIK consortia.
-#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.         
+#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.   
+
+
 WHERE {
   ?NFDIK wdt:P31 wd:Q98270496.       #Give me all accepted NFDI consortia.
   ?NFDIK wdt:P710 ?participants.     #Show me the all participants of this NFDI consortium.
@@ -285,11 +287,17 @@ HAVING (?participantsCount > 4)
 
 ```
 #defaultView:Graph
-SELECT ?affiliate ?affiliateLabel ?affiliatepicture ?NFDIK ?NFDIKLabel ?NFDIKpicture  
-WHERE 
-{
-  ?NFDIK wdt:P31 wd:Q98270496 . 
-  ?NFDIK wdt:P1416 ?affiliate .
+#Use the graph as the visualization type
+
+
+SELECT ?affiliate ?affiliateLabel ?affiliatepicture ?NFDIK ?NFDIKLabel ?NFDIKpicture
+#Give me the affiltate parties of the Ny names of the accepted NFDIK consortia.
+#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.    
+
+
+WHERE {
+  ?NFDIK wdt:P31 wd:Q98270496. 
+  ?NFDIK wdt:P1416 ?affiliate.
   ?affiliate wdt:P131 ?location.
 
   
