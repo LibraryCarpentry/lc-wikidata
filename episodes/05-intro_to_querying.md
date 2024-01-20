@@ -170,7 +170,7 @@ In the first step we searched for cats. It is also possible to search for images
 
 ```
 #defaultView:ImageGrid
-#Normally, the default output is a table, but with the DefaultView we can directly specify that the results should be   displayed in a grid
+#Normally, the default output is a table, but with the defaultView we can directly specify that the results should be displayed in a grid
 
 SELECT ?item ?itemLabel ?itemPic
 #Show me the item, label and the picture of it.
@@ -182,7 +182,7 @@ WHERE
   ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front.
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-#Helps get the label in your language, if not, then en(glish) language
+#Helps get the label in your language, if not, then english is selected as language
 }
 
 ```
@@ -215,7 +215,7 @@ LIMIT 15
 #Limit the shown results down to 15.
 ```
 
-![](fig/episode_05_Bubblechart.png){alt='Example of displaying cats in grid format'}
+![](fig/episode_05_Bubblechart.png){alt='Bubblechart of books weight by genre'}
 
 
 **Map of NFDI Consortia in Germany**
@@ -284,7 +284,7 @@ HAVING (?participantsCount > 4)
 
 ```
 
-![](fig/episode_05_Barchart.png){alt='Number of participants in NFDI consortia visualized'}
+![](fig/episode_05_Barchart.png){alt='Number of participants in NFDI consortia visualized as bar chart'}
 
 **NFDI Consortia in Berlin, Germany**
 
@@ -300,7 +300,7 @@ SELECT ?affiliate ?affiliateLabel ?affiliatepicture ?NFDIK ?NFDIKLabel ?NFDIKpic
 
 WHERE
 {
-  ?NFDIK wdt:P31 wd:Q98270496.       #Give me all accepted NFDI consortia.
+  ?NFDIK wdt:P31 wd:Q98270496.       #Get me all accepted NFDI consortia.
   ?NFDIK wdt:P1416 ?affiliate.       #Get the affiliates of the accepted NFDI.
   ?affiliate wdt:P131 ?location.     #Provide me with the location of the affiliated parties.
 
@@ -315,7 +315,7 @@ WHERE
 #Helps to get the label in your language, if not, then english language is selected
 ```
 
-![](fig/episode_05_Graph.png){alt='NFDI Consortia in Berlin, Germany'}
+![](fig/episode_05_Graph.png){alt='the relationship between NFDI Consortia in Berlin, Germany'}
 
 **Map of libraries**
 
