@@ -262,7 +262,8 @@ SELECT DISTINCT ?NFDIKLabel  (COUNT(DISTINCT ?participants ) as ?participantsCou
 #Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.   
 
 
-WHERE {
+WHERE
+{
   ?NFDIK wdt:P31 wd:Q98270496.       #Give me all accepted NFDI consortia.
   ?NFDIK wdt:P710 ?participants.     #Show me the all participants of this NFDI consortium.
 
@@ -291,22 +292,25 @@ HAVING (?participantsCount > 4)
 
 
 SELECT ?affiliate ?affiliateLabel ?affiliatepicture ?NFDIK ?NFDIKLabel ?NFDIKpicture
-#Give me the affiltate parties of the Ny names of the accepted NFDIK consortia.
-#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.    
+#Give me the label and the pictures of the affiliated parties of the accepted consortia of the NFDIK.
+#Give me label and pictures of accepted NFDIK consortia.
 
 
-WHERE {
-  ?NFDIK wdt:P31 wd:Q98270496. 
-  ?NFDIK wdt:P1416 ?affiliate.
-  ?affiliate wdt:P131 ?location.
+WHERE
+{
+  ?NFDIK wdt:P31 wd:Q98270496.       #Give me all accepted NFDI consortia.
+  ?NFDIK wdt:P1416 ?affiliate.       #Get the affiliates of the accepted NFDI.
+  ?affiliate wdt:P131 ?location.     #Provide me with the location of the affiliated parties.
 
   
-  FILTER(?location = wd:Q64)
+  FILTER(?location = wd:Q64)         #Set the location to Berlin.
   
-  OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture }
+   OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture }  #Give me the pictures of the affilated partner, if available. 
+   OPTIONAL { ?NFDIK wdt:P154 ?NFDIKpicture }          #Give me the pictures of the NFDI, if available.
+
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
 } 
-
+#Helps to get the label in your language, if not, then english language is selected
 ```
 
 ![](fig/episode_05_Graph.png){alt='NFDI Consortia in Berlin, Germany'}
