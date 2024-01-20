@@ -176,7 +176,8 @@ SELECT ?item ?itemLabel ?itemPic
 #Show me the item, label and the picture of it.
 #The result list will look like this (wd:Q123185365/senior cats/ commons:Оредеж, Железнодорожная 9, кот (cropped).jpg)
 
-WHERE {
+WHERE
+{
   ?item wdt:P31 wd:Q146.       #The item of this search is a cat.
   ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front.
 
@@ -198,7 +199,8 @@ SELECT ?genre ?genreLabel  (COUNT(?book) as ?bookCount)
 #Show me the genre, the genre label, and count the available books as a new label ?bookCount
 #The result list will look like this (wd:Q213051/Non-Fiction/252)
 
-WHERE {
+WHERE
+{
   ?book wdt:P31 wd:Q571.            #Searched item is a book
   ?book wdt:P136 ?genre.            #Get the attribute genre form item
 
