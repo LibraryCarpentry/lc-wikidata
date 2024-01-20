@@ -315,7 +315,7 @@ WHERE
 #Helps to get the label in your language, if not, then english language is selected
 ```
 
-![](fig/episode_05_Graph.png){alt='the relationship between NFDI Consortia in Berlin, Germany'}
+![](fig/episode_05_Graph.png){alt='relationships between NFDI Consortia in Berlin, Germany'}
 
 **Map of libraries**
 
