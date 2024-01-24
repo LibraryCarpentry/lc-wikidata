@@ -324,7 +324,7 @@ WHERE
 ```
 #defaultView:Map
 SELECT distinct * WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q7075;
+  ?item wdt:P31 wd:Q7075;
         wdt:P625 ?geo .
 }
 ```
@@ -349,12 +349,12 @@ WHERE {
 #defaultView:BarChart
 SELECT distinct ?geo ?geoLabel (COUNT(?item) as ?Count)
 WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q7075;
+  ?item wdt:P31 wd:Q7075;
         wdt:P17 ?geo.
- SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 }Group by ?geo ?geoLabel
 Order by DESC(?Count)
-LIMIT 5
+LIMIT 10
 ```
 **scholarly articles by Alex Bateman**
 
