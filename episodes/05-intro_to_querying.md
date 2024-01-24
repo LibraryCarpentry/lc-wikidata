@@ -163,6 +163,159 @@ WHERE
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
 }
 ```
+**Cats pictures**
+
+In the first step we searched for cats. It is also possible to search for images in Wikidata if they are available. The Wikidata Query Service offers a range of visualization types. For the representation of images the image grid is suitable.
+
+
+```
+#defaultView:ImageGrid
+#Normally, the default output is a table, but with the defaultView we can directly specify that the results should be displayed in a grid
+
+SELECT ?item ?itemLabel ?itemPic
+#Show me the item, label and the picture of it.
+#The result list will look like this (wd:Q123185365/senior cats/ commons:Оредеж, Железнодорожная 9, кот (cropped).jpg)
+
+WHERE
+{
+  ?item wdt:P31 wd:Q146.       #The item of this search is a cat.
+  ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front.
+
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+#Helps get the label in your language, if not, then english is selected as language
+}
+
+```
+
+![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
+
+**Books weight by genre**
+Number of available books weighted by genre.
+```
+#defaultView:BubbleChart
+#Display the results as a Bubble Chart
+
+SELECT ?genre ?genreLabel  (COUNT(?book) as ?bookCount)
+#Show me the genre, the genre label, and count the available books as a new label ?bookCount
+#The result list will look like this (wd:Q213051/Non-Fiction/252)
+
+WHERE
+{
+  ?book wdt:P31 wd:Q571.            #Searched item is a book
+  ?book wdt:P136 ?genre.            #Get the attribute genre form item
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  #Helps get the label in your language, if not, then english is selected as language
+}
+
+GROUP BY ?genre ?genreLabel
+#Aggregate with the group function
+ 
+LIMIT 15
+#Limit the shown results down to 15.
+```
+
+![](fig/episode_05_Bubblechart.png){alt='Bubblechart of books weight by genre'}
+
+
+**Map of NFDI Consortia in Germany**
+
+```
+#defaultView:Map
+#Display the results as a Map
+
+SELECT DISTINCT ?affiliateLabel ?affiliatepicture ?coordinates ?NFDILabel (?NFDILabel AS ?layer)
+#Show me the label, image, and coordinates of the affiliate parties.
+#Show me the NFDI label as well, using the NFDILabel as a layer filter.
+#The layer filter lets you choose which NFDI to display on the map.
+#The result list will look like this (Deutsche Nationalbibliothek/commons:DNB.svg/NFDI4Culture/Point(8.683333333 50.131111111))
+
+WHERE 
+{
+  ?NFDI wdt:P31 wd:Q98270496.       #Searched item is an accepted NFDI
+  ?NFDI wdt:P1416 ?affiliate.       #Get the affiliates of the accepted NFDI.
+  ?affiliate wdt:P625 ?coordinates. #Get the coordinates of the affiliate parties
+
+  OPTIONAL { ?affiliate wdt:P17 ?country }           #Get attribute country if available
+  OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture } #Get attribute picture if available
+
+  FILTER(?country = wd:Q183)        #Use Filter to set country to wd:Q183(Germany)
+ 
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+  #Helps get the label in your language, if not, then english is selected as language
+}
+```
+![](fig/episode_05_Map.jpg){alt='Map of NFDI Consortia in Germany'}
+
+
+![](fig/episode_05_Map_CloseUp.png){alt='Close up look'}
+
+
+**Number of participants in NFDI consortia**
+
+```
+#Number of participants in NFDI consortia
+#defaultView:BarChart
+#Use the bar chart as the visualization type and give me the results immediately in the form of a bar chart.
+
+SELECT DISTINCT ?NFDIKLabel  (COUNT(DISTINCT ?participants ) as ?participantsCount)
+#Give me the unique (no double entries) names of the accepted NFDIK consortia.
+#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.   
+
+
+WHERE
+{
+  ?NFDIK wdt:P31 wd:Q98270496.       #Give me all accepted NFDI consortia.
+  ?NFDIK wdt:P710 ?participants.     #Show me the all participants of this NFDI consortium.
+
+#Attention: Not all consortia are listed here, but only those that have an entry participants in Wikidata.
+#Participants can be researchers, research institutions, universities, companies and many more.
+
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+#Helps to get the label in your language, if not, then english language is selected
+}
+
+GROUP BY ?NFDIKLabel
+#Group by NFDIK
+
+HAVING (?participantsCount > 4)
+#Show me only NFDI consortia that have more than four registered participants.
+
+```
+
+![](fig/episode_05_Barchart.png){alt='Number of participants in NFDI consortia visualized as bar chart'}
+
+**NFDI Consortia in Berlin, Germany**
+
+```
+#defaultView:Graph
+#Use the graph as the visualization type
+
+
+SELECT ?affiliate ?affiliateLabel ?affiliatepicture ?NFDIK ?NFDIKLabel ?NFDIKpicture
+#Give me the label and the pictures of the affiliated parties of the accepted consortia of the NFDIK.
+#Give me label and pictures of accepted NFDIK consortia.
+
+
+WHERE
+{
+  ?NFDIK wdt:P31 wd:Q98270496.       #Get me all accepted NFDI consortia.
+  ?NFDIK wdt:P1416 ?affiliate.       #Get the affiliates of the accepted NFDI.
+  ?affiliate wdt:P131 ?location.     #Provide me with the location of the affiliated parties.
+
+  
+  FILTER(?location = wd:Q64)         #Set the location to Berlin.
+  
+   OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture }  #Give me the pictures of the affilated partner, if available. 
+   OPTIONAL { ?NFDIK wdt:P154 ?NFDIKpicture }          #Give me the pictures of the NFDI, if available.
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+} 
+#Helps to get the label in your language, if not, then english language is selected
+```
+
+![](fig/episode_05_Graph.png){alt='relationships between NFDI Consortia in Berlin, Germany'}
 
 **Map of libraries**
 
@@ -172,7 +325,6 @@ SELECT distinct * WHERE {
         wdt:P625 ?geo .
 }
 ```
-
 **scholarly articles by Alex Bateman**
 
 ```
