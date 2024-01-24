@@ -148,7 +148,9 @@ Namespaces in Wikidata are:
 - ORDER
 - FILTER
 - OPTIONAL
+### How to visualize your query
 
+There
 ### Exercises
 
 ## 5\.3 Try examples
@@ -317,13 +319,40 @@ WHERE
 
 ![](fig/episode_05_Graph.png){alt='relationships between NFDI Consortia in Berlin, Germany'}
 
-**Map of libraries**
+**Worldmap of libraries**
 
 ```
 SELECT distinct * WHERE {
   ?item wdt:P31/wdt:P279* wd:Q7075;
         wdt:P625 ?geo .
 }
+```
+**Map of libraries**
+
+```
+SELECT ?itemLabel ?geo 
+WHERE {
+  ?item wdt:P31 wd:Q7075.
+  ?item wdt:P625 ?geo.
+  ?item wdt:P17 ?land.
+
+  FILTER(?land = wd:Q183)  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,de". }
+
+}
+```
+**Map of libraries**
+
+```
+#defaultView:BarChart
+SELECT distinct ?geo ?geoLabel (COUNT(?item) as ?Count)
+WHERE {
+  ?item wdt:P31/wdt:P279* wd:Q7075;
+        wdt:P17 ?geo.
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}Group by ?geo ?geoLabel
+Order by DESC(?Count)
+LIMIT 10
 ```
 **scholarly articles by Alex Bateman**
 
