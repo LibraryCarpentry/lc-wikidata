@@ -354,7 +354,7 @@ WHERE {
  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }Group by ?geo ?geoLabel
 Order by DESC(?Count)
-LIMIT 10
+LIMIT 5
 ```
 **scholarly articles by Alex Bateman**
 
