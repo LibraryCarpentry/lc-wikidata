@@ -322,22 +322,24 @@ WHERE
 **Worldmap of libraries**
 
 ```
+#defaultView:Map
 SELECT distinct * WHERE {
   ?item wdt:P31/wdt:P279* wd:Q7075;
         wdt:P625 ?geo .
 }
 ```
-**Map of libraries**
+**Map of libraries in the USA**
 
 ```
+#defaultView:Map
 SELECT ?itemLabel ?geo 
 WHERE {
   ?item wdt:P31 wd:Q7075.
   ?item wdt:P625 ?geo.
   ?item wdt:P17 ?land.
 
-  FILTER(?land = wd:Q183)  
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,de". }
+  FILTER(?land = wd:Q30)  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 
 }
 ```
