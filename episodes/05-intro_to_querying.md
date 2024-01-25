@@ -166,6 +166,8 @@ For an easy start, add the #defaultView: snippet at the beginning of your query.
 
 ## 5\.3 Try examples
 
+#### Enough theory! it's time to get hands-on. Let's start with a simple example. Literally everyone likes cats, right? So lets search for them in the Wikidata database.
+
 **Cats example**
 
 ```
@@ -176,6 +178,9 @@ WHERE
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
 }
 ```
+
+alright! so we found the all the Cats. But i am pretty sure that i have seen Pictures of Cats somewhere in Wikipeida or wikidata. Is there a possiblity to display Pictures in the wikidata Query Serivice? The simple Answer yes! Let me show you how it is done.
+
 **Cats pictures**
 
 In the first step we searched for cats. It is also possible to search for images in Wikidata if they are available. The Wikidata Query Service offers a range of visualization types. For the representation of images the image grid is suitable.
@@ -199,8 +204,14 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
 }
 
 ```
-
 ![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
+
+Wow that was quit a lot of Code, hasnt it. lets break it down so you understand the synatx better.
+
+
+
+
+
 
 **Books weight by genre**
 Number of available books weighted by genre.
