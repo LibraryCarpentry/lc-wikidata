@@ -175,7 +175,7 @@ SELECT ?item ?itemLabel
 WHERE 
 {
   ?item wdt:P31 wd:Q146. # Must be of a cat
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". } # Helps get the label in your language, if not, then en language
 }
 ```
 
@@ -207,11 +207,56 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
 ![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
 
 Wow that was quit a lot of Code, hasnt it. lets break it down so you understand the synatx better.
+STEP.1
+xxxx
+Step 2
+Select
+Step 3
+WHERE
+STEP 4
+Label 
 
 
 
+Lets move on to another example
 
+**Worldmap of libraries**
 
+```
+#defaultView:Map
+SELECT distinct * WHERE {
+  ?item wdt:P31 wd:Q7075;
+        wdt:P625 ?geo .
+}
+```
+**Map of libraries in the USA**
+
+```
+#defaultView:Map
+SELECT ?itemLabel ?geo 
+WHERE {
+  ?item wdt:P31 wd:Q7075.
+  ?item wdt:P625 ?geo.
+  ?item wdt:P17 ?land.
+
+  FILTER(?land = wd:Q30)  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+
+}
+```
+**Count of libraries per Country**
+
+```
+#defaultView:BarChart
+SELECT distinct ?geo ?geoLabel (COUNT(?item) as ?Count)
+WHERE {
+  ?item wdt:P31 wd:Q7075;
+        wdt:P17 ?geo.
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}Group by ?geo ?geoLabel
+Order by DESC(?Count)
+LIMIT 10
+```
 
 **Books weight by genre**
 Number of available books weighted by genre.
@@ -341,43 +386,7 @@ WHERE
 
 ![](fig/episode_05_Graph.png){alt='relationships between NFDI Consortia in Berlin, Germany'}
 
-**Worldmap of libraries**
 
-```
-#defaultView:Map
-SELECT distinct * WHERE {
-  ?item wdt:P31 wd:Q7075;
-        wdt:P625 ?geo .
-}
-```
-**Map of libraries in the USA**
-
-```
-#defaultView:Map
-SELECT ?itemLabel ?geo 
-WHERE {
-  ?item wdt:P31 wd:Q7075.
-  ?item wdt:P625 ?geo.
-  ?item wdt:P17 ?land.
-
-  FILTER(?land = wd:Q30)  
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
-
-}
-```
-**Count of libraries per Country**
-
-```
-#defaultView:BarChart
-SELECT distinct ?geo ?geoLabel (COUNT(?item) as ?Count)
-WHERE {
-  ?item wdt:P31 wd:Q7075;
-        wdt:P17 ?geo.
- SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
-}Group by ?geo ?geoLabel
-Order by DESC(?Count)
-LIMIT 10
-```
 **scholarly articles by Alex Bateman**
 
 ```
