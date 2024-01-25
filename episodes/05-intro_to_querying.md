@@ -179,7 +179,7 @@ WHERE
 }
 ```
 
-alright! so we found the all the Cats. But i am pretty sure that i have seen Pictures of Cats somewhere in Wikipeida or wikidata. Is there a possiblity to display Pictures in the wikidata Query Serivice? The simple Answer yes! Let me show you how it is done.
+alright! so we found the all the Cats. But i am pretty sure that i have seen Pictures of Cats somewhere in Wikipedia or Wikidata. Is there a possiblity to display Pictures in the wikidata Query Serivice? The simple Answer yes! Let me show you how it is done.
 
 **Cats pictures**
 
