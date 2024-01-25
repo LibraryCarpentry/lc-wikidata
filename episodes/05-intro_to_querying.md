@@ -153,7 +153,7 @@ Namespaces in Wikidata are:
 
 Start by opening the results window. In the results pane, click the "Table" button and choose the type of visualization you want. This way, you can try different ways of visualizing your data without having to change the query code.
 
-![](fig/episode_5_Table.png) 
+![](fig/episode_5_table.jpg) 
 {alt='Wikidata Query Service results window'}
 
 
