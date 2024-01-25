@@ -149,8 +149,17 @@ Namespaces in Wikidata are:
 - FILTER
 - OPTIONAL
 ### How to visualize your query
+#### Manual visualization in the results window:
 
-There
+Start by opening the results window. In the results pane, click the "Table" button and choose the type of visualization you want. This way, you can try different ways of visualizing your data without having to change the query code.
+
+![](fig/Knowledge-Graph-Example-Meaning-of-it-All-More.png){alt='Example for the knowledge graph spanned by one Wikidata item and more details about Feynman'}
+
+
+#### Simple visualization with #defaultView:
+For an easy start, add the #defaultView: snippet at the beginning of your query. This method ensures that your results will be automatically visualized in a predefined style. This will save you time without having to manually adjust the result window after each query. This method is useful for queries where you already know which visualization types you want to use.
+
+![](fig/Knowledge-Graph-Example-Meaning-of-it-All-More.png){alt='Example for the knowledge graph spanned by one Wikidata item and more details about Feynman'}
 ### Exercises
 
 ## 5\.3 Try examples
