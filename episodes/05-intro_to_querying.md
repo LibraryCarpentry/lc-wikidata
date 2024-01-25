@@ -365,7 +365,7 @@ WHERE {
 
 }
 ```
-**Map of libraries**
+**Count of libraries per Country**
 
 ```
 #defaultView:BarChart
