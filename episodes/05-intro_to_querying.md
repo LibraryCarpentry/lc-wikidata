@@ -284,7 +284,7 @@ LIMIT 15
 #Limit the shown results down to 15.
 ```
 
-![](fig/episode_05_Bubblechart.png){alt='Bubblechart of books weight by genre'}
+![](fig/episode_5_Bubble.png){alt='Bubblechart of books weight by genre'}
 
 
 **Map of NFDI Consortia in Germany**
@@ -384,7 +384,7 @@ WHERE
 #Helps to get the label in your language, if not, then english language is selected
 ```
 
-![](fig/episode_05_Graph.png){alt='relationships between NFDI Consortia in Berlin, Germany'}
+![](fig/episode_5_Graph.png){alt='relationships between NFDI Consortia in Berlin, Germany'}
 
 
 **scholarly articles by Alex Bateman**
