@@ -229,6 +229,9 @@ SELECT distinct * WHERE {
         wdt:P625 ?geo .
 }
 ```
+![](fig/episode_5_Map_WorldWide.png)
+{alt='Extract from the SPARQL editor'}
+
 **Map of libraries in the USA**
 
 ```
@@ -244,6 +247,9 @@ WHERE {
 
 }
 ```
+![](fig/episode_5_Map_USA.png)
+{alt='Extract from the SPARQL editor'}
+
 **Count of libraries per Country**
 
 ```
@@ -257,6 +263,9 @@ WHERE {
 Order by DESC(?Count)
 LIMIT 10
 ```
+
+![](fig/episode_5_Bar_Countries.png)
+{alt='Extract from the SPARQL editor'}
 
 **Books weight by genre**
 Number of available books weighted by genre.
