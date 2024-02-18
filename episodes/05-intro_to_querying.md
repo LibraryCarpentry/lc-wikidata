@@ -207,16 +207,6 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
 ![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
 
 Wow that was quit a lot of Code, hasnt it. lets break it down so you understand the synatx better.
-STEP.1
-xxxx
-Step 2
-Select
-Step 3
-WHERE
-STEP 4
-Label 
-
-
 
 Lets move on to another example
 
