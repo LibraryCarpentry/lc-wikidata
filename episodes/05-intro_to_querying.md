@@ -233,7 +233,7 @@ WHERE {
   ?item wdt:P17 ?land.
 
   FILTER(?land = wd:Q30)  
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 
 }
 ```
@@ -248,7 +248,7 @@ SELECT distinct ?geo ?geoLabel (COUNT(?item) as ?Count)
 WHERE {
   ?item wdt:P31 wd:Q7075;
         wdt:P17 ?geo.
- SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }Group by ?geo ?geoLabel
 Order by DESC(?Count)
 LIMIT 10
@@ -272,7 +272,7 @@ WHERE
   ?book wdt:P31 wd:Q571.            #Searched item is a book
   ?book wdt:P136 ?genre.            #Get the attribute genre form item
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
   #Helps get the label in your language, if not, then english is selected as language
 }
 
@@ -310,7 +310,7 @@ WHERE
   FILTER(?country = wd:Q183)        #Use Filter to set country to wd:Q183(Germany)
  
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
   #Helps get the label in your language, if not, then english is selected as language
 }
 ```
@@ -340,7 +340,7 @@ WHERE
 #Attention: Not all consortia are listed here, but only those that have an entry participants in Wikidata.
 #Participants can be researchers, research institutions, universities, companies and many more.
 
-SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
 #Helps to get the label in your language, if not, then english language is selected
 }
 
@@ -378,7 +378,7 @@ WHERE
    OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture }  #Give me the pictures of the affilated partner, if available. 
    OPTIONAL { ?NFDIK wdt:P154 ?NFDIKpicture }          #Give me the pictures of the NFDI, if available.
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
 } 
 #Helps to get the label in your language, if not, then english language is selected
 ```
@@ -395,7 +395,7 @@ WHERE
   ?item wdt:P31 wd:Q13442814.
   ?item wdt:P50 wd:Q18921408.
   ?item wdt:P1433 ?journal.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }
 ```
 
@@ -411,7 +411,7 @@ WHERE
   ?place wdt:P17 wd:Q159.
   ?place wdt:P625 ?coord
   
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }
 ```
 
@@ -422,7 +422,7 @@ SELECT ?item ?itemLabel WHERE {
   
   ?item wdt:P31 wd:Q11173, wd:Q12140.
   
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }
 ```
 
@@ -434,7 +434,7 @@ WHERE {
   ?item wdt:P31 wd:Q11173, wd:Q12140.
   ?item wdt:P117 ?struc.
   ?item wdt:P274 ?formula
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
   
 }
 ```
@@ -448,7 +448,7 @@ WHERE {
   ?item wdt:P117 ?struc.
   ?item wdt:P274 ?formula.
   ?item wdt:P2067 ?mass.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
   
 }
 
@@ -468,7 +468,7 @@ WHERE
   
   FILTER(YEAR(?dob) = 1970)
   
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }
 ```
 
