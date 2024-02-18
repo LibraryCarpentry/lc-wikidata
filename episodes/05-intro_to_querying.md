@@ -217,12 +217,12 @@ Lets move on to another example
 #Display the results as a Map
 
 SELECT distinct *
-#Display every geographic coordinates
+#Display all available geographic coordinates
 
 WHERE {
 
-  ?item wdt:P31 wd:Q7075;      #
-        wdt:P625 ?geo.        
+  ?item wdt:P31 wd:Q7075;     #Define the item as a library ";"(and) define the geographic coordinates of item as ?geo
+        wdt:P625 ?geo.           
 
 }
 ```
@@ -261,12 +261,12 @@ WHERE {
 #defaultView:BarChart
 #Display the results as a Bar Chart
 
-SELECT distinct ?geo ?geoLabel (COUNT(?item) as ?Count)
-
+SELECT distinct ?country ?countryLabel (COUNT(?item) as ?Count)
+#Show me the g
 
 WHERE {
-  ?item wdt:P31 wd:Q7075;
-        wdt:P17 ?geo.
+  ?item wdt:P31 wd:Q7075;  #Define the item as a library ";"(and) define the country of item as ?country
+        wdt:P17 ?country.  
 
 
  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
@@ -274,11 +274,13 @@ WHERE {
 
 }
 Group by ?geo ?geoLabel
+#Aggregate with the group function
 
 Order by DESC(?Count)
+#Order result list by variable ?count in descending order
 
 LIMIT 10
-
+#Limit the shown results down to 10.
 
 ```
 
