@@ -191,16 +191,16 @@ In the first step we searched for cats. It is also possible to search for images
 #Normally, the default output is a table, but with the defaultView we can directly specify that the results should be displayed in a grid
 
 SELECT ?item ?itemLabel ?itemPic
-#Show me the item, label and the picture of it.
+#Show me the item, label and the picture of it
 #The result list will look like this (wd:Q123185365/senior cats/ commons:Оредеж, Железнодорожная 9, кот (cropped).jpg)
 
 WHERE
 {
-  ?item wdt:P31 wd:Q146.       #The item of this search is a cat.
-  ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front.
+  ?item wdt:P31 wd:Q146.       #The item of this search is a cat
+  ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-#Helps get the label in your language, if not, then english is selected as language
+#Helps to get the Label in english, if not, then yours is automatically selected
 }
 
 ```
@@ -214,9 +214,16 @@ Lets move on to another example
 
 ```
 #defaultView:Map
-SELECT distinct * WHERE {
-  ?item wdt:P31 wd:Q7075;
-        wdt:P625 ?geo .
+#Display the results as a Map
+
+SELECT distinct *
+#Display every geographic coordinates
+
+WHERE {
+
+  ?item wdt:P31 wd:Q7075;      #
+        wdt:P625 ?geo.        
+
 }
 ```
 ![](fig/episode_5_Map_WorldWide.png)
@@ -226,15 +233,23 @@ SELECT distinct * WHERE {
 
 ```
 #defaultView:Map
-SELECT ?itemLabel ?geo 
+#Display the results as a Map
+
+
+SELECT ?itemLabel ?geo
+#Display the label and the geographical coordinates of the item
+
 WHERE {
-  ?item wdt:P31 wd:Q7075.
-  ?item wdt:P625 ?geo.
-  ?item wdt:P17 ?land.
 
-  FILTER(?land = wd:Q30)  
+  ?item wdt:P31 wd:Q7075.     #Define the item as a library
+  ?item wdt:P625 ?geo.        #bind the geographic coordinates as ?geo
+  ?item wdt:P17 ?country.     #bind the country of item as ?country
+
+  FILTER(?country = wd:Q30)   #Use Filter to set Country to wd:Q30(U.S.A)
+
+
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
-
+  #Helps to get the Label in english, if not, then yours is automatically selected
 }
 ```
 ![](fig/episode_5_Map_USA.png)
@@ -244,14 +259,27 @@ WHERE {
 
 ```
 #defaultView:BarChart
+#Display the results as a Bar Chart
+
 SELECT distinct ?geo ?geoLabel (COUNT(?item) as ?Count)
+
+
 WHERE {
   ?item wdt:P31 wd:Q7075;
         wdt:P17 ?geo.
+
+
  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
-}Group by ?geo ?geoLabel
+ #Helps to get the Label in english, if not, then yours is automatically selected
+
+}
+Group by ?geo ?geoLabel
+
 Order by DESC(?Count)
+
 LIMIT 10
+
+
 ```
 
 ![](fig/episode_5_Bar_Countries.png)
@@ -273,7 +301,7 @@ WHERE
   ?book wdt:P136 ?genre.            #Get the attribute genre form item
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
-  #Helps get the label in your language, if not, then english is selected as language
+  #Helps to get the Label in english, if not, then yours is automatically selected
 }
 
 GROUP BY ?genre ?genreLabel
@@ -311,7 +339,7 @@ WHERE
  
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
-  #Helps get the label in your language, if not, then english is selected as language
+  #Helps to get the Label in english, if not, then yours is automatically selected
 }
 ```
 ![](fig/episode_05_Map.jpg){alt='Map of NFDI Consortia in Germany'}
@@ -341,7 +369,7 @@ WHERE
 #Participants can be researchers, research institutions, universities, companies and many more.
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
-#Helps to get the label in your language, if not, then english language is selected
+#Helps to get the Label in english, if not, then yours is automatically selected
 }
 
 GROUP BY ?NFDIKLabel
@@ -379,8 +407,11 @@ WHERE
    OPTIONAL { ?NFDIK wdt:P154 ?NFDIKpicture }          #Give me the pictures of the NFDI, if available.
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
+  #Helps to get the Label in english, if not, then yours is automatically selected
+
 } 
-#Helps to get the label in your language, if not, then english language is selected
+
+
 ```
 
 ![](fig/episode_5_Graph.png){alt='relationships between NFDI Consortia in Berlin, Germany'}
