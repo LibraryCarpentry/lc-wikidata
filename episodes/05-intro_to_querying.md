@@ -200,7 +200,7 @@ WHERE
   ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-#Helps to get the Label in english, if not, then yours is automatically selected
+#Helps to get the label in English. If not, yours will be selected automatically
 }
 
 ```
@@ -249,7 +249,7 @@ WHERE {
 
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
-  #Helps to get the Label in english, if not, then yours is automatically selected
+  #Helps to get the label in English. If not, yours will be selected automatically
 }
 ```
 ![](fig/episode_5_Map_USA.png)
@@ -270,7 +270,7 @@ WHERE {
 
 
  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
- #Helps to get the Label in english, if not, then yours is automatically selected
+ #Helps to get the label in English. If not, yours will be selected automatically
 
 }
 Group by ?geo ?geoLabel
@@ -303,7 +303,7 @@ WHERE
   ?book wdt:P136 ?genre.            #Get the attribute genre form item
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
-  #Helps to get the Label in english, if not, then yours is automatically selected
+  #Helps to get the label in English. If not, yours will be selected automatically
 }
 
 GROUP BY ?genre ?genreLabel
@@ -341,7 +341,7 @@ WHERE
  
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
-  #Helps to get the Label in english, if not, then yours is automatically selected
+  #Helps to get the label in English. If not, yours will be selected automatically
 }
 ```
 ![](fig/episode_05_Map.jpg){alt='Map of NFDI Consortia in Germany'}
@@ -371,7 +371,7 @@ WHERE
 #Participants can be researchers, research institutions, universities, companies and many more.
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
-#Helps to get the Label in english, if not, then yours is automatically selected
+#Helps to get the label in English. If not, yours will be selected automatically
 }
 
 GROUP BY ?NFDIKLabel
@@ -409,7 +409,7 @@ WHERE
    OPTIONAL { ?NFDIK wdt:P154 ?NFDIKpicture }          #Give me the pictures of the NFDI, if available.
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
-  #Helps to get the Label in english, if not, then yours is automatically selected
+  #Helps to get the label in English. If not, yours will be selected automatically
 
 } 
 
