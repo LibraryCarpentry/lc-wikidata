@@ -1156,9 +1156,7 @@ in the results window:</li>
 “Table” button and choose the type of visualization you want. This way,
 you can try different ways of visualizing your data without having to
 change the query code.</p>
-<p><img src="fig/episode_5_table.jpg" class="figure"> {alt=‘Wikidata Query Service
-results window’}</p>
-<div class="section level4">
+<figure><img src="fig/episode_5_table.jpg" alt="Wikidata Query Service results window" class="figure mx-auto d-block"></figure><div class="section level4">
 <h4 id="automated-visualization-with-defaultview">Automated visualization with #defaultView:<a class="anchor" aria-label="anchor" href="#automated-visualization-with-defaultview"></a>
 </h4>
 <p>For an easy start, add the #defaultView: snippet at the beginning of
@@ -1167,8 +1165,7 @@ visualized in a predefined style. This will save you time without having
 to manually adjust the result window after each query. This method is
 useful for queries where you already know which visualization types you
 want to use.</p>
-<p><img src="fig/episode_5_defaultview.png" class="figure"> {alt=‘Extract from the
-SPARQL editor’} ### Exercises</p>
+<p><img src="fig/episode_5_defaultview.png" alt="Extract from the SPARQL editor" class="figure"> ### Exercises</p>
 </div>
 </div>
 </section><section id="try-examples"><h2 class="section-heading">5.3 Try examples<a class="anchor" aria-label="anchor" href="#try-examples"></a>
@@ -1227,9 +1224,7 @@ WHERE {
         wdt:P625 ?geo.           
 
 }</code></pre>
-<p><img src="fig/episode_5_Map_WorldWide.png" class="figure"> {alt=‘Extract from the
-SPARQL editor’}</p>
-<p><strong>Map of libraries in the USA</strong></p>
+<figure><img src="fig/episode_5_Map_WorldWide.png" alt="Extract from the SPARQL editor" class="figure mx-auto d-block"></figure><p><strong>Map of libraries in the USA</strong></p>
 <pre><code>#defaultView:Map
 #Display the results as a Map
 
@@ -1249,9 +1244,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
   #Helps to get the label in English. If not, yours will be selected automatically
 }</code></pre>
-<p><img src="fig/episode_5_Map_USA.png" class="figure"> {alt=‘Extract from the SPARQL
-editor’}</p>
-<p><strong>Count of libraries per Country</strong></p>
+<figure><img src="fig/episode_5_Map_USA.png" alt="Extract from the SPARQL editor" class="figure mx-auto d-block"></figure><p><strong>Count of libraries per Country</strong></p>
 <pre><code>#defaultView:BarChart
 #Display the results as a Bar Chart
 
@@ -1276,9 +1269,7 @@ Order by DESC(?Count)
 LIMIT 10
 #Limit the shown results down to 10.
 </code></pre>
-<p><img src="fig/episode_5_Bar_Countries.png" class="figure"> {alt=‘Extract from the
-SPARQL editor’}</p>
-<p><strong>Books weight by genre</strong> Number of available books
+<figure><img src="fig/episode_5_Bar_Countries.png" alt="Extract from the SPARQL editor" class="figure mx-auto d-block"></figure><p><strong>Books weight by genre</strong> Number of available books
 weighted by genre.</p>
 <pre><code>#defaultView:BubbleChart
 #Display the results as a Bubble Chart
