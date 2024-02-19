@@ -270,7 +270,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction to querying</h1>
-        <p>Last updated on 2024-01-24 |
+        <p>Last updated on 2024-02-19 |
         
         <a href="https://github.com/librarycarpentry/lc-wikidata/edit/main/episodes/05-intro_to_querying.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -393,7 +393,7 @@ SELECT-statement.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre><code>SELECT * WHERE {
    wd:Q7750812 wdt:P123 ?publisher .
@@ -430,20 +430,43 @@ vs. books authored by Richard Feynman from Addison-Wesley</li>
 <li>LIMIT</li>
 <li>ORDER</li>
 <li>FILTER</li>
-<li>OPTIONAL</li>
-</ul></div>
-<div class="section level3">
-<h3 id="exercises">Exercises<a class="anchor" aria-label="anchor" href="#exercises"></a></h3>
+<li>OPTIONAL ### How to visualize your query #### Manual visualization
+in the results window:</li>
+</ul><p>Start by opening the results window. In the results pane, click the
+“Table” button and choose the type of visualization you want. This way,
+you can try different ways of visualizing your data without having to
+change the query code.</p>
+<p><img src="fig/episode_5_table.jpg" class="figure"> {alt=‘Wikidata Query Service
+results window’}</p>
+<div class="section level4">
+<h4 id="automated-visualization-with-defaultview">Automated visualization with #defaultView:<a class="anchor" aria-label="anchor" href="#automated-visualization-with-defaultview"></a></h4>
+<p>For an easy start, add the #defaultView: snippet at the beginning of
+your query. This method ensures that your results will be automatically
+visualized in a predefined style. This will save you time without having
+to manually adjust the result window after each query. This method is
+useful for queries where you already know which visualization types you
+want to use.</p>
+<p><img src="fig/episode_5_defaultview.png" class="figure"> {alt=‘Extract from the
+SPARQL editor’} ### Exercises</p>
+</div>
 </div>
 </section><section id="try-examples"><h2 class="section-heading">5.3 Try examples<a class="anchor" aria-label="anchor" href="#try-examples"></a>
 </h2>
-<hr class="half-width"><p><strong>Cats example</strong></p>
+<hr class="half-width"><div class="section level4">
+<h4 id="enough-theory-its-time-to-get-hands-on--lets-start-with-a-simple-example--literally-everyone-likes-cats-right-so-lets-search-for-them-in-the-wikidata-database-">Enough theory! it’s time to get hands-on. Let’s start with a simple
+example. Literally everyone likes cats, right? So lets search for them
+in the Wikidata database.<a class="anchor" aria-label="anchor" href="#enough-theory-its-time-to-get-hands-on--lets-start-with-a-simple-example--literally-everyone-likes-cats-right-so-lets-search-for-them-in-the-wikidata-database-"></a></h4>
+<p><strong>Cats example</strong></p>
 <pre><code>SELECT ?item ?itemLabel 
 WHERE 
 {
   ?item wdt:P31 wd:Q146. # Must be of a cat
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". } # Helps get the label in your language, if not, then en language
 }</code></pre>
+<p>alright! so we found the all the Cats. But i am pretty sure that i
+have seen Pictures of Cats somewhere in Wikipedia or Wikidata. Is there
+a possiblity to display Pictures in the wikidata Query Serivice? The
+simple Answer yes! Let me show you how it is done.</p>
 <p><strong>Cats pictures</strong></p>
 <p>In the first step we searched for cats. It is also possible to search
 for images in Wikidata if they are available. The Wikidata Query Service
@@ -453,19 +476,86 @@ the image grid is suitable.</p>
 #Normally, the default output is a table, but with the defaultView we can directly specify that the results should be displayed in a grid
 
 SELECT ?item ?itemLabel ?itemPic
-#Show me the item, label and the picture of it.
+#Show me the item, label and the picture of it
 #The result list will look like this (wd:Q123185365/senior cats/ commons:Оредеж, Железнодорожная 9, кот (cropped).jpg)
 
 WHERE
 {
-  ?item wdt:P31 wd:Q146.       #The item of this search is a cat.
-  ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front.
+  ?item wdt:P31 wd:Q146.       #The item of this search is a cat
+  ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-#Helps get the label in your language, if not, then english is selected as language
+#Helps to get the label in English. If not, yours will be selected automatically
 }
 </code></pre>
-<figure><img src="fig/episode_5_Imagegrid.jpg" alt="Example of displaying cats in grid format" class="figure mx-auto d-block"></figure><p><strong>Books weight by genre</strong> Number of available books
+<figure><img src="fig/episode_5_Imagegrid.jpg" alt="Example of displaying cats in grid format" class="figure mx-auto d-block"></figure><p>Wow that was quit a lot of Code, hasnt it. lets break it down so you
+understand the synatx better.</p>
+<p>Lets move on to another example</p>
+<p><strong>Worldmap of libraries</strong></p>
+<pre><code>#defaultView:Map
+#Display the results as a Map
+
+SELECT distinct *
+#Display all available geographic coordinates
+
+WHERE {
+
+  ?item wdt:P31 wd:Q7075;     #Define the item as a library ";"(and) define the geographic coordinates of item as ?geo
+        wdt:P625 ?geo.           
+
+}</code></pre>
+<p><img src="fig/episode_5_Map_WorldWide.png" class="figure"> {alt=‘Extract from the
+SPARQL editor’}</p>
+<p><strong>Map of libraries in the USA</strong></p>
+<pre><code>#defaultView:Map
+#Display the results as a Map
+
+
+SELECT ?itemLabel ?geo
+#Display the label and the geographical coordinates of the item
+
+WHERE {
+
+  ?item wdt:P31 wd:Q7075.     #Define the item as a library
+  ?item wdt:P625 ?geo.        #bind the geographic coordinates as ?geo
+  ?item wdt:P17 ?country.     #bind the country of item as ?country
+
+  FILTER(?country = wd:Q30)   #Use Filter to set Country to wd:Q30(U.S.A)
+
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
+  #Helps to get the label in English. If not, yours will be selected automatically
+}</code></pre>
+<p><img src="fig/episode_5_Map_USA.png" class="figure"> {alt=‘Extract from the SPARQL
+editor’}</p>
+<p><strong>Count of libraries per Country</strong></p>
+<pre><code>#defaultView:BarChart
+#Display the results as a Bar Chart
+
+SELECT distinct ?country ?countryLabel (COUNT(?item) as ?Count)
+#Show me the g
+
+WHERE {
+  ?item wdt:P31 wd:Q7075;  #Define the item as a library ";"(and) define the country of item as ?country
+        wdt:P17 ?country.  
+
+
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
+ #Helps to get the label in English. If not, yours will be selected automatically
+
+}
+Group by ?geo ?geoLabel
+#Aggregate with the group function
+
+Order by DESC(?Count)
+#Order result list by variable ?count in descending order
+
+LIMIT 10
+#Limit the shown results down to 10.
+</code></pre>
+<p><img src="fig/episode_5_Bar_Countries.png" class="figure"> {alt=‘Extract from the
+SPARQL editor’}</p>
+<p><strong>Books weight by genre</strong> Number of available books
 weighted by genre.</p>
 <pre><code>#defaultView:BubbleChart
 #Display the results as a Bubble Chart
@@ -479,8 +569,8 @@ WHERE
   ?book wdt:P31 wd:Q571.            #Searched item is a book
   ?book wdt:P136 ?genre.            #Get the attribute genre form item
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-  #Helps get the label in your language, if not, then english is selected as language
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
+  #Helps to get the label in English. If not, yours will be selected automatically
 }
 
 GROUP BY ?genre ?genreLabel
@@ -488,7 +578,7 @@ GROUP BY ?genre ?genreLabel
  
 LIMIT 15
 #Limit the shown results down to 15.</code></pre>
-<figure><img src="fig/episode_05_Bubblechart.png" alt="Bubblechart of books weight by genre" class="figure mx-auto d-block"></figure><p><strong>Map of NFDI Consortia in Germany</strong></p>
+<figure><img src="fig/episode_5_Bubble.png" alt="Bubblechart of books weight by genre" class="figure mx-auto d-block"></figure><p><strong>Map of NFDI Consortia in Germany</strong></p>
 <pre><code>#defaultView:Map
 #Display the results as a Map
 
@@ -510,8 +600,8 @@ WHERE
   FILTER(?country = wd:Q183)        #Use Filter to set country to wd:Q183(Germany)
  
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
-  #Helps get the label in your language, if not, then english is selected as language
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
+  #Helps to get the label in English. If not, yours will be selected automatically
 }</code></pre>
 <figure><img src="fig/episode_05_Map.jpg" alt="Map of NFDI Consortia in Germany" class="figure mx-auto d-block"></figure><figure><img src="fig/episode_05_Map_CloseUp.png" alt="Close up look" class="figure mx-auto d-block"></figure><p><strong>Number of participants in NFDI consortia</strong></p>
 <pre><code>#Number of participants in NFDI consortia
@@ -531,8 +621,8 @@ WHERE
 #Attention: Not all consortia are listed here, but only those that have an entry participants in Wikidata.
 #Participants can be researchers, research institutions, universities, companies and many more.
 
-SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
-#Helps to get the label in your language, if not, then english language is selected
+SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
+#Helps to get the label in English. If not, yours will be selected automatically
 }
 
 GROUP BY ?NFDIKLabel
@@ -563,22 +653,20 @@ WHERE
    OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture }  #Give me the pictures of the affilated partner, if available. 
    OPTIONAL { ?NFDIK wdt:P154 ?NFDIKpicture }          #Give me the pictures of the NFDI, if available.
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
+  #Helps to get the label in English. If not, yours will be selected automatically
+
 } 
-#Helps to get the label in your language, if not, then english language is selected</code></pre>
-<figure><img src="fig/episode_05_Graph.png" alt="relationships between NFDI Consortia in Berlin, Germany" class="figure mx-auto d-block"></figure><p><strong>Map of libraries</strong></p>
-<pre><code>SELECT distinct * WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q7075;
-        wdt:P625 ?geo .
-}</code></pre>
-<p><strong>scholarly articles by Alex Bateman</strong></p>
+
+</code></pre>
+<figure><img src="fig/episode_5_Graph.png" alt="relationships between NFDI Consortia in Berlin, Germany" class="figure mx-auto d-block"></figure><p><strong>scholarly articles by Alex Bateman</strong></p>
 <pre><code>SELECT ?item ?itemLabel ?journalLabel
 WHERE 
 {
   ?item wdt:P31 wd:Q13442814.
   ?item wdt:P50 wd:Q18921408.
   ?item wdt:P1433 ?journal.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }</code></pre>
 <p><strong>Russian poets</strong></p>
 <pre><code>SELECT ?item ?itemLabel ?place ?placeLabel ?coord
@@ -590,14 +678,14 @@ WHERE
   ?place wdt:P17 wd:Q159.
   ?place wdt:P625 ?coord
   
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }</code></pre>
 <p><strong>chemicals example</strong></p>
 <pre><code>SELECT ?item ?itemLabel WHERE {
   
   ?item wdt:P31 wd:Q11173, wd:Q12140.
   
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }</code></pre>
 <pre><code>SELECT ?item ?itemLabel ?struc ?formula
 
@@ -606,7 +694,7 @@ WHERE {
   ?item wdt:P31 wd:Q11173, wd:Q12140.
   ?item wdt:P117 ?struc.
   ?item wdt:P274 ?formula
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
   
 }</code></pre>
 <pre><code>SELECT ?item ?itemLabel ?formula ?mass ?struc
@@ -617,7 +705,7 @@ WHERE {
   ?item wdt:P117 ?struc.
   ?item wdt:P274 ?formula.
   ?item wdt:P2067 ?mass.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
   
 }
 
@@ -633,8 +721,9 @@ WHERE
   
   FILTER(YEAR(?dob) = 1970)
   
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }</code></pre>
+</div>
 </section><section id="more-advanced-queries"><h2 class="section-heading">5.4 More Advanced queries<a class="anchor" aria-label="anchor" href="#more-advanced-queries"></a>
 </h2>
 <hr class="half-width"><p>further links</p>
@@ -711,8 +800,8 @@ https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial</code></pre>
   "url": "https://librarycarpentry.github.io/lc-wikidata/05-intro_to_querying.html",
   "identifier": "https://librarycarpentry.github.io/lc-wikidata/05-intro_to_querying.html",
   "dateCreated": "2018-09-17",
-  "dateModified": "2024-01-24",
-  "datePublished": "2024-02-13"
+  "dateModified": "2024-02-19",
+  "datePublished": "2024-02-19"
 }
 
   </script><script>
