@@ -153,15 +153,13 @@ Namespaces in Wikidata are:
 
 Start by opening the results window. In the results pane, click the "Table" button and choose the type of visualization you want. This way, you can try different ways of visualizing your data without having to change the query code.
 
-![](fig/episode_5_table.jpg) 
-{alt='Wikidata Query Service results window'}
+![](fig/episode_5_table.jpg){alt='Wikidata Query Service results window'}
 
 
 #### Automated visualization with #defaultView:
 For an easy start, add the #defaultView: snippet at the beginning of your query. This method ensures that your results will be automatically visualized in a predefined style. This will save you time without having to manually adjust the result window after each query. This method is useful for queries where you already know which visualization types you want to use.
 
-![](fig/episode_5_defaultview.png)
-{alt='Extract from the SPARQL editor'}
+![](fig/episode_5_defaultview.png){alt='Extract from the SPARQL editor'}
 ### Exercises
 
 ## 5\.3 Try examples
@@ -226,8 +224,7 @@ WHERE {
 
 }
 ```
-![](fig/episode_5_Map_WorldWide.png)
-{alt='Extract from the SPARQL editor'}
+![](fig/episode_5_Map_WorldWide.png){alt='Extract from the SPARQL editor'}
 
 **Map of libraries in the USA**
 
@@ -252,8 +249,7 @@ WHERE {
   #Helps to get the label in English. If not, yours will be selected automatically
 }
 ```
-![](fig/episode_5_Map_USA.png)
-{alt='Extract from the SPARQL editor'}
+![](fig/episode_5_Map_USA.png){alt='Extract from the SPARQL editor'}
 
 **Count of libraries per Country**
 
@@ -284,8 +280,7 @@ LIMIT 10
 
 ```
 
-![](fig/episode_5_Bar_Countries.png)
-{alt='Extract from the SPARQL editor'}
+![](fig/episode_5_Bar_Countries.png){alt='Extract from the SPARQL editor'}
 
 **Books weight by genre**
 Number of available books weighted by genre.
