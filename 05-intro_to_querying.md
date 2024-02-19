@@ -148,10 +148,25 @@ Namespaces in Wikidata are:
 - ORDER
 - FILTER
 - OPTIONAL
+### How to visualize your query
+#### Manual visualization in the results window:
 
+Start by opening the results window. In the results pane, click the "Table" button and choose the type of visualization you want. This way, you can try different ways of visualizing your data without having to change the query code.
+
+![](fig/episode_5_table.jpg) 
+{alt='Wikidata Query Service results window'}
+
+
+#### Automated visualization with #defaultView:
+For an easy start, add the #defaultView: snippet at the beginning of your query. This method ensures that your results will be automatically visualized in a predefined style. This will save you time without having to manually adjust the result window after each query. This method is useful for queries where you already know which visualization types you want to use.
+
+![](fig/episode_5_defaultview.png)
+{alt='Extract from the SPARQL editor'}
 ### Exercises
 
 ## 5\.3 Try examples
+
+#### Enough theory! it's time to get hands-on. Let's start with a simple example. Literally everyone likes cats, right? So lets search for them in the Wikidata database.
 
 **Cats example**
 
@@ -160,9 +175,12 @@ SELECT ?item ?itemLabel
 WHERE 
 {
   ?item wdt:P31 wd:Q146. # Must be of a cat
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". } # Helps get the label in your language, if not, then en language
 }
 ```
+
+alright! so we found the all the Cats. But i am pretty sure that i have seen Pictures of Cats somewhere in Wikipedia or Wikidata. Is there a possiblity to display Pictures in the wikidata Query Serivice? The simple Answer yes! Let me show you how it is done.
+
 **Cats pictures**
 
 In the first step we searched for cats. It is also possible to search for images in Wikidata if they are available. The Wikidata Query Service offers a range of visualization types. For the representation of images the image grid is suitable.
@@ -173,21 +191,101 @@ In the first step we searched for cats. It is also possible to search for images
 #Normally, the default output is a table, but with the defaultView we can directly specify that the results should be displayed in a grid
 
 SELECT ?item ?itemLabel ?itemPic
-#Show me the item, label and the picture of it.
+#Show me the item, label and the picture of it
 #The result list will look like this (wd:Q123185365/senior cats/ commons:Оредеж, Железнодорожная 9, кот (cropped).jpg)
 
 WHERE
 {
-  ?item wdt:P31 wd:Q146.       #The item of this search is a cat.
-  ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front.
+  ?item wdt:P31 wd:Q146.       #The item of this search is a cat
+  ?item wdt:P18 ?itemPic.      #Show me only cats with pictures. If you want to include very cats in your search, you need to place the Option{} function in front
 
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-#Helps get the label in your language, if not, then english is selected as language
+#Helps to get the label in English. If not, yours will be selected automatically
 }
 
 ```
-
 ![](fig/episode_5_Imagegrid.jpg){alt='Example of displaying cats in grid format'}
+
+Wow that was quit a lot of Code, hasnt it. lets break it down so you understand the synatx better.
+
+Lets move on to another example
+
+**Worldmap of libraries**
+
+```
+#defaultView:Map
+#Display the results as a Map
+
+SELECT distinct *
+#Display all available geographic coordinates
+
+WHERE {
+
+  ?item wdt:P31 wd:Q7075;     #Define the item as a library ";"(and) define the geographic coordinates of item as ?geo
+        wdt:P625 ?geo.           
+
+}
+```
+![](fig/episode_5_Map_WorldWide.png)
+{alt='Extract from the SPARQL editor'}
+
+**Map of libraries in the USA**
+
+```
+#defaultView:Map
+#Display the results as a Map
+
+
+SELECT ?itemLabel ?geo
+#Display the label and the geographical coordinates of the item
+
+WHERE {
+
+  ?item wdt:P31 wd:Q7075.     #Define the item as a library
+  ?item wdt:P625 ?geo.        #bind the geographic coordinates as ?geo
+  ?item wdt:P17 ?country.     #bind the country of item as ?country
+
+  FILTER(?country = wd:Q30)   #Use Filter to set Country to wd:Q30(U.S.A)
+
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
+  #Helps to get the label in English. If not, yours will be selected automatically
+}
+```
+![](fig/episode_5_Map_USA.png)
+{alt='Extract from the SPARQL editor'}
+
+**Count of libraries per Country**
+
+```
+#defaultView:BarChart
+#Display the results as a Bar Chart
+
+SELECT distinct ?country ?countryLabel (COUNT(?item) as ?Count)
+#Show me the g
+
+WHERE {
+  ?item wdt:P31 wd:Q7075;  #Define the item as a library ";"(and) define the country of item as ?country
+        wdt:P17 ?country.  
+
+
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
+ #Helps to get the label in English. If not, yours will be selected automatically
+
+}
+Group by ?geo ?geoLabel
+#Aggregate with the group function
+
+Order by DESC(?Count)
+#Order result list by variable ?count in descending order
+
+LIMIT 10
+#Limit the shown results down to 10.
+
+```
+
+![](fig/episode_5_Bar_Countries.png)
+{alt='Extract from the SPARQL editor'}
 
 **Books weight by genre**
 Number of available books weighted by genre.
@@ -204,8 +302,8 @@ WHERE
   ?book wdt:P31 wd:Q571.            #Searched item is a book
   ?book wdt:P136 ?genre.            #Get the attribute genre form item
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-  #Helps get the label in your language, if not, then english is selected as language
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
+  #Helps to get the label in English. If not, yours will be selected automatically
 }
 
 GROUP BY ?genre ?genreLabel
@@ -215,7 +313,7 @@ LIMIT 15
 #Limit the shown results down to 15.
 ```
 
-![](fig/episode_05_Bubblechart.png){alt='Bubblechart of books weight by genre'}
+![](fig/episode_5_Bubble.png){alt='Bubblechart of books weight by genre'}
 
 
 **Map of NFDI Consortia in Germany**
@@ -242,8 +340,8 @@ WHERE
   FILTER(?country = wd:Q183)        #Use Filter to set country to wd:Q183(Germany)
  
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
-  #Helps get the label in your language, if not, then english is selected as language
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
+  #Helps to get the label in English. If not, yours will be selected automatically
 }
 ```
 ![](fig/episode_05_Map.jpg){alt='Map of NFDI Consortia in Germany'}
@@ -272,8 +370,8 @@ WHERE
 #Attention: Not all consortia are listed here, but only those that have an entry participants in Wikidata.
 #Participants can be researchers, research institutions, universities, companies and many more.
 
-SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
-#Helps to get the label in your language, if not, then english language is selected
+SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
+#Helps to get the label in English. If not, yours will be selected automatically
 }
 
 GROUP BY ?NFDIKLabel
@@ -310,21 +408,17 @@ WHERE
    OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture }  #Give me the pictures of the affilated partner, if available. 
    OPTIONAL { ?NFDIK wdt:P154 ?NFDIKpicture }          #Give me the pictures of the NFDI, if available.
 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
+  #Helps to get the label in English. If not, yours will be selected automatically
+
 } 
-#Helps to get the label in your language, if not, then english language is selected
-```
 
-![](fig/episode_05_Graph.png){alt='relationships between NFDI Consortia in Berlin, Germany'}
-
-**Map of libraries**
 
 ```
-SELECT distinct * WHERE {
-  ?item wdt:P31/wdt:P279* wd:Q7075;
-        wdt:P625 ?geo .
-}
-```
+
+![](fig/episode_5_Graph.png){alt='relationships between NFDI Consortia in Berlin, Germany'}
+
+
 **scholarly articles by Alex Bateman**
 
 ```
@@ -334,7 +428,7 @@ WHERE
   ?item wdt:P31 wd:Q13442814.
   ?item wdt:P50 wd:Q18921408.
   ?item wdt:P1433 ?journal.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }
 ```
 
@@ -350,7 +444,7 @@ WHERE
   ?place wdt:P17 wd:Q159.
   ?place wdt:P625 ?coord
   
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }
 ```
 
@@ -361,7 +455,7 @@ SELECT ?item ?itemLabel WHERE {
   
   ?item wdt:P31 wd:Q11173, wd:Q12140.
   
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }
 ```
 
@@ -373,7 +467,7 @@ WHERE {
   ?item wdt:P31 wd:Q11173, wd:Q12140.
   ?item wdt:P117 ?struc.
   ?item wdt:P274 ?formula
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
   
 }
 ```
@@ -387,7 +481,7 @@ WHERE {
   ?item wdt:P117 ?struc.
   ?item wdt:P274 ?formula.
   ?item wdt:P2067 ?mass.
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE], en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
   
 }
 
@@ -407,7 +501,7 @@ WHERE
   
   FILTER(YEAR(?dob) = 1970)
   
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }
 ```
 
