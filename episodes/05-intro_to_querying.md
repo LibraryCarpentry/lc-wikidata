@@ -180,11 +180,11 @@ WHERE
 }
 ```
 
-alright! so we found the all the Cats. But i am pretty sure that i have seen Pictures of Cats somewhere in Wikipedia or Wikidata. Is there a possiblity to display Pictures in the wikidata Query Serivice? The simple Answer yes! Let me show you how it is done.
+Alright! So we found all the cats. But I am pretty sure that I have seen pictures of cats somewhere in Wikipedia or Wikidata. Is there a way to display the images in the Wikidata query service? The simple answer is yes! Let me show you how to do it.
 
 **Cats pictures**
 
-In the first step we searched for cats. It is also possible to search for images in Wikidata if they are available. The Wikidata Query Service offers a range of visualization types. For the representation of images the image grid is suitable.
+In the first step, we searched for cats. It is also possible to search for images in Wikidata, if they are available. The Wikidata query service offers several types of visualization. The image grid is a good way to display images.
 
 
 ```
