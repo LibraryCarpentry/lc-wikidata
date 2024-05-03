@@ -148,7 +148,9 @@ Namespaces in Wikidata are:
 - ORDER
 - FILTER
 - OPTIONAL
+  
 ### How to visualize your query
+
 #### Manual visualization in the results window:
 
 Start by opening the results window. In the results pane, click the "Table" button and choose the type of visualization you want. This way, you can try different ways of visualizing your data without having to change the query code.
@@ -160,6 +162,7 @@ Start by opening the results window. In the results pane, click the "Table" butt
 For an easy start, add the #defaultView: snippet at the beginning of your query. This method ensures that your results will be automatically visualized in a predefined style. This will save you time without having to manually adjust the result window after each query. This method is useful for queries where you already know which visualization types you want to use.
 
 ![](fig/episode_5_defaultview.png){alt='Extract from the SPARQL editor'}
+
 ### Exercises
 
 ## 5\.3 Try examples
