@@ -292,7 +292,7 @@ WHERE {
 }
 
 ```
-![](fig/episode_5_Map_USA.png){alt='Extract from the SPARQL editor'}
+![](fig/episode_05_Map_Toolkit.jpg){alt='Extract from the SPARQL editor'}
 
 
 **Count of libraries per Country**
