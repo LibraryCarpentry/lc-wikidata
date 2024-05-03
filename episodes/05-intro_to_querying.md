@@ -256,7 +256,7 @@ WHERE {
 
 
 
-**Map of libraries in the USA**
+**Map visualization toolbox for libraries**
 
 ```
 #defaultView:Map
