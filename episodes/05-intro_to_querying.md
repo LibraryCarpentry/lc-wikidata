@@ -254,6 +254,47 @@ WHERE {
 ```
 ![](fig/episode_5_Map_USA.png){alt='Extract from the SPARQL editor'}
 
+
+
+**Map of libraries in the USA**
+
+```
+#defaultView:Map
+#Display the results as a Map
+
+#the main query-----------------------------------------------------------------------
+SELECT DISTINCT ?itemLabel ?geo #(?itemLabel AS ?layer)
+#Show the label and geographic coordinates of the item
+#Remove the „#“ before „(?itemLabel AS ?layer)“ to filter the result list.
+
+
+WHERE {
+ ?item wdt:P31 wd:Q7075;             #Define the item as a library
+       wdt:P625 ?geo.                #Get the Coordinates of the library
+  
+  
+ #Advanced Query Options-----------------------------------------------
+ #Bind the attributes you need to filter them later.
+ ?item wdt:P17 ?country.             #Bind the country of item to ?country
+ ?item wdt:P131 ?stateORcity.        #Bind the territory of item to ?stateORcity
+
+  
+ #Filter---------------------------------------------------------------
+ #Select only one filter at a time to filter between country, state, and city.
+  
+ #FILTER(?country = wd:Q30)         #Set ?country to U.S.A(wd:Q30)
+ #FILTER(?stateORcity = wd:Q1261)   #Set ?StateOrCity to Colorado(wd:Q1261)
+ #FILTER(?stateORcity = wd:Q16554)  #Set ?StateOrCity to Denver(wd:Q16554
+ #--------------------------------------------------------------------
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+ #Helps to get the label in English. If not, yours will be SELECTed automatically
+}
+
+```
+![](fig/episode_5_Map_USA.png){alt='Extract from the SPARQL editor'}
+
+
 **Count of libraries per Country**
 
 ```
@@ -261,7 +302,8 @@ WHERE {
 #Display the results as a Bar Chart
 
 SELECT distinct ?country ?countryLabel (COUNT(?item) as ?Count)
-#Show me the g
+#Show me the genre, the genre label, and count the available books as a new label ?bookCount
+#The result list will look like this (wd:Q213051/Non-Fiction/252)
 
 WHERE {
   ?item wdt:P31 wd:Q7075;  #Define the item as a library ";"(and) define the country of item as ?country
