@@ -27,7 +27,7 @@
             <span class="visually-hidden">This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team.</span>
           </abbr>
         </span>
-        
+
       </div>
     </div>
     <div class="selector-container">
@@ -56,7 +56,7 @@
             </li>
           </ul></li>
       </div>
-      
+
       <div class="dropdown" id="instructor-dropdown">
         <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
           <i aria-hidden="true" class="icon" data-feather="eye"></i> Instructor View <i data-feather="chevron-down"></i>
@@ -180,7 +180,7 @@
                 </div><!--/div.accordion-flush-->
               </div><!--div.sidenav-view-selector -->
             </div><!--/div.col -->
-      
+
             <hr></div><!--/div.mobile-row -->
 
           <div class="accordion accordion-flush" id="accordionFlush11">
@@ -199,7 +199,7 @@
     <div class="accordion-header" id="flush-heading1">
         <a href="index.html">Summary and Schedule</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -208,7 +208,7 @@
     <div class="accordion-header" id="flush-heading2">
         <a href="01-introduction.html">1. What is Wikidata?</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -217,7 +217,7 @@
     <div class="accordion-header" id="flush-heading3">
         <a href="02-Wikidata_underlying_concepts.html">2. Underlying concepts of Wikidata</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -226,7 +226,7 @@
     <div class="accordion-header" id="flush-heading4">
         <a href="03-intro_to_editing.html">3. Introduction to editing</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -235,7 +235,7 @@
     <div class="accordion-header" id="flush-heading5">
         <a href="04-advanced_editing.html">4. Advanced editing</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -249,7 +249,7 @@
         </span>
       </button>
     </div><!--/div.accordion-header-->
-        
+
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#what-is-sparql">5.1 What is SPARQL?</a></li>
@@ -258,7 +258,7 @@
 <li><a href="#more-advanced-queries">5.4 More Advanced queries</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -267,7 +267,7 @@
     <div class="accordion-header" id="flush-heading7">
         <a href="06-bulk_actions.html">6. Advanced bulk updating, bots</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -299,10 +299,10 @@
               </div>
             </div>
             <hr class="half-width resources"><a href="../instructor/aio.html">See all in one page</a>
-            
+
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
-            
+
             </div>
           </div><!-- /div.accordion -->
         </div><!-- /div.sidebar-inner -->
@@ -323,20 +323,20 @@
           Previous: Advanced editing
         </a>
         <a class="chapter-link float-end" href="../instructor/06-bulk_actions.html" rel="next">
-          Next: Advanced bulk... 
+          Next: Advanced bulk...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction to querying</h1>
         <p>Last updated on 2024-02-19 |
-        
+
         <a href="https://github.com/librarycarpentry/lc-wikidata/edit/main/episodes/05-intro_to_querying.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-        
-        
-        
+
+
+
         <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
-        
+
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -392,8 +392,8 @@ can be experienced through more advanced querying with the Wikidata
 query service where the queries have to entered in SPARQL.</p>
 <p>% To discover Wikidata objects nearby there is the nearby search: %
 <a href="https://www.wikidata.org/wiki/Special:Nearby" class="external-link">https://www.wikidata.org/wiki/Special:Nearby</a></p>
-<section id="what-is-sparql"><h2 class="section-heading">5.1 What is SPARQL?<a class="anchor" aria-label="anchor" href="#what-is-sparql"></a>
-</h2>
+<section><h2 class="section-heading" id="what-is-sparql">5.1 What is SPARQL?<a class="anchor" aria-label="anchor" href="#what-is-sparql"></a>
+<a class="anchor" aria-label="anchor" href="#what-is-sparql"></a></h2>
 <hr class="half-width"><p>SPARQL is a query language for RDF data and is a W3C recommendations
 since 2008. The data has to be stored as triples where the object of one
 triple can be the subject of another triple. Thus, one can think about a
@@ -420,8 +420,8 @@ indicated by a string starting with a question mark:</p>
 <li>Query for the publications from Addison-Wesley:
 <code>{ ?book wdt:P123 wd:Q353060 . }</code>
 </li>
-</ul></section><section id="wikidata-query-service"><h2 class="section-heading">5.2 Wikidata Query Service<a class="anchor" aria-label="anchor" href="#wikidata-query-service"></a>
-</h2>
+</ul></section><section><h2 class="section-heading" id="wikidata-query-service">5.2 Wikidata Query Service<a class="anchor" aria-label="anchor" href="#wikidata-query-service"></a>
+<a class="anchor" aria-label="anchor" href="#wikidata-query-service"></a></h2>
 <hr class="half-width"><p>The Wikidata query service can be found at <a href="https://query.wikidata.org/" class="external-link">https://query.wikidata.org/</a>.
 There is the main window on the right to formulate your query in SPARQL.
 On the left there is the query helper and at the bottom the result will
@@ -471,8 +471,8 @@ SELECT-statement.</p>
 <p>Prefixes are short abbrevations in the Wikidata Query Service. Some
 prefixes in Wikidata are: wd, wdt, p, ps, bd, etc.</p>
 <p>Example:</p>
-<pre><code>SELECT ?item ?itemLabel 
-WHERE 
+<pre><code>SELECT ?item ?itemLabel
+WHERE
 {
   ?item wdt:P50 wd:Q23434.
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
@@ -508,15 +508,15 @@ want to use.</p>
 <p><img src="../fig/episode_5_defaultview.png" alt="Extract from the SPARQL editor" class="figure"> ### Exercises</p>
 </div>
 </div>
-</section><section id="try-examples"><h2 class="section-heading">5.3 Try examples<a class="anchor" aria-label="anchor" href="#try-examples"></a>
-</h2>
+</section><section><h2 class="section-heading" id="try-examples">5.3 Try examples<a class="anchor" aria-label="anchor" href="#try-examples"></a>
+<a class="anchor" aria-label="anchor" href="#try-examples"></a></h2>
 <hr class="half-width"><div class="section level4">
 <h4 id="enough-theory-its-time-to-get-hands-on--lets-start-with-a-simple-example--literally-everyone-likes-cats-right-so-lets-search-for-them-in-the-wikidata-database-">Enough theory! it’s time to get hands-on. Let’s start with a simple
 example. Literally everyone likes cats, right? So lets search for them
 in the Wikidata database.<a class="anchor" aria-label="anchor" href="#enough-theory-its-time-to-get-hands-on--lets-start-with-a-simple-example--literally-everyone-likes-cats-right-so-lets-search-for-them-in-the-wikidata-database-"></a></h4>
 <p><strong>Cats example</strong></p>
-<pre><code>SELECT ?item ?itemLabel 
-WHERE 
+<pre><code>SELECT ?item ?itemLabel
+WHERE
 {
   ?item wdt:P31 wd:Q146. # Must be of a cat
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". } # Helps get the label in your language, if not, then en language
@@ -559,7 +559,7 @@ SELECT distinct *
 WHERE {
 
   ?item wdt:P31 wd:Q7075;     #Define the item as a library ";"(and) define the geographic coordinates of item as ?geo
-        wdt:P625 ?geo.           
+        wdt:P625 ?geo.
 
 }</code></pre>
 <figure><img src="../fig/episode_5_Map_WorldWide.png" alt="Extract from the SPARQL editor" class="figure mx-auto d-block"></figure><p><strong>Map of libraries in the USA</strong></p>
@@ -591,7 +591,7 @@ SELECT distinct ?country ?countryLabel (COUNT(?item) as ?Count)
 
 WHERE {
   ?item wdt:P31 wd:Q7075;  #Define the item as a library ";"(and) define the country of item as ?country
-        wdt:P17 ?country.  
+        wdt:P17 ?country.
 
 
  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
@@ -627,7 +627,7 @@ WHERE
 
 GROUP BY ?genre ?genreLabel
 #Aggregate with the group function
- 
+
 LIMIT 15
 #Limit the shown results down to 15.</code></pre>
 <figure><img src="../fig/episode_5_Bubble.png" alt="Bubblechart of books weight by genre" class="figure mx-auto d-block"></figure><p><strong>Map of NFDI Consortia in Germany</strong></p>
@@ -640,7 +640,7 @@ SELECT DISTINCT ?affiliateLabel ?affiliatepicture ?coordinates ?NFDILabel (?NFDI
 #The layer filter lets you choose which NFDI to display on the map.
 #The result list will look like this (Deutsche Nationalbibliothek/commons:DNB.svg/NFDI4Culture/Point(8.683333333 50.131111111))
 
-WHERE 
+WHERE
 {
   ?NFDI wdt:P31 wd:Q98270496.       #Searched item is an accepted NFDI
   ?NFDI wdt:P1416 ?affiliate.       #Get the affiliates of the accepted NFDI.
@@ -650,7 +650,7 @@ WHERE
   OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture } #Get attribute picture if available
 
   FILTER(?country = wd:Q183)        #Use Filter to set country to wd:Q183(Germany)
- 
+
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
   #Helps to get the label in English. If not, yours will be selected automatically
@@ -662,7 +662,7 @@ WHERE
 
 SELECT DISTINCT ?NFDIKLabel  (COUNT(DISTINCT ?participants ) as ?participantsCount)
 #Give me the unique (no double entries) names of the accepted NFDIK consortia.
-#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.   
+#Count the participants using the COUNT function and return the number of participants as a new variable ?participantsCount.
 
 
 WHERE
@@ -699,21 +699,21 @@ WHERE
   ?NFDIK wdt:P1416 ?affiliate.       #Get the affiliates of the accepted NFDI.
   ?affiliate wdt:P131 ?location.     #Provide me with the location of the affiliated parties.
 
-  
+
   FILTER(?location = wd:Q64)         #Set the location to Berlin.
-  
-   OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture }  #Give me the pictures of the affilated partner, if available. 
+
+   OPTIONAL { ?affiliate wdt:P154 ?affiliatepicture }  #Give me the pictures of the affilated partner, if available.
    OPTIONAL { ?NFDIK wdt:P154 ?NFDIKpicture }          #Give me the pictures of the NFDI, if available.
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]" . }
   #Helps to get the label in English. If not, yours will be selected automatically
 
-} 
+}
 
 </code></pre>
 <figure><img src="../fig/episode_5_Graph.png" alt="relationships between NFDI Consortia in Berlin, Germany" class="figure mx-auto d-block"></figure><p><strong>scholarly articles by Alex Bateman</strong></p>
 <pre><code>SELECT ?item ?itemLabel ?journalLabel
-WHERE 
+WHERE
 {
   ?item wdt:P31 wd:Q13442814.
   ?item wdt:P50 wd:Q18921408.
@@ -722,62 +722,62 @@ WHERE
 }</code></pre>
 <p><strong>Russian poets</strong></p>
 <pre><code>SELECT ?item ?itemLabel ?place ?placeLabel ?coord
-WHERE 
+WHERE
 {
   ?item wdt:P31 wd:Q5.
   ?item wdt:P106 wd:Q49757.
   ?item wdt:P19 ?place.
   ?place wdt:P17 wd:Q159.
   ?place wdt:P625 ?coord
-  
+
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }</code></pre>
 <p><strong>chemicals example</strong></p>
 <pre><code>SELECT ?item ?itemLabel WHERE {
-  
+
   ?item wdt:P31 wd:Q11173, wd:Q12140.
-  
+
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }</code></pre>
 <pre><code>SELECT ?item ?itemLabel ?struc ?formula
 
 WHERE {
-  
+
   ?item wdt:P31 wd:Q11173, wd:Q12140.
   ?item wdt:P117 ?struc.
   ?item wdt:P274 ?formula
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
-  
+
 }</code></pre>
 <pre><code>SELECT ?item ?itemLabel ?formula ?mass ?struc
 
 WHERE {
-  
+
   ?item wdt:P31 wd:Q11173, wd:Q12140.
   ?item wdt:P117 ?struc.
   ?item wdt:P274 ?formula.
   ?item wdt:P2067 ?mass.
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
-  
+
 }
 
 ORDER BY DESC(?mass)
 LIMIT 10</code></pre>
 <p><strong>People born in Berlin filtered by year 1970</strong></p>
 <pre><code>SELECT ?item ?itemLabel ?dob
-WHERE 
+WHERE
 {
   ?item wdt:P31 wd:Q5.
   ?item wdt:P19 wd:Q64.
   ?item wdt:P569 ?dob.
-  
+
   FILTER(YEAR(?dob) = 1970)
-  
+
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
 }</code></pre>
 </div>
-</section><section id="more-advanced-queries"><h2 class="section-heading">5.4 More Advanced queries<a class="anchor" aria-label="anchor" href="#more-advanced-queries"></a>
-</h2>
+</section><section><h2 class="section-heading" id="more-advanced-queries">5.4 More Advanced queries<a class="anchor" aria-label="anchor" href="#more-advanced-queries"></a>
+<a class="anchor" aria-label="anchor" href="#more-advanced-queries"></a></h2>
 <hr class="half-width"><p>further links</p>
 <pre><code>https://commons.wikimedia.org/wiki/File:Wikidata_Query_Service_in_Brief.pdf
 https://www.uni-mannheim.de/media/Einrichtungen/dws/Files_Teaching/Semantic_Web_Technologies/SWT05-SPARQL-v1.pdf
@@ -806,7 +806,7 @@ https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial</code></pre>
           Previous: Advanced editing
         </a>
         <a class="chapter-link float-end" href="../instructor/06-bulk_actions.html" rel="next">
-          Next: Advanced bulk... 
+          Next: Advanced bulk...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -817,18 +817,18 @@ https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial</code></pre>
       		<footer class="row footer mx-md-3"><hr><div class="col-md-6">
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
-        
+
         <a href="https://github.com/librarycarpentry/lc-wikidata/edit/main/episodes/05-intro_to_querying.md" class="external-link">Edit on GitHub</a>
-        
+
 	
         | <a href="https://github.com/librarycarpentry/lc-wikidata/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
         | <a href="https://github.com/librarycarpentry/lc-wikidata/" class="external-link">Source</a></p>
 				<p><a href="https://github.com/librarycarpentry/lc-wikidata/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
-        
+
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
-        
+
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
         <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.5" class="external-link">sandpaper (0.16.5)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.6" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.3" class="external-link">varnish (1.0.3)</a></p>
 			</div>
@@ -853,7 +853,7 @@ https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial</code></pre>
   "identifier": "https://librarycarpentry.github.io/lc-wikidata/instructor/05-intro_to_querying.html",
   "dateCreated": "2018-09-17",
   "dateModified": "2024-02-19",
-  "datePublished": "2024-07-02"
+  "datePublished": "2024-07-09"
 }
 
   </script><script>
