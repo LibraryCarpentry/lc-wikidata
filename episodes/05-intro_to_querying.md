@@ -148,7 +148,9 @@ Namespaces in Wikidata are:
 - ORDER
 - FILTER
 - OPTIONAL
+  
 ### How to visualize your query
+
 #### Manual visualization in the results window:
 
 Start by opening the results window. In the results pane, click the "Table" button and choose the type of visualization you want. This way, you can try different ways of visualizing your data without having to change the query code.
@@ -160,6 +162,7 @@ Start by opening the results window. In the results pane, click the "Table" butt
 For an easy start, add the #defaultView: snippet at the beginning of your query. This method ensures that your results will be automatically visualized in a predefined style. This will save you time without having to manually adjust the result window after each query. This method is useful for queries where you already know which visualization types you want to use.
 
 ![](fig/episode_5_defaultview.png){alt='Extract from the SPARQL editor'}
+
 ### Exercises
 
 ## 5\.3 Try examples
@@ -177,11 +180,11 @@ WHERE
 }
 ```
 
-alright! so we found the all the Cats. But i am pretty sure that i have seen Pictures of Cats somewhere in Wikipedia or Wikidata. Is there a possiblity to display Pictures in the wikidata Query Serivice? The simple Answer yes! Let me show you how it is done.
+Alright! So we found all the cats. But I am pretty sure that I have seen pictures of cats somewhere in Wikipedia or Wikidata. Is there a way to display the images in the Wikidata query service? The simple answer is yes! Let me show you how to do it.
 
 **Cats pictures**
 
-In the first step we searched for cats. It is also possible to search for images in Wikidata if they are available. The Wikidata Query Service offers a range of visualization types. For the representation of images the image grid is suitable.
+In the first step, we searched for cats. It is also possible to search for images in Wikidata, if they are available. The Wikidata query service offers several types of visualization. The image grid is a good way to display images.
 
 
 ```
@@ -251,6 +254,47 @@ WHERE {
 ```
 ![](fig/episode_5_Map_USA.png){alt='Extract from the SPARQL editor'}
 
+
+
+**Map visualization toolbox for libraries**
+
+```
+#defaultView:Map
+#Display the results as a Map
+
+#the main query-----------------------------------------------------------------------
+SELECT DISTINCT ?itemLabel ?geo #(?itemLabel AS ?layer)
+#Show the label and geographic coordinates of the item
+#Remove the „#“ before „(?itemLabel AS ?layer)“ to filter the result list.
+
+
+WHERE {
+ ?item wdt:P31 wd:Q7075;             #Define the item as a library
+       wdt:P625 ?geo.                #Get the Coordinates of the library
+  
+  
+ #Advanced Query Options-----------------------------------------------
+ #Bind the attributes you need to filter them later.
+ ?item wdt:P17 ?country.             #Bind the country of item to ?country
+ ?item wdt:P131 ?stateORcity.        #Bind the territory of item to ?stateORcity
+
+  
+ #Filter---------------------------------------------------------------
+ #Select only one filter at a time to filter between country, state, and city.
+  
+ #FILTER(?country = wd:Q30)         #Set ?country to U.S.A(wd:Q30)
+ #FILTER(?stateORcity = wd:Q1261)   #Set ?StateOrCity to Colorado(wd:Q1261)
+ #FILTER(?stateORcity = wd:Q16554)  #Set ?StateOrCity to Denver(wd:Q16554
+ #--------------------------------------------------------------------
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+ #Helps to get the label in English. If not, yours will be SELECTed automatically
+}
+
+```
+![](fig/episode_05_Map_Toolkit.jpg){alt='Extract from the SPARQL editor'}
+
+
 **Count of libraries per Country**
 
 ```
@@ -258,7 +302,8 @@ WHERE {
 #Display the results as a Bar Chart
 
 SELECT distinct ?country ?countryLabel (COUNT(?item) as ?Count)
-#Show me the g
+#Show me the genre, the genre label, and count the available books as a new label ?bookCount
+#The result list will look like this (wd:Q213051/Non-Fiction/252)
 
 WHERE {
   ?item wdt:P31 wd:Q7075;  #Define the item as a library ";"(and) define the country of item as ?country
