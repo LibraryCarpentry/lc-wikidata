@@ -329,7 +329,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction to querying</h1>
-        <p>Last updated on 2024-02-19 |
+        <p>Last updated on 2024-10-01 |
 
         <a href="https://github.com/librarycarpentry/lc-wikidata/edit/main/episodes/05-intro_to_querying.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -451,7 +451,7 @@ SELECT-statement.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <pre><code>SELECT * WHERE {
    wd:Q7750812 wdt:P123 ?publisher .
@@ -488,13 +488,18 @@ vs. books authored by Richard Feynman from Addison-Wesley</li>
 <li>LIMIT</li>
 <li>ORDER</li>
 <li>FILTER</li>
-<li>OPTIONAL ### How to visualize your query #### Manual visualization
-in the results window:</li>
-</ul><p>Start by opening the results window. In the results pane, click the
+<li>OPTIONAL</li>
+</ul></div>
+<div class="section level3">
+<h3 id="how-to-visualize-your-query">How to visualize your query<a class="anchor" aria-label="anchor" href="#how-to-visualize-your-query"></a></h3>
+<div class="section level4">
+<h4 id="manual-visualization-in-the-results-window">Manual visualization in the results window:<a class="anchor" aria-label="anchor" href="#manual-visualization-in-the-results-window"></a></h4>
+<p>Start by opening the results window. In the results pane, click the
 “Table” button and choose the type of visualization you want. This way,
 you can try different ways of visualizing your data without having to
 change the query code.</p>
-<figure><img src="../fig/episode_5_table.jpg" alt="Wikidata Query Service results window" class="figure mx-auto d-block"></figure><div class="section level4">
+<figure><img src="../fig/episode_5_table.jpg" alt="Wikidata Query Service results window" class="figure mx-auto d-block"></figure></div>
+<div class="section level4">
 <h4 id="automated-visualization-with-defaultview">Automated visualization with #defaultView:<a class="anchor" aria-label="anchor" href="#automated-visualization-with-defaultview"></a></h4>
 <p>For an easy start, add the #defaultView: snippet at the beginning of
 your query. This method ensures that your results will be automatically
@@ -502,8 +507,10 @@ visualized in a predefined style. This will save you time without having
 to manually adjust the result window after each query. This method is
 useful for queries where you already know which visualization types you
 want to use.</p>
-<p><img src="../fig/episode_5_defaultview.png" alt="Extract from the SPARQL editor" class="figure"> ### Exercises</p>
+<figure><img src="../fig/episode_5_defaultview.png" alt="Extract from the SPARQL editor" class="figure mx-auto d-block"></figure></div>
 </div>
+<div class="section level3">
+<h3 id="exercises">Exercises<a class="anchor" aria-label="anchor" href="#exercises"></a></h3>
 </div>
 </section><section><h2 class="section-heading" id="try-examples">5.3 Try examples<a class="anchor" aria-label="anchor" href="#try-examples"></a></h2>
 <hr class="half-width"><div class="section level4">
@@ -517,15 +524,15 @@ WHERE
   ?item wdt:P31 wd:Q146. # Must be of a cat
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". } # Helps get the label in your language, if not, then en language
 }</code></pre>
-<p>alright! so we found the all the Cats. But i am pretty sure that i
-have seen Pictures of Cats somewhere in Wikipedia or Wikidata. Is there
-a possiblity to display Pictures in the wikidata Query Serivice? The
-simple Answer yes! Let me show you how it is done.</p>
+<p>Alright! So we found all the cats. But I am pretty sure that I have
+seen pictures of cats somewhere in Wikipedia or Wikidata. Is there a way
+to display the images in the Wikidata query service? The simple answer
+is yes! Let me show you how to do it.</p>
 <p><strong>Cats pictures</strong></p>
-<p>In the first step we searched for cats. It is also possible to search
-for images in Wikidata if they are available. The Wikidata Query Service
-offers a range of visualization types. For the representation of images
-the image grid is suitable.</p>
+<p>In the first step, we searched for cats. It is also possible to
+search for images in Wikidata, if they are available. The Wikidata query
+service offers several types of visualization. The image grid is a good
+way to display images.</p>
 <pre><code>#defaultView:ImageGrid
 #Normally, the default output is a table, but with the defaultView we can directly specify that the results should be displayed in a grid
 
@@ -578,12 +585,46 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en,[AUTO_LANGUAGE]". }
   #Helps to get the label in English. If not, yours will be selected automatically
 }</code></pre>
-<figure><img src="../fig/episode_5_Map_USA.png" alt="Extract from the SPARQL editor" class="figure mx-auto d-block"></figure><p><strong>Count of libraries per Country</strong></p>
+<figure><img src="../fig/episode_5_Map_USA.png" alt="Extract from the SPARQL editor" class="figure mx-auto d-block"></figure><p><strong>Map visualization toolbox for libraries</strong></p>
+<pre><code>#defaultView:Map
+#Display the results as a Map
+
+#the main query-----------------------------------------------------------------------
+SELECT DISTINCT ?itemLabel ?geo #(?itemLabel AS ?layer)
+#Show the label and geographic coordinates of the item
+#Remove the „#“ before „(?itemLabel AS ?layer)“ to filter the result list.
+
+
+WHERE {
+ ?item wdt:P31 wd:Q7075;             #Define the item as a library
+       wdt:P625 ?geo.                #Get the Coordinates of the library
+
+
+ #Advanced Query Options-----------------------------------------------
+ #Bind the attributes you need to filter them later.
+ ?item wdt:P17 ?country.             #Bind the country of item to ?country
+ ?item wdt:P131 ?stateORcity.        #Bind the territory of item to ?stateORcity
+
+
+ #Filter---------------------------------------------------------------
+ #Select only one filter at a time to filter between country, state, and city.
+
+ #FILTER(?country = wd:Q30)         #Set ?country to U.S.A(wd:Q30)
+ #FILTER(?stateORcity = wd:Q1261)   #Set ?StateOrCity to Colorado(wd:Q1261)
+ #FILTER(?stateORcity = wd:Q16554)  #Set ?StateOrCity to Denver(wd:Q16554
+ #--------------------------------------------------------------------
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+ #Helps to get the label in English. If not, yours will be SELECTed automatically
+}
+</code></pre>
+<figure><img src="../fig/episode_05_Map_Toolkit.jpg" alt="Extract from the SPARQL editor" class="figure mx-auto d-block"></figure><p><strong>Count of libraries per Country</strong></p>
 <pre><code>#defaultView:BarChart
 #Display the results as a Bar Chart
 
 SELECT distinct ?country ?countryLabel (COUNT(?item) as ?Count)
-#Show me the g
+#Show me the genre, the genre label, and count the available books as a new label ?bookCount
+#The result list will look like this (wd:Q213051/Non-Fiction/252)
 
 WHERE {
   ?item wdt:P31 wd:Q7075;  #Define the item as a library ";"(and) define the country of item as ?country
@@ -846,7 +887,7 @@ https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial</code></pre>
   "url": "https://librarycarpentry.github.io/lc-wikidata/instructor/05-intro_to_querying.html",
   "identifier": "https://librarycarpentry.github.io/lc-wikidata/instructor/05-intro_to_querying.html",
   "dateCreated": "2018-09-17",
-  "dateModified": "2024-02-19",
+  "dateModified": "2024-10-01",
   "datePublished": "2024-10-01"
 }
 
