@@ -76,7 +76,7 @@ three.
 ### Using GitHub
 
 If you choose to contribute via GitHub, you may want to look at [How to
-Contribute to an Open Source Project on GitHub][how-contribute]. In brief, we
+Contribute to an Open Source Project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github). In brief, we
 use [GitHub flow][github-flow] to manage changes:
 
 1. Create a new branch in your desktop copy of this repository for each
@@ -102,8 +102,8 @@ community listed at <https://carpentries.org/connect/> including via social
 media, slack, newsletters, and email lists. You can also [reach us by
 email][contact].
 
-[repo]: https://example.com/FIXME
-[repo-issues]: https://example.com/FIXME/issues
+[repo]: [https://example.com/FIXME](https://github.com/LibraryCarpentry/lc-wikidata)
+[repo-issues]: [https://example.com/FIXME/issues](https://github.com/LibraryCarpentry/lc-wikidata/issues)
 [contact]: mailto:team@carpentries.org
 [cp-site]: https://carpentries.org/
 [dc-issues]: https://github.com/issues?q=user%3Adatacarpentry
