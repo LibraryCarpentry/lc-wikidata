@@ -39,7 +39,7 @@ Save the DOI, PMID or PMCID of the article:
 
 ![](fig/episode_04_screenshot_02_choose_doi.png){alt='choose\_doi'}
 
-Go to [sourcemd](https://sourcemd.toolforge.org/orcidator_old.php) and paste the DOI or PMID into the search field:
+Go to [sourcemd](https://sourcemd.toolforge.org/index_old.php) and paste the DOI or PMID into the search field:
 
 ![](fig/episode_04_screenshot_03_paste_into_sourcemd.png){alt='paste\_into\_sourcemd'}
 
