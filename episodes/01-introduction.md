@@ -7,17 +7,18 @@ exercises: 10
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Feel comfortable describing Wikidata to colleagues.
-- Learn about Wikimedia projects (e.g. Wikipedia, WikiCommons) and Wikidata is related to them.
-- Know why linked open data is important in my work as a cataloging or teaching librarian.
-- Know able identify components of a Wikidata item page, how Wikidata is organized and how to navigate in it.
+- Learn about Wikimedia projects (e.g. Wikipedia, WikiCommons) and how Wikidata is related to them.
+- Know why linked open data is important to librarians.
+- Be able to identify components of a Wikidata item page, how Wikidata is organized and how to navigate a Wikidata item.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- What are Items and Statements?
-- How does the Wikidata interface look like?
+- What is Wikidata?
+- How does the Wikidata interface look?
 - How is Wikidata linked to other Wiki projects?
+- What are Items and Statements?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
