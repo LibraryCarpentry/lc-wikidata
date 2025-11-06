@@ -65,14 +65,14 @@ Let's see if we as humans can simply read the data on Wikidata:
   - Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page:
     [https://www.wikidata.org/wiki/Q23308](https://www.wikidata.org/wiki/Q23308)
   
-  - Let us explore the item British Library (Q23308). The top part of the item page identifies the item. It displays:
+  - Let us explore the item *British Library (Q23308)*. The top part of the item page identifies the item. It displays:
     
     - unique identifier (constructed as the capital letter followed by one or more numbers)
     - label
     - description
     - aliases
   
-  - Lower on the page is a "statement" section, which shows statements about the item. A statement has:
+  - Lower on the page is a *statements* section, which shows relationships that have been asserted about the item. A statement has:
     
     - property (constructed as the capital letter P followed by one or more numbers)
     - value
@@ -131,7 +131,7 @@ While most of the Q identifiers are arbitrary numbers, there are a few that sugg
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Item
+- Wikidata entities are known as Items, and each item 
 - Statement
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
