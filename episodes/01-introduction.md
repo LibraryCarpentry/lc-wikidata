@@ -55,48 +55,46 @@ Wikidata has many features that make it of interest to librarians and knowledge 
 This section of the lesson introduces the Wikidata interface as it can be seen in a web browser.
 Let's see if we as humans can simply read the data on Wikidata:
 
-- Explore a Wikidata Item page:
+- Explore a Wikidata Item page
+
+  - Start by going to the [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. You will see something like this:
   
-  - Start by going to the [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. This is what you should see:
-  
-  ![](fig/Wikidata_Main_Page.png){alt='Wikidata\_Main\_Page'}  
+  ![](fig/Wikidata_Main_Page.png){alt='Screenshot of the Wikidata main page displaying in a web browser'}  
   *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
   
   - Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page:
     [https://www.wikidata.org/wiki/Q23308](https://www.wikidata.org/wiki/Q23308)
   
-  - Let us explore the item British Library (Q23308). The top part of the item page serves for identifying the item. It    has:
+  - Let us explore the item British Library (Q23308). The top part of the item page identifies the item. It displays:
     
-    - unique identifier (Q + a number)
+    - unique identifier (constructed as the capital letter followed by one or more numbers)
     - label
     - description
     - aliases
   
-  - The bottom part is the "statement" section, that adds statements to the item. A statement has:
+  - Lower on the page is a "statement" section, which shows statements about the item. A statement has:
     
-    - property (P + a number)
+    - property (constructed as the capital letter P followed by one or more numbers)
     - value
     - qualifier (optional)
     - references (optional)
-    - is a so called triple which will be explained later
-    - As you can see a property can have multiple values for one property; for example "member of"; can be further specified by qualifiers (not showen on item British Library).
+    - can also be called a "triple," which will be explained later
+    - As you can see, a property can have multiple values for one property; for example "member of"; and can be further specified by qualifiers (not shown on the item page for British Library).
 
-- All these new definitions like statements, qualifiers and so on can be confusing. If you are not sure you can check this overview graphic [https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel\_in\_Wikidata.svg](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg):
+- There are many special terms and definitions here, like statements, qualifiers and so on. Since many of these terms can be confusing, you may check [this overview graphic as a reference](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg):
 
-![](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg){alt='Datamodel in Wikidata'}
+![](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg){alt='Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed'}
 
-- Usually pages can be edited by anyone; click the pen on the upper-right; Q23308 - British Library is semi-protected; don't worry if you made a mistake, you can always go back in history
+- Most pages can be edited by anyone (note, however, that the British Library - Q23308 item is semi-protected). To edit an item, click the pen icon followed by the word "edit" in the upper-right are of the page. Don't worry if you made a mistake, you can always go back in an item's history and restore or undo changes.
   
   - "View history" - more later
   - "Log in" and other things for registered users
 
-- All structured data is under the creative Creative Commons CC0 License:
-  "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."
-  from [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
+- All of Wikidata's data is published online under the [Creative Commons CC0 License](https://creativecommons.org/publicdomain/zero/1.0/), which states:
+"The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission." 
+In other words, the data is openly licensed and reusable. Since Wikidata can also be linked to other data sources on the web, this means Wikidata is *linked open data*.
 
-- Further Link describing Wikidata in one page (visual)
-  
-  - [https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf](https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf)
+- Follow this link to view a pdf that offers a one-page overview of Wikidata (visual): [https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf](https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf)
 
 ## 1\.2 Play games to open
 
