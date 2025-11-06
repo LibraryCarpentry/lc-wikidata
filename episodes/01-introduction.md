@@ -131,9 +131,9 @@ While most of the Q identifiers are arbitrary numbers, there are a few that sugg
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Wikidata entities are known as Items, and each item 
-- Statement
+- Wikidata entities are known as Items, and each item is displayed on a page that is identified with the item's "Q" number
+- Relationships between entities are known as Properties, and each property is identified with a "P" number
+- Statements are assertions about items, which state relationships between items using wikidata properties.
+- Statements are also known as "triples"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
