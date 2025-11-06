@@ -37,19 +37,23 @@ Wikidata also contains authority files, bibliographic data, and other content no
 Importantly, Wikidata can be understood as linked open data, which can be  [connected](https://www.wikidata.org/wiki/Wikidata:Data_access#How_can_I_get_data_out_of_Wikidata?) to other open data sets on the web.
 
 ## Motivation and "Why should I use Wikidata"
-1. Knowledge Integration and Access: Wikidata offers an open and structured way to interlink various identifiers (like ORCID, GND, or VIAF). This is essential for librarians who manage resources and need to ensure that different systems and databases can communicate with each other seamlessly.
 
-2. Authority Control: Librarians often work with authority files like GND or VIAF to ensure consistent naming conventions. Wikidata helps to map and retrieve these identifiers, making cataloging more efficient.
+Wikidata has many features that make it of interest to librarians and knowledge management, including:
 
-3. Real-World Use Cases:
+1. **Knowledge Integration and Access:** Wikidata offers an open and structured way to interlink various identifiers (like ORCID, GND, or VIAF). This is essential for librarians who manage resources and need to ensure that different systems and databases can communicate with each other seamlessly.
 
-- **Scholia**: A tool built on top of Wikidata that visualizes scholarly profiles and research outputs, showing the impact of Wikidata in academic and research contexts. Librarians can showcase Scholia as a tangible example of how data in Wikidata is used for research and scholarship.
-- **Crosswalks between systems**: Wikidata’s ability to link various identifiers (e.g., connecting ORCID to GND or VIAF) is beneficial for cross-referencing and data cleaning in library management systems.
-4. Global and Collaborative Nature: Wikidata is a collaborative platform where librarians can contribute and maintain data, ensuring that their records stay relevant and up to date within a global information network.
+2. **Authority Control:** Librarians often work with authority files like GND or VIAF to ensure consistent naming conventions. Wikidata helps to map and retrieve these identifiers, making cataloging more efficient.
+
+3. **Global and Collaborative Nature:** Wikidata is a collaborative platform where librarians can contribute and maintain data, ensuring that their records stay relevant and up to date within a global information network.
+
+4. **Real-World Examples:**
+  a. *Scholia*: A tool built on top of Wikidata that visualizes scholarly profiles and research outputs, showing the impact of Wikidata in academic and research contexts. Librarians can showcase Scholia as a tangible example of how data in Wikidata is used for research and scholarship.
+  b. *Crosswalks between systems*: Wikidata’s ability to link various identifiers (e.g., connecting ORCID to GND or VIAF) is beneficial for cross-referencing and data cleaning in library management systems.
 
 ## 1\.1 Intro interface
 
-- Let's try this out in the next section of this lesson and see if we as humans can simply read the data on Wikidata:
+This section of the lesson introduces the Wikidata interface as it can be seen in a web browser.
+Let's see if we as humans can simply read the data on Wikidata:
 
 - Explore a Wikidata Item page:
   
