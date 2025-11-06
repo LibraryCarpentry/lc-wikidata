@@ -106,6 +106,8 @@ In other words, the data is openly licensed and reusable. Since Wikidata can als
 
 ## 1\.3 Wikidata Item Eastereggs
 
+While most of the Q identifiers are arbitrary numbers, there are a few that suggest some meaning or humor, such as:
+
 - [Q1 - Universe](https://www.wikidata.org/wiki/Q1)
 - [Q2 - Earth](https://www.wikidata.org/wiki/Q2)
 - [Q3 - Life](https://www.wikidata.org/wiki/Q3)
