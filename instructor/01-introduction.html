@@ -332,7 +332,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>What is Wikidata?</h1>
-        <p>Last updated on 2024-10-21 |
+        <p>Last updated on 2026-02-06 |
 
         <a href="https://github.com/librarycarpentry/lc-wikidata/edit/main/episodes/01-introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -353,9 +353,10 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>What are Items and Statements?</li>
-<li>How does the Wikidata interface look like?</li>
+<ul><li>What is Wikidata?</li>
+<li>How does the Wikidata interface look?</li>
 <li>How is Wikidata linked to other Wiki projects?</li>
+<li>What are Items and Statements?</li>
 </ul></div>
 </div>
 </div>
@@ -364,120 +365,133 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul><li>Feel comfortable describing Wikidata to colleagues.</li>
-<li>Learn about Wikimedia projects (e.g. Wikipedia, WikiCommons) and
+<li>Learn about Wikimedia projects (e.g. Wikipedia, WikiCommons) and how
 Wikidata is related to them.</li>
-<li>Know why linked open data is important in my work as a cataloging or
-teaching librarian.</li>
-<li>Know able identify components of a Wikidata item page, how Wikidata
-is organized and how to navigate in it.</li>
+<li>Know why linked open data is important to librarians.</li>
+<li>Be able to identify components of a Wikidata item page, how Wikidata
+is organized and how to navigate a Wikidata item.</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
 <section><h2 class="section-heading" id="what-is-wikidata">What is Wikidata?<a class="anchor" aria-label="anchor" href="#what-is-wikidata"></a></h2>
-<hr class="half-width"><p>Wikidata’s <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">description</a>
-explains that “Wikidata is a free and open knowledge base that can be
-read and edited by both humans and machines.” Wikidata functions as the
-central database for a variety of Wiki projects, including Wikipedia,
-Wiktionary, and Wikisource, among others.</p>
-<p>Most users will be familiar with Wikpedia, which <a href="https://en.wikipedia.org/wiki/Wikipedia:Introduction" class="external-link">describes
-itself</a> as “a free encyclopedia, written collaboratively by the
-people who use it. It is a special type of website designed to make
-collaboration easy, called a wiki. Many people are constantly improving
-Wikipedia, making thousands of changes per hour. All of these changes
-are recorded in article histories and recent changes.”</p>
+<hr class="half-width"><p>Wikidata <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">describes
+itself</a> as “a free and open knowledge base that can be read and
+edited by both humans and machines.”</p>
+<p>Most users will be familiar with <a href="https://en.wikipedia.org/wiki/Wikipedia:Introduction" class="external-link">Wikipedia</a>,
+the “free encyclopedia, written collaboratively by the people who use
+it. It is a special type of website designed to make collaboration easy,
+called a wiki. Many people are constantly improving Wikipedia, making
+thousands of changes per hour. All of these changes are recorded in
+article histories and recent changes.”</p>
+<p>Wikidata uses the same speed and similar collaborative editing
+platform, but for data. Wikidata functions as the central database for a
+variety of Wiki projects, including Wikipedia, Wiktionary, and
+Wikisource, among others.</p>
 <p>Wikidata contains various data types (e.g. text, images, quantities,
-coordinates, geographic shapes, dates). The data can be queried via a
-query interface called SPARQL, which we will cover later in this lesson.
-Data is published under the Creative Commons Public Domain 1.0 license.
-It can be modified, copied, and distributed without permission.</p>
+coordinates, geographic shapes, dates). The data can be viewed in a web
+browser, but it can also be queried via a query interface called SPARQL,
+which we will cover later in this lesson. Data on Wikidata is published
+under the Creative Commons Public Domain 1.0 license. Thus, the data can
+be modified, copied, and distributed without permission.</p>
 <p>Wikidata also contains authority files, bibliographic data, and other
 content normally managed in library databases.</p>
-<p>Importantly, Wikidata can be <a href="https://www.wikidata.org/wiki/Wikidata:Data_access#How_can_I_get_data_out_of_Wikidata?" class="external-link">interlinked</a>
-to other open data sets on the linked data web.</p>
+<p>Importantly, Wikidata can be understood as linked open data, which
+can be <a href="https://www.wikidata.org/wiki/Wikidata:Data_access#How_can_I_get_data_out_of_Wikidata?" class="external-link">connected</a>
+to other open data sets on the web.</p>
 </section><section><h2 class="section-heading" id="motivation-and-why-should-i-use-wikidata">Motivation and “Why should I use Wikidata”<a class="anchor" aria-label="anchor" href="#motivation-and-why-should-i-use-wikidata"></a></h2>
-<hr class="half-width"><ol style="list-style-type: decimal"><li><p>Knowledge Integration and Access: Wikidata offers an open and
-structured way to interlink various identifiers (like ORCID, GND, or
-VIAF). This is essential for librarians who manage resources and need to
-ensure that different systems and databases can communicate with each
-other seamlessly.</p></li>
-<li><p>Authority Control: Librarians often work with authority files
-like GND or VIAF to ensure consistent naming conventions. Wikidata helps
-to map and retrieve these identifiers, making cataloging more
-efficient.</p></li>
-<li><p>Real-World Use Cases:</p></li>
-</ol><ul><li>
-<strong>Scholia</strong>: A tool built on top of Wikidata that
-visualizes scholarly profiles and research outputs, showing the impact
-of Wikidata in academic and research contexts. Librarians can showcase
-Scholia as a tangible example of how data in Wikidata is used for
-research and scholarship.</li>
+<hr class="half-width"><p>Wikidata has many features that make it of interest to librarians and
+knowledge management, including:</p>
+<ol style="list-style-type: decimal"><li><p><strong>Knowledge Integration and Access:</strong> Wikidata
+offers an open and structured way to interlink various identifiers (like
+ORCID, GND, or VIAF). This is essential for librarians who manage
+resources and need to ensure that different systems and databases can
+communicate with each other seamlessly.</p></li>
+<li><p><strong>Authority Control:</strong> Librarians often work with
+authority files like GND or VIAF to ensure consistent naming
+conventions. Wikidata helps to map and retrieve these identifiers,
+making cataloging more efficient.</p></li>
+<li><p><strong>Global and Collaborative Nature:</strong> Wikidata is a
+collaborative platform where librarians can contribute and maintain
+data, ensuring that their records stay relevant and up to date within a
+global information network.</p></li>
+<li><p><strong>Real-World Examples:</strong></p></li>
+</ol><ol style="list-style-type: lower-alpha"><li>
+<em>Scholia</em>: A tool built on top of Wikidata that visualizes
+scholarly profiles and research outputs, showing the impact of Wikidata
+in academic and research contexts. Librarians can showcase Scholia as a
+tangible example of how data in Wikidata is used for research and
+scholarship.</li>
 <li>
-<strong>Crosswalks between systems</strong>: Wikidata’s ability to
-link various identifiers (e.g., connecting ORCID to GND or VIAF) is
+<em>Crosswalks between systems</em>: Wikidata’s ability to link
+various identifiers (e.g., connecting ORCID to GND or VIAF) is
 beneficial for cross-referencing and data cleaning in library management
 systems.</li>
-</ul><ol start="4" style="list-style-type: decimal"><li>Global and Collaborative Nature: Wikidata is a collaborative
-platform where librarians can contribute and maintain data, ensuring
-that their records stay relevant and up to date within a global
-information network.</li>
 </ol></section><section><h2 class="section-heading" id="intro-interface">1.1 Intro interface<a class="anchor" aria-label="anchor" href="#intro-interface"></a></h2>
-<hr class="half-width"><ul><li><p>Let’s try this out in the next section of this lesson and see if
-we as humans can simply read the data on Wikidata:</p></li>
-<li>
-<p>Explore a Wikidata Item page:</p>
+<hr class="half-width"><p>This section of the lesson introduces the Wikidata interface as it
+can be seen in a web browser. Let’s see if we as humans can simply read
+the data on Wikidata:</p>
+<ul><li>
+<p>Explore a Wikidata Item page</p>
 <ul><li>Start by going to the <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
-Page</a> by typing “www.wikidata.org” into your browser. This is what
-you should see:</li>
-</ul><p><img src="../fig/Wikidata_Main_Page.png" alt="Wikidata_Main_Page" class="figure"><br><em>Screenshot of <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
+Page</a> by typing “www.wikidata.org” into your browser. You will see
+something like this:</li>
+</ul><p><img src="../fig/Wikidata_Main_Page.png" alt="Screenshot of the Wikidata main page displaying in a web browser" class="figure"><br><em>Screenshot of <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
 Page</a></em></p>
 <ul><li><p>Now go to the search bar in the top right corner and enter
 “british library”. This will give you a list with search results. Click
 the entry that says: “British Library (Q23308) national library of the
 United Kingdom”. Now you should see the british library’s item page: <a href="https://www.wikidata.org/wiki/Q23308" class="external-link">https://www.wikidata.org/wiki/Q23308</a></p></li>
 <li>
-<p>Let us explore the item British Library (Q23308). The top part of
-the item page serves for identifying the item. It has:</p>
-<ul><li>unique identifier (Q + a number)</li>
+<p>Let us explore the item <em>British Library (Q23308)</em>. The
+top part of the item page identifies the item. It displays:</p>
+<ul><li>unique identifier (constructed as the capital letter followed by one
+or more numbers)</li>
 <li>label</li>
 <li>description</li>
 <li>aliases</li>
 </ul></li>
 <li>
-<p>The bottom part is the “statement” section, that adds statements
-to the item. A statement has:</p>
-<ul><li>property (P + a number)</li>
+<p>Lower on the page is a <em>statements</em> section, which shows
+relationships that have been asserted about the item. A statement
+has:</p>
+<ul><li>property (constructed as the capital letter P followed by one or
+more numbers)</li>
 <li>value</li>
 <li>qualifier (optional)</li>
 <li>references (optional)</li>
-<li>is a so called triple which will be explained later</li>
-<li>As you can see a property can have multiple values for one property;
-for example “member of”; can be further specified by qualifiers (not
-showen on item British Library).</li>
+<li>can also be called a “triple,” which will be explained later</li>
+<li>As you can see, a property can have multiple values for one
+property; for example “member of”; and can be further specified by
+qualifiers (not shown on the item page for British Library).</li>
 </ul></li>
 </ul></li>
-<li><p>All these new definitions like statements, qualifiers and so on
-can be confusing. If you are not sure you can check this overview
-graphic <a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" class="external-link">https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg</a>:</p></li>
-</ul><figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" alt="Datamodel in Wikidata" class="figure mx-auto d-block"></figure><ul><li>
-<p>Usually pages can be edited by anyone; click the pen on the
-upper-right; Q23308 - British Library is semi-protected; don’t worry if
-you made a mistake, you can always go back in history</p>
+<li><p>There are many special terms and definitions here, like
+statements, qualifiers and so on. Since many of these terms can be
+confusing, you may check <a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" class="external-link">this
+overview graphic as a reference</a>:</p></li>
+</ul><figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" alt="Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed" class="figure mx-auto d-block"></figure><ul><li>
+<p>Most pages can be edited by anyone (note, however, that the
+British Library - Q23308 item is semi-protected). To edit an item, click
+the pen icon followed by the word “edit” in the upper-right are of the
+page. Don’t worry if you made a mistake, you can always go back in an
+item’s history and restore or undo changes.</p>
 <ul><li>“View history” - more later</li>
 <li>“Log in” and other things for registered users</li>
 </ul></li>
-<li><p>All structured data is under the creative Creative Commons CC0
-License: “The person who associated a work with this deed has dedicated
-the work to the public domain by waiving all of his or her rights to the
-work worldwide under copyright law, including all related and
-neighboring rights, to the extent allowed by law. You can copy, modify,
-distribute and perform the work, even for commercial purposes, all
-without asking permission.” from <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="external-link">https://creativecommons.org/publicdomain/zero/1.0/</a></p></li>
-<li>
-<p>Further Link describing Wikidata in one page (visual)</p>
-<ul><li><a href="https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf" class="external-link">https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf</a></li>
-</ul></li>
+<li><p>All of Wikidata’s data is published online under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="external-link">Creative
+Commons CC0 License</a>, which states: “The person who associated a work
+with this deed has dedicated the work to the public domain by waiving
+all of his or her rights to the work worldwide under copyright law,
+including all related and neighboring rights, to the extent allowed by
+law. You can copy, modify, distribute and perform the work, even for
+commercial purposes, all without asking permission.” In other words, the
+data is openly licensed and reusable. Since Wikidata can also be linked
+to other data sources on the web, this means Wikidata is <em>linked open
+data</em>.</p></li>
+<li><p>Follow this link to view a pdf that offers a one-page overview of
+Wikidata (visual): <a href="https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf" class="external-link">https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf</a></p></li>
 </ul></section><section><h2 class="section-heading" id="play-games-to-open">1.2 Play games to open<a class="anchor" aria-label="anchor" href="#play-games-to-open"></a></h2>
 <hr class="half-width"><ul><li>Visit the Wikipedia page of the city you were born in two languages
 of you choice (you can choose different language version in the left
@@ -485,7 +499,9 @@ side of a Wikipedia page) and look the size of the population. Are the
 numbers the same in the different language? Visit the item in
 Wikidata.</li>
 </ul></section><section><h2 class="section-heading" id="wikidata-item-eastereggs">1.3 Wikidata Item Eastereggs<a class="anchor" aria-label="anchor" href="#wikidata-item-eastereggs"></a></h2>
-<hr class="half-width"><ul><li><a href="https://www.wikidata.org/wiki/Q1" class="external-link">Q1 - Universe</a></li>
+<hr class="half-width"><p>While most of the Q identifiers are arbitrary numbers, there are a
+few that suggest some meaning or humor, such as:</p>
+<ul><li><a href="https://www.wikidata.org/wiki/Q1" class="external-link">Q1 - Universe</a></li>
 <li><a href="https://www.wikidata.org/wiki/Q2" class="external-link">Q2 - Earth</a></li>
 <li><a href="https://www.wikidata.org/wiki/Q3" class="external-link">Q3 - Life</a></li>
 <li><a href="https://www.wikidata.org/wiki/Q4" class="external-link">Q4 - Death</a></li>
@@ -521,8 +537,13 @@ You can find it on the right side.</li>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>Item</li>
-<li>Statement</li>
+<ul><li>Wikidata entities are known as Items, and each item is displayed on
+a page that is identified with the item’s “Q” number</li>
+<li>Relationships between entities are known as Properties, and each
+property is identified with a “P” number</li>
+<li>Statements are assertions about items, which state relationships
+between items using wikidata properties.</li>
+<li>Statements are also known as “triples”</li>
 </ul></div>
 </div>
 </div>
@@ -586,8 +607,8 @@ You can find it on the right side.</li>
   "url": "https://librarycarpentry.github.io/lc-wikidata/instructor/01-introduction.html",
   "identifier": "https://librarycarpentry.github.io/lc-wikidata/instructor/01-introduction.html",
   "dateCreated": "2018-09-17",
-  "dateModified": "2024-10-21",
-  "datePublished": "2026-02-03"
+  "dateModified": "2026-02-06",
+  "datePublished": "2026-02-06"
 }
 
   </script><script>
