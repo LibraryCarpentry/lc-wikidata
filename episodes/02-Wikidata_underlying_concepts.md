@@ -19,7 +19,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## 2\.1 Concepts foundations: ways of storing data.
+## 2\.1 Concepts foundations: ways of storing data
 
 There are many types of databases, the most common types are:
 
