@@ -21,9 +21,12 @@ exercises: 0
 
 ## 2\.1 Concepts foundations: ways of storing data
 
-There are many types of databases, the most common types are:
+There are many types of database structures and systems.
+Two common database types are relational databases and graph databases.
+Understanding the commonalities and differencews between these structures
+helps to explain the uniqueness of Wikidata's data structure.
 
-### 2\.1.1 Relational databases:
+### 2\.1.1 Relational databases
 
 A relational database is a set of formally described related tables from which data can be accessed or reassembled. This model organizes data into one or more tables (or "relations") of columns and rows, with a unique key identifying each row. each table/relation represents one "entity type" and these entities are connected via constrained relationships. This model is fully structured and mostly uses SQL (Structured Query Language) to retrive and manuplate data.  
 Examples:
@@ -36,7 +39,7 @@ Semantic web is an extension of the World Wide Web standards, which promote comm
 
 ![](fig/Data_Structure_Diagram.jpg){alt='data structure diagram'}
 
-## 2\.2 Concepts foundations (RDF and RDF triples)
+## 2\.2 Conceptual foundations: RDF and Triples
 
 - The RDF is a conceptual data model, It is based on the idea of making statements about resources in expressions of the form (subject–predicate–object), known as triples.
 
@@ -108,7 +111,7 @@ In the picture below the statement "Mae C. Jemison - part of - NASA Astronaut Gr
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## 2\.4 Scholia - a webserive with Wikidata as underlying database
+## 2\.4 Scholia: a webservice with Wikidata as underlying database
 
 - Introduction with [The Linked Open Data Cloud](https://www.lod-cloud.net/)
 - the structure enables queries
@@ -120,7 +123,7 @@ In the picture below the statement "Mae C. Jemison - part of - NASA Astronaut Gr
 
 - [https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf](https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf)
 
-## 2\.6 How Wikidata compares with other data sets
+## 2\.6 Wikidata in comparison with other data
 
 - [https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia\_and\_Wikidata](https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata)
 - [https://lod-cloud.net/](https://lod-cloud.net/)
