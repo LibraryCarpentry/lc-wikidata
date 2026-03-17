@@ -29,9 +29,8 @@ Contributions are very welcome**
 ## Prerequisites
 
 1. Learners need a proper internet connection.
-
-2. There is no need for pre installations.
-  
+2. There is no need for pre installation of software.
+3. A [Wikimedia user account](https://www.wikidata.org/w/index.php?title=Special:CreateAccount&returnto=Wikidata%3AMain+Page), which can be created for free and used to edit Wikidata, Wikipedia, or other Wikimedia projects 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

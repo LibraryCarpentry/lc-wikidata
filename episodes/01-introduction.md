@@ -1,6 +1,6 @@
 ---
 title: What is Wikidata?
-teaching: 20
+teaching: 10
 exercises: 10
 ---
 
@@ -32,7 +32,7 @@ Wikidata uses the same speed and similar collaborative editing platform, but for
 
 Wikidata contains various data types (e.g. text, images, quantities, coordinates, geographic shapes, dates). The data can be viewed in a web browser, but it can also be queried via a query interface called SPARQL, which we will cover later in this lesson. Data on Wikidata is published under the Creative Commons Public Domain 1.0 license. Thus, the data can be modified, copied, and distributed without permission.
 
-Wikidata also contains authority files, bibliographic data, and other content normally managed in library databases.
+Wikidata also contains authority files, bibliographic data, and other content that can similarly be found or managed in library databases.
 
 Importantly, Wikidata can be understood as linked open data, which can be  [connected](https://www.wikidata.org/wiki/Wikidata:Data_access#How_can_I_get_data_out_of_Wikidata?) to other open data sets on the web.
 
@@ -50,61 +50,85 @@ Wikidata has many features that make it of interest to librarians and knowledge 
   a. *Scholia*: A tool built on top of Wikidata that visualizes scholarly profiles and research outputs, showing the impact of Wikidata in academic and research contexts. Librarians can showcase Scholia as a tangible example of how data in Wikidata is used for research and scholarship.
   b. *Crosswalks between systems*: Wikidata’s ability to link various identifiers (e.g., connecting ORCID to GND or VIAF) is beneficial for cross-referencing and data cleaning in library management systems.
 
-## 1\.1 Intro interface
+## 1\.1 Wikidata interface
 
 This section of the lesson introduces the Wikidata interface as it can be seen in a web browser.
-Let's see if we as humans can simply read the data on Wikidata:
+Let's learn about some of the important elements of how you can read
+and interact with the data on Wikidata.
 
-- Explore a Wikidata Item page
-
-  - Start by going to the [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. You will see something like this:
+- Start by going to the [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. You will see something like this:
   
   ![](fig/Wikidata_Main_Page.png){alt='Screenshot of the Wikidata main page displaying in a web browser'}  
   *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
-  
-  - Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page:
-    [https://www.wikidata.org/wiki/Q23308](https://www.wikidata.org/wiki/Q23308)
-  
-  - Let us explore the item *British Library (Q23308)*. The top part of the item page identifies the item. It displays:
-    
-    - unique identifier (constructed as the capital letter followed by one or more numbers)
-    - label
-    - description
-    - aliases
-  
-  - Lower on the page is a *statements* section, which shows relationships that have been asserted about the item. A statement has:
-    
-    - property (constructed as the capital letter P followed by one or more numbers)
-    - value
-    - qualifier (optional)
-    - references (optional)
-    - can also be called a "triple," which will be explained later
-    - As you can see, a property can have multiple values for one property; for example "member of"; and can be further specified by qualifiers (not shown on the item page for British Library).
 
-- There are many special terms and definitions here, like statements, qualifiers and so on. Since many of these terms can be confusing, you may check [this overview graphic as a reference](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg):
+## 1\.2 Wikidata Items and Item Pages
+
+The primary unit of data described on Wikidata are "items." Each item has an item page with a unique identifier designated by the letter `Q` followed by a string of numbers. Let's explore a Wikidata item page, which will also demonstrate the characteristics of items in Wikidata.
+
+### Explore a Wikidata Item page
+  
+- Click in the search bar in the top right corner of the main page and enter "british library". As you start typing, you will see a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page: 
+[https://www.wikidata.org/wiki/Q23308](https://www.wikidata.org/wiki/Q23308)
+  
+- Let us explore the item *British Library (Q23308)*. The top part of the item page identifies the item. Here you will see:
+    
+  - label
+  - description
+  - unique identifier (constructed as the capital letter followed by one or more numbers)
+  - aliases
+  
+- Farther down on the page is a *Statements* subheading. This section shows relationships, or claims, that have been asserted about the item. Statement may include:
+    
+  - property (constructed as the capital letter P followed by one or more numbers)
+  - value
+  - qualifier (optional)
+  - references (optional)
+  - As you can see, a property can have multiple values. For example, *member of* indicates multiple values. These values can be further specified or supported by qualifiers (not shown on the item page for British Library)
+  - statements can also be called "triples," since they include three parts (the item, the property relationship, and the property's value), which we will look into more closely later on
+
+Wikidata items, as you can see above, have many special parts, like statements, qualifiers, and so on. The following overview graphic, [directly linked here](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg), explains many of the various elements of a Wikidata item and shows how they may appear on an item page:
 
 ![](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg){alt='Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed'}
 
-- Most pages can be edited by anyone (note, however, that the British Library - Q23308 item is semi-protected). To edit an item, click the pen icon followed by the word "edit" in the upper-right are of the page. Don't worry if you made a mistake, you can always go back in an item's history and restore or undo changes.
-  
-  - "View history" - more later
-  - "Log in" and other things for registered users
+:::::::::::: callout
 
-- All of Wikidata's data is published online under the [Creative Commons CC0 License](https://creativecommons.org/publicdomain/zero/1.0/), which states:
+### Wikidata editing and change history
+
+Most pages can be edited by anyone (note, however, that the British Library - Q23308 item is semi-protected), and like other wiki projects, Wikidata tracks all changes made to an item.
+To see the changes made to an item, click "View history".
+To edit an item, click the pen icon followed by the word "edit" in the upper-right area of an item page.
+Don't worry if you made a mistake, you can always go back in an item's history and restore or undo changes.
+We will explore the steps of editing a Wikidata item in [episode 3, "Introduction to editing"](../episodes/03-intro_to_editing.html).
+
+::::::::::::
+
+## 1\.3 Wikidata's commitment to open data 
+
+All of Wikidata's data is published freely and openly online under a [Creative Commons CC0 License](https://creativecommons.org/publicdomain/zero/1.0/), which states:
 "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission." 
 In other words, the data is openly licensed and reusable. Since Wikidata can also be linked to other data sources on the web, this means Wikidata is *linked open data*.
 
 - Follow this link to view a pdf that offers a one-page overview of Wikidata (visual): [https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf](https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf)
 
-## 1\.2 Play games to open
+:::::::::::: challenge
 
-- Visit the Wikipedia page of the city you were born in two languages
-  of you choice (you can choose different language version in the left
-  side of a Wikipedia page) and look the size of the population. Are
-  the numbers the same in the different language? Visit the item in
-  Wikidata.
+### Explore a Wikidata Item
 
-## 1\.3 Wikidata Item Eastereggs
+Locate the Wikidata page of the city you were born in. Look for the population. 
+
+- Has the population changed over time? Some wikidata pages appear in multiple languages. 
+- Are the aliases and data similar between Wikidata and the various Wikipedia entries in different languages? 
+- Compare the information in Wikipedia and Wikidata
+
+:::::::: solution
+
+- Depending on the detail and amount of information about a place, there may be multiple values regarding a city's population. Because a city changes over time, Wikidata statements can be qualified, including with the addition of a start/end date, or by providing a citation for the data. The change in population over time provides a good example of the importance of providing qualifications for Wikidata staements.
+
+::::::::
+
+::::::::::::
+
+## 1\.4 Wikidata Item Eastereggs
 
 While most of the Q identifiers are arbitrary numbers, there are a few that suggest some meaning or humor, such as:
 
@@ -120,20 +144,39 @@ While most of the Q identifiers are arbitrary numbers, there are a few that sugg
 - [Q666 - Number of the beast](https://www.wikidata.org/wiki/Q666)
 - [Q12345 - Count von Count, Character on Sesame Street](https://www.wikidata.org/wiki/Q12345)
 
-## 1\.4 Linking Wikidata to other Wiki resources
+## 1\.5 Linking Wikidata to other Wiki resources
 
-- Link from Wikipedia to Wikidata
-  - e.g. [https://en.wikipedia.org/wiki/On\_the\_Origin\_of\_Species](https://en.wikipedia.org/wiki/On_the_Origin_of_Species)
-    - \=> Follow the link "Wikidata item" on the left side under "tools"
-    - \=> [https://www.wikidata.org/wiki/Q20124](https://www.wikidata.org/wiki/Q20124)
-    - \=> the Wikipedia article is linked on the Wikidata's item page. You can find it on the right side.
-    - \=> link to WikiCommons and WikiSource
+One of the most important and powerful aspects of Wikidata item pages is the final subheading, *Identifiers*. This is a special section that appears at the end of a Wikidata item page, and it is where information about how an item is identified in other databases or knowledge bases. Here, for example, is where you will find information about how an author's Wikidata page relates to various national library catalogs, the Virtual International Authority File, or fan databases that document an author's writings. This linking feature, which is quite highly developed in Wikipedia, makes the data especially valuable to libraries, archives, and other cultural heritage information.
+
+As well as linking to external identifiers and authority sources, this section also has information about links to an item's Wikipedia page (if there is one), as well as other WikiMedia projects, including WikiCommons, WikiSource, and others. 
+
+:::::::::::: challenge 
+
+### Links from Wikipedia to Wikidata
+
+Let's take a look at the relationships between Wikipedia and Wikidata. For example, how about Darwin's [On the Origin of Species](https://en.wikipedia.org/wiki/On_the_Origin_of_Species), a notable scientific work that is discussed in both resources.
+
+- What information is common between both resources? How would you describe the information in Wikidata, in comparison to that in Wikipedia? How are they similar or different?
+
+:::::::: solution 
+
+  - \=> Follow the link "Wikidata item" on the left side under "tools"
+  - \=> [https://www.wikidata.org/wiki/Q20124](https://www.wikidata.org/wiki/Q20124)
+  - \=> the Wikipedia article is linked on the Wikidata's item page. You can find it on the right side.
+  - \=> link to WikiCommons and WikiSource
+
+It is important to note that Wikidata is limited to basic statements or assertions, such as when the work was published, who and where it was published, and who wrote the work. This is similar to a catalog record. The Wikipedia article, on the other hand, discusses the themes and structure, the impact and reception of the work, and subsequent or ongoing debates.
+
+::::::::
+
+::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Wikidata entities are known as Items, and each item is displayed on a page that is identified with the item's "Q" number
-- Relationships between entities are known as Properties, and each property is identified with a "P" number
 - Statements are assertions about items, which state relationships between items using wikidata properties.
+- Relationships between entities are known as Properties, and each property is identified with a "P" number
 - Statements are also known as "triples"
+- Wikidata and Wikipedia are complementary, but Wikidata is focused on basic claims or assertions, not descriptive or narrative information
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
