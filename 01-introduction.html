@@ -219,10 +219,11 @@
       <div class="accordion-body">
         <ul><li><a href="#what-is-wikidata">What is Wikidata?</a></li>
 <li><a href="#motivation-and-why-should-i-use-wikidata">Motivation and “Why should I use Wikidata”</a></li>
-<li><a href="#intro-interface">1.1 Intro interface</a></li>
-<li><a href="#play-games-to-open">1.2 Play games to open</a></li>
-<li><a href="#wikidata-item-eastereggs">1.3 Wikidata Item Eastereggs</a></li>
-<li><a href="#linking-wikidata-to-other-wiki-resources">1.4 Linking Wikidata to other Wiki resources</a></li>
+<li><a href="#wikidata-interface">1.1 Wikidata interface</a></li>
+<li><a href="#wikidata-items-and-item-pages">1.2 Wikidata Items and Item Pages</a></li>
+<li><a href="#wikidatas-commitment-to-open-data">1.3 Wikidata’s commitment to open data</a></li>
+<li><a href="#wikidata-item-eastereggs">1.4 Wikidata Item Eastereggs</a></li>
+<li><a href="#linking-wikidata-to-other-wiki-resources">1.5 Linking Wikidata to other Wiki resources</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -332,7 +333,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>What is Wikidata?</h1>
-        <p>Last updated on 2026-02-06 |
+        <p>Last updated on 2026-03-17 |
 
         <a href="https://github.com/librarycarpentry/lc-wikidata/edit/main/episodes/01-introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -394,7 +395,7 @@ which we will cover later in this lesson. Data on Wikidata is published
 under the Creative Commons Public Domain 1.0 license. Thus, the data can
 be modified, copied, and distributed without permission.</p>
 <p>Wikidata also contains authority files, bibliographic data, and other
-content normally managed in library databases.</p>
+content that can similarly be found or managed in library databases.</p>
 <p>Importantly, Wikidata can be understood as linked open data, which
 can be <a href="https://www.wikidata.org/wiki/Wikidata:Data_access#How_can_I_get_data_out_of_Wikidata?" class="external-link">connected</a>
 to other open data sets on the web.</p>
@@ -426,59 +427,84 @@ scholarship.</li>
 various identifiers (e.g., connecting ORCID to GND or VIAF) is
 beneficial for cross-referencing and data cleaning in library management
 systems.</li>
-</ol></section><section><h2 class="section-heading" id="intro-interface">1.1 Intro interface<a class="anchor" aria-label="anchor" href="#intro-interface"></a></h2>
+</ol></section><section><h2 class="section-heading" id="wikidata-interface">1.1 Wikidata interface<a class="anchor" aria-label="anchor" href="#wikidata-interface"></a></h2>
 <hr class="half-width"><p>This section of the lesson introduces the Wikidata interface as it
-can be seen in a web browser. Let’s see if we as humans can simply read
-the data on Wikidata:</p>
+can be seen in a web browser. Let’s learn about some of the important
+elements of how you can read and interact with the data on Wikidata.</p>
 <ul><li>
-<p>Explore a Wikidata Item page</p>
-<ul><li>Start by going to the <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
+<p>Start by going to the <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
 Page</a> by typing “www.wikidata.org” into your browser. You will see
-something like this:</li>
-</ul><p><img src="fig/Wikidata_Main_Page.png" alt="Screenshot of the Wikidata main page displaying in a web browser" class="figure"><br><em>Screenshot of <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
+something like this:</p>
+<p><img src="fig/Wikidata_Main_Page.png" alt="Screenshot of the Wikidata main page displaying in a web browser" class="figure"><br><em>Screenshot of <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
 Page</a></em></p>
-<ul><li><p>Now go to the search bar in the top right corner and enter
-“british library”. This will give you a list with search results. Click
-the entry that says: “British Library (Q23308) national library of the
-United Kingdom”. Now you should see the british library’s item page: <a href="https://www.wikidata.org/wiki/Q23308" class="external-link">https://www.wikidata.org/wiki/Q23308</a></p></li>
+</li>
+</ul></section><section><h2 class="section-heading" id="wikidata-items-and-item-pages">1.2 Wikidata Items and Item Pages<a class="anchor" aria-label="anchor" href="#wikidata-items-and-item-pages"></a></h2>
+<hr class="half-width"><p>The primary unit of data described on Wikidata are “items.” Each item
+has an item page with a unique identifier designated by the letter
+<code>Q</code> followed by a string of numbers. Let’s explore a Wikidata
+item page, which will also demonstrate the characteristics of items in
+Wikidata.</p>
+<div class="section level3">
+<h3 id="explore-a-wikidata-item-page">Explore a Wikidata Item page<a class="anchor" aria-label="anchor" href="#explore-a-wikidata-item-page"></a></h3>
+<ul><li><p>Click in the search bar in the top right corner of the main page
+and enter “british library”. As you start typing, you will see a list
+with search results. Click the entry that says: “British Library
+(Q23308) national library of the United Kingdom”. Now you should see the
+british library’s item page: <a href="https://www.wikidata.org/wiki/Q23308" class="external-link">https://www.wikidata.org/wiki/Q23308</a></p></li>
 <li>
 <p>Let us explore the item <em>British Library (Q23308)</em>. The
-top part of the item page identifies the item. It displays:</p>
-<ul><li>unique identifier (constructed as the capital letter followed by one
-or more numbers)</li>
-<li>label</li>
+top part of the item page identifies the item. Here you will see:</p>
+<ul><li>label</li>
 <li>description</li>
+<li>unique identifier (constructed as the capital letter followed by one
+or more numbers)</li>
 <li>aliases</li>
 </ul></li>
 <li>
-<p>Lower on the page is a <em>statements</em> section, which shows
-relationships that have been asserted about the item. A statement
-has:</p>
+<p>Farther down on the page is a <em>Statements</em> subheading.
+This section shows relationships, or claims, that have been asserted
+about the item. Statement may include:</p>
 <ul><li>property (constructed as the capital letter P followed by one or
 more numbers)</li>
 <li>value</li>
 <li>qualifier (optional)</li>
 <li>references (optional)</li>
-<li>can also be called a “triple,” which will be explained later</li>
-<li>As you can see, a property can have multiple values for one
-property; for example “member of”; and can be further specified by
-qualifiers (not shown on the item page for British Library).</li>
+<li>As you can see, a property can have multiple values. For example,
+<em>member of</em> indicates multiple values. These values can be
+further specified or supported by qualifiers (not shown on the item page
+for British Library)</li>
+<li>statements can also be called “triples,” since they include three
+parts (the item, the property relationship, and the property’s value),
+which we will look into more closely later on</li>
 </ul></li>
-</ul></li>
-<li><p>There are many special terms and definitions here, like
-statements, qualifiers and so on. Since many of these terms can be
-confusing, you may check <a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" class="external-link">this
-overview graphic as a reference</a>:</p></li>
-</ul><figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" alt="Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed" class="figure mx-auto d-block"></figure><ul><li>
-<p>Most pages can be edited by anyone (note, however, that the
-British Library - Q23308 item is semi-protected). To edit an item, click
-the pen icon followed by the word “edit” in the upper-right are of the
-page. Don’t worry if you made a mistake, you can always go back in an
-item’s history and restore or undo changes.</p>
-<ul><li>“View history” - more later</li>
-<li>“Log in” and other things for registered users</li>
-</ul></li>
-<li><p>All of Wikidata’s data is published online under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="external-link">Creative
+</ul><p>Wikidata items, as you can see above, have many special parts, like
+statements, qualifiers, and so on. The following overview graphic, <a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" class="external-link">directly
+linked here</a>, explains many of the various elements of a Wikidata
+item and shows how they may appear on an item page:</p>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" alt="Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed" class="figure mx-auto d-block"></figure><div id="wikidata-editing-and-change-history" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="wikidata-editing-and-change-history" class="callout-inner">
+<h3 class="callout-title">Wikidata editing and change history</h3>
+<div class="callout-content">
+<p>Most pages can be edited by anyone (note, however, that the British
+Library - Q23308 item is semi-protected), and like other wiki projects,
+Wikidata tracks all changes made to an item. To see the changes made to
+an item, click “View history”. To edit an item, click the pen icon
+followed by the word “edit” in the upper-right area of an item page.
+Don’t worry if you made a mistake, you can always go back in an item’s
+history and restore or undo changes. We will explore the steps of
+editing a Wikidata item in <a href="03-intro_to_editing.html">episode 3,
+“Introduction to editing”</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="wikidatas-commitment-to-open-data">1.3 Wikidata’s commitment to open data<a class="anchor" aria-label="anchor" href="#wikidatas-commitment-to-open-data"></a></h2>
+<hr class="half-width"><p>All of Wikidata’s data is published freely and openly online under a
+<a href="https://creativecommons.org/publicdomain/zero/1.0/" class="external-link">Creative
 Commons CC0 License</a>, which states: “The person who associated a work
 with this deed has dedicated the work to the public domain by waiving
 all of his or her rights to the work worldwide under copyright law,
@@ -487,16 +513,46 @@ law. You can copy, modify, distribute and perform the work, even for
 commercial purposes, all without asking permission.” In other words, the
 data is openly licensed and reusable. Since Wikidata can also be linked
 to other data sources on the web, this means Wikidata is <em>linked open
-data</em>.</p></li>
-<li><p>Follow this link to view a pdf that offers a one-page overview of
-Wikidata (visual): <a href="https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf" class="external-link">https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf</a></p></li>
-</ul></section><section><h2 class="section-heading" id="play-games-to-open">1.2 Play games to open<a class="anchor" aria-label="anchor" href="#play-games-to-open"></a></h2>
-<hr class="half-width"><ul><li>Visit the Wikipedia page of the city you were born in two languages
-of you choice (you can choose different language version in the left
-side of a Wikipedia page) and look the size of the population. Are the
-numbers the same in the different language? Visit the item in
-Wikidata.</li>
-</ul></section><section><h2 class="section-heading" id="wikidata-item-eastereggs">1.3 Wikidata Item Eastereggs<a class="anchor" aria-label="anchor" href="#wikidata-item-eastereggs"></a></h2>
+data</em>.</p>
+<ul><li>Follow this link to view a pdf that offers a one-page overview of
+Wikidata (visual): <a href="https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf" class="external-link">https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf</a>
+</li>
+</ul><div id="explore-a-wikidata-item" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="explore-a-wikidata-item" class="callout-inner">
+<h3 class="callout-title">Explore a Wikidata Item</h3>
+<div class="callout-content">
+<p>Locate the Wikidata page of the city you were born in. Look for the
+population.</p>
+<ul><li>Has the population changed over time? Some wikidata pages appear in
+multiple languages.</li>
+<li>Are the aliases and data similar between Wikidata and the various
+Wikipedia entries in different languages?</li>
+<li>Compare the information in Wikipedia and Wikidata</li>
+</ul></div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<ul><li>Depending on the detail and amount of information about a place,
+there may be multiple values regarding a city’s population. Because a
+city changes over time, Wikidata statements can be qualified, including
+with the addition of a start/end date, or by providing a citation for
+the data. The change in population over time provides a good example of
+the importance of providing qualifications for Wikidata staements.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="wikidata-item-eastereggs">1.4 Wikidata Item Eastereggs<a class="anchor" aria-label="anchor" href="#wikidata-item-eastereggs"></a></h2>
 <hr class="half-width"><p>While most of the Q identifiers are arbitrary numbers, there are a
 few that suggest some meaning or humor, such as:</p>
 <ul><li><a href="https://www.wikidata.org/wiki/Q1" class="external-link">Q1 - Universe</a></li>
@@ -516,9 +572,46 @@ Hitchhiker’s Guide to the Galaxy)</a></li>
 beast</a></li>
 <li><a href="https://www.wikidata.org/wiki/Q12345" class="external-link">Q12345 - Count von
 Count, Character on Sesame Street</a></li>
-</ul></section><section><h2 class="section-heading" id="linking-wikidata-to-other-wiki-resources">1.4 Linking Wikidata to other Wiki resources<a class="anchor" aria-label="anchor" href="#linking-wikidata-to-other-wiki-resources"></a></h2>
-<hr class="half-width"><ul><li>Link from Wikipedia to Wikidata
-<ul><li>e.g. <a href="https://en.wikipedia.org/wiki/On_the_Origin_of_Species" class="external-link">https://en.wikipedia.org/wiki/On_the_Origin_of_Species</a>
+</ul></section><section><h2 class="section-heading" id="linking-wikidata-to-other-wiki-resources">1.5 Linking Wikidata to other Wiki resources<a class="anchor" aria-label="anchor" href="#linking-wikidata-to-other-wiki-resources"></a></h2>
+<hr class="half-width"><p>One of the most important and powerful aspects of Wikidata item pages
+is the final subheading, <em>Identifiers</em>. This is a special section
+that appears at the end of a Wikidata item page, and it is where
+information about how an item is identified in other databases or
+knowledge bases. Here, for example, is where you will find information
+about how an author’s Wikidata page relates to various national library
+catalogs, the Virtual International Authority File, or fan databases
+that document an author’s writings. This linking feature, which is quite
+highly developed in Wikipedia, makes the data especially valuable to
+libraries, archives, and other cultural heritage information.</p>
+<p>As well as linking to external identifiers and authority sources,
+this section also has information about links to an item’s Wikipedia
+page (if there is one), as well as other WikiMedia projects, including
+WikiCommons, WikiSource, and others.</p>
+<div id="links-from-wikipedia-to-wikidata" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="links-from-wikipedia-to-wikidata" class="callout-inner">
+<h3 class="callout-title">Links from Wikipedia to Wikidata</h3>
+<div class="callout-content">
+<p>Let’s take a look at the relationships between Wikipedia and
+Wikidata. For example, how about Darwin’s <a href="https://en.wikipedia.org/wiki/On_the_Origin_of_Species" class="external-link">On the
+Origin of Species</a>, a notable scientific work that is discussed in
+both resources.</p>
+<ul><li>What information is common between both resources? How would you
+describe the information in Wikidata, in comparison to that in
+Wikipedia? How are they similar or different?</li>
+</ul></div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
 <ul><li>=&gt; Follow the link “Wikidata item” on the left side under
 “tools”</li>
 <li>=&gt; <a href="https://www.wikidata.org/wiki/Q20124" class="external-link">https://www.wikidata.org/wiki/Q20124</a>
@@ -526,9 +619,17 @@ Count, Character on Sesame Street</a></li>
 <li>=&gt; the Wikipedia article is linked on the Wikidata’s item page.
 You can find it on the right side.</li>
 <li>=&gt; link to WikiCommons and WikiSource</li>
-</ul></li>
-</ul></li>
-</ul><div id="keypoints1" class="callout keypoints">
+</ul><p>It is important to note that Wikidata is limited to basic statements
+or assertions, such as when the work was published, who and where it was
+published, and who wrote the work. This is similar to a catalog record.
+The Wikipedia article, on the other hand, discusses the themes and
+structure, the impact and reception of the work, and subsequent or
+ongoing debates.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -537,11 +638,14 @@ You can find it on the right side.</li>
 <div class="callout-content">
 <ul><li>Wikidata entities are known as Items, and each item is displayed on
 a page that is identified with the item’s “Q” number</li>
-<li>Relationships between entities are known as Properties, and each
-property is identified with a “P” number</li>
 <li>Statements are assertions about items, which state relationships
 between items using wikidata properties.</li>
+<li>Relationships between entities are known as Properties, and each
+property is identified with a “P” number</li>
 <li>Statements are also known as “triples”</li>
+<li>Wikidata and Wikipedia are complementary, but Wikidata is focused on
+basic claims or assertions, not descriptive or narrative
+information</li>
 </ul></div>
 </div>
 </div>
@@ -605,7 +709,7 @@ between items using wikidata properties.</li>
   "url": "https://librarycarpentry.github.io/lc-wikidata/01-introduction.html",
   "identifier": "https://librarycarpentry.github.io/lc-wikidata/01-introduction.html",
   "dateCreated": "2018-09-17",
-  "dateModified": "2026-02-06",
+  "dateModified": "2026-03-17",
   "datePublished": "2026-03-17"
 }
 

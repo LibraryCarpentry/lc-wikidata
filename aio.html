@@ -371,7 +371,7 @@
         
 <section id="aio-01-introduction"><p>Content from <a href="01-introduction.html">What is Wikidata?</a></p>
 <hr>
-<p>Last updated on 2026-02-06 |
+<p>Last updated on 2026-03-17 |
 
         <a href="https://github.com/librarycarpentry/lc-wikidata/edit/main/episodes/01-introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -433,7 +433,7 @@ which we will cover later in this lesson. Data on Wikidata is published
 under the Creative Commons Public Domain 1.0 license. Thus, the data can
 be modified, copied, and distributed without permission.</p>
 <p>Wikidata also contains authority files, bibliographic data, and other
-content normally managed in library databases.</p>
+content that can similarly be found or managed in library databases.</p>
 <p>Importantly, Wikidata can be understood as linked open data, which
 can be <a href="https://www.wikidata.org/wiki/Wikidata:Data_access#How_can_I_get_data_out_of_Wikidata?" class="external-link">connected</a>
 to other open data sets on the web.</p>
@@ -470,74 +470,98 @@ scholarship.</li>
 various identifiers (e.g., connecting ORCID to GND or VIAF) is
 beneficial for cross-referencing and data cleaning in library management
 systems.</li>
-</ol></section><section><h2 class="section-heading" id="intro-interface">1.1 Intro interface<a class="anchor" aria-label="anchor" href="#intro-interface"></a>
+</ol></section><section><h2 class="section-heading" id="wikidata-interface">1.1 Wikidata interface<a class="anchor" aria-label="anchor" href="#wikidata-interface"></a>
 </h2>
 <hr class="half-width">
 <p>This section of the lesson introduces the Wikidata interface as it
-can be seen in a web browser. Let’s see if we as humans can simply read
-the data on Wikidata:</p>
+can be seen in a web browser. Let’s learn about some of the important
+elements of how you can read and interact with the data on Wikidata.</p>
 <ul>
 <li>
-<p>Explore a Wikidata Item page</p>
-<ul>
-<li>Start by going to the <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
+<p>Start by going to the <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
 Page</a> by typing “www.wikidata.org” into your browser. You will see
-something like this:</li>
-</ul>
+something like this:</p>
 <p><img src="fig/Wikidata_Main_Page.png" alt="Screenshot of the Wikidata main page displaying in a web browser" class="figure"><br><em>Screenshot of <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" class="external-link">Wikidata Main
 Page</a></em></p>
+</li>
+</ul></section><section><h2 class="section-heading" id="wikidata-items-and-item-pages">1.2 Wikidata Items and Item Pages<a class="anchor" aria-label="anchor" href="#wikidata-items-and-item-pages"></a>
+</h2>
+<hr class="half-width">
+<p>The primary unit of data described on Wikidata are “items.” Each item
+has an item page with a unique identifier designated by the letter
+<code>Q</code> followed by a string of numbers. Let’s explore a Wikidata
+item page, which will also demonstrate the characteristics of items in
+Wikidata.</p>
+<div class="section level3">
+<h3 id="explore-a-wikidata-item-page">Explore a Wikidata Item page<a class="anchor" aria-label="anchor" href="#explore-a-wikidata-item-page"></a>
+</h3>
 <ul>
-<li><p>Now go to the search bar in the top right corner and enter
-“british library”. This will give you a list with search results. Click
-the entry that says: “British Library (Q23308) national library of the
-United Kingdom”. Now you should see the british library’s item page: <a href="https://www.wikidata.org/wiki/Q23308" class="external-link">https://www.wikidata.org/wiki/Q23308</a></p></li>
+<li><p>Click in the search bar in the top right corner of the main page
+and enter “british library”. As you start typing, you will see a list
+with search results. Click the entry that says: “British Library
+(Q23308) national library of the United Kingdom”. Now you should see the
+british library’s item page: <a href="https://www.wikidata.org/wiki/Q23308" class="external-link">https://www.wikidata.org/wiki/Q23308</a></p></li>
 <li>
 <p>Let us explore the item <em>British Library (Q23308)</em>. The
-top part of the item page identifies the item. It displays:</p>
+top part of the item page identifies the item. Here you will see:</p>
 <ul>
-<li>unique identifier (constructed as the capital letter followed by one
-or more numbers)</li>
 <li>label</li>
 <li>description</li>
+<li>unique identifier (constructed as the capital letter followed by one
+or more numbers)</li>
 <li>aliases</li>
 </ul>
 </li>
 <li>
-<p>Lower on the page is a <em>statements</em> section, which shows
-relationships that have been asserted about the item. A statement
-has:</p>
+<p>Farther down on the page is a <em>Statements</em> subheading.
+This section shows relationships, or claims, that have been asserted
+about the item. Statement may include:</p>
 <ul>
 <li>property (constructed as the capital letter P followed by one or
 more numbers)</li>
 <li>value</li>
 <li>qualifier (optional)</li>
 <li>references (optional)</li>
-<li>can also be called a “triple,” which will be explained later</li>
-<li>As you can see, a property can have multiple values for one
-property; for example “member of”; and can be further specified by
-qualifiers (not shown on the item page for British Library).</li>
+<li>As you can see, a property can have multiple values. For example,
+<em>member of</em> indicates multiple values. These values can be
+further specified or supported by qualifiers (not shown on the item page
+for British Library)</li>
+<li>statements can also be called “triples,” since they include three
+parts (the item, the property relationship, and the property’s value),
+which we will look into more closely later on</li>
 </ul>
 </li>
 </ul>
-</li>
-<li><p>There are many special terms and definitions here, like
-statements, qualifiers and so on. Since many of these terms can be
-confusing, you may check <a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" class="external-link">this
-overview graphic as a reference</a>:</p></li>
-</ul>
-<figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" alt="Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed" class="figure mx-auto d-block"></figure><ul>
-<li>
-<p>Most pages can be edited by anyone (note, however, that the
-British Library - Q23308 item is semi-protected). To edit an item, click
-the pen icon followed by the word “edit” in the upper-right are of the
-page. Don’t worry if you made a mistake, you can always go back in an
-item’s history and restore or undo changes.</p>
-<ul>
-<li>“View history” - more later</li>
-<li>“Log in” and other things for registered users</li>
-</ul>
-</li>
-<li><p>All of Wikidata’s data is published online under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" class="external-link">Creative
+<p>Wikidata items, as you can see above, have many special parts, like
+statements, qualifiers, and so on. The following overview graphic, <a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" class="external-link">directly
+linked here</a>, explains many of the various elements of a Wikidata
+item and shows how they may appear on an item page:</p>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg" alt="Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed" class="figure mx-auto d-block"></figure><div id="wikidata-editing-and-change-history" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="wikidata-editing-and-change-history" class="callout-inner">
+<h3 class="callout-title">Wikidata editing and change history</h3>
+<div class="callout-content">
+<p>Most pages can be edited by anyone (note, however, that the British
+Library - Q23308 item is semi-protected), and like other wiki projects,
+Wikidata tracks all changes made to an item. To see the changes made to
+an item, click “View history”. To edit an item, click the pen icon
+followed by the word “edit” in the upper-right area of an item page.
+Don’t worry if you made a mistake, you can always go back in an item’s
+history and restore or undo changes. We will explore the steps of
+editing a Wikidata item in <a href="03-intro_to_editing.html">episode 3,
+“Introduction to editing”</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="wikidatas-commitment-to-open-data">1.3 Wikidata’s commitment to open data<a class="anchor" aria-label="anchor" href="#wikidatas-commitment-to-open-data"></a>
+</h2>
+<hr class="half-width">
+<p>All of Wikidata’s data is published freely and openly online under a
+<a href="https://creativecommons.org/publicdomain/zero/1.0/" class="external-link">Creative
 Commons CC0 License</a>, which states: “The person who associated a work
 with this deed has dedicated the work to the public domain by waiving
 all of his or her rights to the work worldwide under copyright law,
@@ -546,19 +570,52 @@ law. You can copy, modify, distribute and perform the work, even for
 commercial purposes, all without asking permission.” In other words, the
 data is openly licensed and reusable. Since Wikidata can also be linked
 to other data sources on the web, this means Wikidata is <em>linked open
-data</em>.</p></li>
-<li><p>Follow this link to view a pdf that offers a one-page overview of
-Wikidata (visual): <a href="https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf" class="external-link">https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf</a></p></li>
-</ul></section><section><h2 class="section-heading" id="play-games-to-open">1.2 Play games to open<a class="anchor" aria-label="anchor" href="#play-games-to-open"></a>
-</h2>
-<hr class="half-width">
+data</em>.</p>
 <ul>
-<li>Visit the Wikipedia page of the city you were born in two languages
-of you choice (you can choose different language version in the left
-side of a Wikipedia page) and look the size of the population. Are the
-numbers the same in the different language? Visit the item in
-Wikidata.</li>
-</ul></section><section><h2 class="section-heading" id="wikidata-item-eastereggs">1.3 Wikidata Item Eastereggs<a class="anchor" aria-label="anchor" href="#wikidata-item-eastereggs"></a>
+<li>Follow this link to view a pdf that offers a one-page overview of
+Wikidata (visual): <a href="https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf" class="external-link">https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf</a>
+</li>
+</ul>
+<div id="explore-a-wikidata-item" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="explore-a-wikidata-item" class="callout-inner">
+<h3 class="callout-title">Explore a Wikidata Item</h3>
+<div class="callout-content">
+<p>Locate the Wikidata page of the city you were born in. Look for the
+population.</p>
+<ul>
+<li>Has the population changed over time? Some wikidata pages appear in
+multiple languages.</li>
+<li>Are the aliases and data similar between Wikidata and the various
+Wikipedia entries in different languages?</li>
+<li>Compare the information in Wikipedia and Wikidata</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<ul>
+<li>Depending on the detail and amount of information about a place,
+there may be multiple values regarding a city’s population. Because a
+city changes over time, Wikidata statements can be qualified, including
+with the addition of a start/end date, or by providing a citation for
+the data. The change in population over time provides a good example of
+the importance of providing qualifications for Wikidata staements.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="wikidata-item-eastereggs">1.4 Wikidata Item Eastereggs<a class="anchor" aria-label="anchor" href="#wikidata-item-eastereggs"></a>
 </h2>
 <hr class="half-width">
 <p>While most of the Q identifiers are arbitrary numbers, there are a
@@ -581,13 +638,50 @@ Hitchhiker’s Guide to the Galaxy)</a></li>
 beast</a></li>
 <li><a href="https://www.wikidata.org/wiki/Q12345" class="external-link">Q12345 - Count von
 Count, Character on Sesame Street</a></li>
-</ul></section><section><h2 class="section-heading" id="linking-wikidata-to-other-wiki-resources">1.4 Linking Wikidata to other Wiki resources<a class="anchor" aria-label="anchor" href="#linking-wikidata-to-other-wiki-resources"></a>
+</ul></section><section><h2 class="section-heading" id="linking-wikidata-to-other-wiki-resources">1.5 Linking Wikidata to other Wiki resources<a class="anchor" aria-label="anchor" href="#linking-wikidata-to-other-wiki-resources"></a>
 </h2>
 <hr class="half-width">
+<p>One of the most important and powerful aspects of Wikidata item pages
+is the final subheading, <em>Identifiers</em>. This is a special section
+that appears at the end of a Wikidata item page, and it is where
+information about how an item is identified in other databases or
+knowledge bases. Here, for example, is where you will find information
+about how an author’s Wikidata page relates to various national library
+catalogs, the Virtual International Authority File, or fan databases
+that document an author’s writings. This linking feature, which is quite
+highly developed in Wikipedia, makes the data especially valuable to
+libraries, archives, and other cultural heritage information.</p>
+<p>As well as linking to external identifiers and authority sources,
+this section also has information about links to an item’s Wikipedia
+page (if there is one), as well as other WikiMedia projects, including
+WikiCommons, WikiSource, and others.</p>
+<div id="links-from-wikipedia-to-wikidata" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="links-from-wikipedia-to-wikidata" class="callout-inner">
+<h3 class="callout-title">Links from Wikipedia to Wikidata</h3>
+<div class="callout-content">
+<p>Let’s take a look at the relationships between Wikipedia and
+Wikidata. For example, how about Darwin’s <a href="https://en.wikipedia.org/wiki/On_the_Origin_of_Species" class="external-link">On the
+Origin of Species</a>, a notable scientific work that is discussed in
+both resources.</p>
 <ul>
-<li>Link from Wikipedia to Wikidata
-<ul>
-<li>e.g. <a href="https://en.wikipedia.org/wiki/On_the_Origin_of_Species" class="external-link">https://en.wikipedia.org/wiki/On_the_Origin_of_Species</a>
+<li>What information is common between both resources? How would you
+describe the information in Wikidata, in comparison to that in
+Wikipedia? How are they similar or different?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
 <ul>
 <li>=&gt; Follow the link “Wikidata item” on the left side under
 “tools”</li>
@@ -597,10 +691,16 @@ Count, Character on Sesame Street</a></li>
 You can find it on the right side.</li>
 <li>=&gt; link to WikiCommons and WikiSource</li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>It is important to note that Wikidata is limited to basic statements
+or assertions, such as when the work was published, who and where it was
+published, and who wrote the work. This is similar to a catalog record.
+The Wikipedia article, on the other hand, discusses the themes and
+structure, the impact and reception of the work, and subsequent or
+ongoing debates.</p>
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -611,18 +711,21 @@ You can find it on the right side.</li>
 <ul>
 <li>Wikidata entities are known as Items, and each item is displayed on
 a page that is identified with the item’s “Q” number</li>
-<li>Relationships between entities are known as Properties, and each
-property is identified with a “P” number</li>
 <li>Statements are assertions about items, which state relationships
 between items using wikidata properties.</li>
+<li>Relationships between entities are known as Properties, and each
+property is identified with a “P” number</li>
 <li>Statements are also known as “triples”</li>
+<li>Wikidata and Wikipedia are complementary, but Wikidata is focused on
+basic claims or assertions, not descriptive or narrative
+information</li>
 </ul>
 </div>
 </div>
 </div>
 </section></section><section id="aio-02-Wikidata_underlying_concepts"><p>Content from <a href="02-Wikidata_underlying_concepts.html">Underlying concepts of Wikidata</a></p>
 <hr>
-<p>Last updated on 2023-04-24 |
+<p>Last updated on 2026-03-17 |
 
         <a href="https://github.com/librarycarpentry/lc-wikidata/edit/main/episodes/02-Wikidata_underlying_concepts.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -651,20 +754,23 @@ between items using wikidata properties.</li>
 to traditional metadata field structure</li>
 <li>Know how linked data can create more context for patrons/users in
 library catalogs</li>
-<li>Know how linked data can improve recall in library catalogs? (TODO:
-Check if we want to address this here).</li>
+<li>Know how linked data can improve recall in library catalogs?</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="concepts-foundations-ways-of-storing-data-">2.1 Concepts foundations: ways of storing data.<a class="anchor" aria-label="anchor" href="#concepts-foundations-ways-of-storing-data-"></a>
+<section><h2 class="section-heading" id="conceptual-foundations-ways-of-storing-data">2.1 Conceptual foundations: ways of storing data<a class="anchor" aria-label="anchor" href="#conceptual-foundations-ways-of-storing-data"></a>
 </h2>
 <hr class="half-width">
-<p>There are many types of databases, the most common types are:</p>
+<p>There are many types of database structures and systems. Two common
+database types are relational databases and graph databases.
+Understanding the commonalities and differencews between these
+structures helps to explain the uniqueness of Wikidata’s data
+structure.</p>
 <div class="section level3">
-<h3 id="relational-databases">2.1.1 Relational databases:<a class="anchor" aria-label="anchor" href="#relational-databases"></a>
+<h3 id="relational-databases">2.1.1 Relational databases<a class="anchor" aria-label="anchor" href="#relational-databases"></a>
 </h3>
 <p>A relational database is a set of formally described related tables
 from which data can be accessed or reassembled. This model organizes
@@ -672,91 +778,125 @@ data into one or more tables (or “relations”) of columns and rows, with
 a unique key identifying each row. each table/relation represents one
 “entity type” and these entities are connected via constrained
 relationships. This model is fully structured and mostly uses SQL
-(Structured Query Language) to retrive and manuplate data.<br>
-Examples:</p>
-<figure><img src="fig/Relational_database_terms.svg.png" alt="relational database" class="figure mx-auto d-block"></figure>
+(Structured Query Language) to retrive and manuplate data.</p>
+<p>A single database table and its basic parts is demonstrated below.
+Note that each row is a set of ordered values that corresponds to a
+single data element. Each column in the table may be understood as an
+attribute, which is a common attribute, but for which each row has the
+data corresponding to that record. Together, the entire table consitutes
+a data element that can be related to other other tables.</p>
+<figure><img src="fig/Relational_database_terms.svg.png" alt="Schematic of a data table in a relational database, which can be understood as a series of records (ordered tuple values) with various attributes, which can be related to other tables in the database through structured queries." class="figure mx-auto d-block"></figure>
 </div>
 <div class="section level3">
 <h3 id="graph-semantic-databases">2.1.2 Graph / Semantic databases<a class="anchor" aria-label="anchor" href="#graph-semantic-databases"></a>
 </h3>
 <p>Semantic web is an extension of the World Wide Web standards, which
-promote common data formats and exchange protocols on the Web, most
-fundamentally the Resource Description Framework (RDF) is used to store
-data. Most RDF fundamentally uses SPARQL (Simple Protocol and Rdf Query
-Language) to read stored data while relational databases uses SQL
-(Structured Query Language) to do so. In SQL relational database terms,
-RDF data can also be considered or viewed as a table with only three
-columns – the subject column, the predicate column, and the object
-column.</p>
-<figure><img src="fig/Data_Structure_Diagram.jpg" alt="data structure diagram" class="figure mx-auto d-block"></figure>
+promote common formats and exchange protocols on the Web. For data
+exchange, the fundamental Web standard is the Resource Description
+Framework, or RDF. Rather than being defined by tables, this “graph” or
+semantic structure is defined by relationship statements. RDF outlines a
+protocol for encoding and transmitting graph data on the web.</p>
+<p>RDF can be queried and analyzes using a language called SPARQL
+(Simple Protocol and RDF Query Language). This has its own syntax, but
+it is similar to how relational databases use SQL (Structured Query
+Language) to create and build queries. In SQL relational database terms,
+RDF data can also be processed as a table, but with only three columns –
+the subject column, the predicate column, and the object column.</p>
+<figure><img src="fig/Data_Structure_Diagram.jpg" alt="A data structure diagram illustrating a possible connection between a list of triples, represented by a data dictionary, and a graph diagram which visualizes the relationships stipulated by the triples." class="figure mx-auto d-block"></figure>
 </div>
-</section><section><h2 class="section-heading" id="concepts-foundations-rdf-and-rdf-triples">2.2 Concepts foundations (RDF and RDF triples)<a class="anchor" aria-label="anchor" href="#concepts-foundations-rdf-and-rdf-triples"></a>
+</section><section><h2 class="section-heading" id="conceptual-foundations-rdf-and-triples">2.2 Conceptual foundations: RDF and Triples<a class="anchor" aria-label="anchor" href="#conceptual-foundations-rdf-and-triples"></a>
 </h2>
 <hr class="half-width">
-<ul>
-<li><p>The RDF is a conceptual data model, It is based on the idea of
-making statements about resources in expressions of the form
-(subject–predicate–object), known as triples.</p></li>
-<li><p>The subject denotes the resource, and the predicate denotes
+<p>The RDF defines a conceptual data model that is based on the idea of
+making statements about resources. Unlike a relational database, the
+data model defined by RDF is text-focused, and it is based on relating
+defined entities (as Wikidata calls them, <em>items</em>) that can be
+referred to by a Internationalized Resource Identifier (an IRI, which is
+nearly synonymous with a URL), and which can be connected or related to
+any other defined entity through a standard language. While the data
+structures can be complex, they rely on a basic structure called a
+<strong>triple</strong>, which consists of a <em>subject</em> and an
+<em>object</em>, which are linked together, or related, by a defined
+relationship called a <em>predicate</em> (as Wikidata calls it, a
+<em>property</em>). Here youcan read Wikipedia’s definition of a <a href="https://en.wikipedia.org/wiki/Semantic_triple" class="external-link">semantic
+triple</a>.</p>
+<figure><img src="fig/RDF_subject_predicate_object.jpg" alt="Schematic illustration of an RDF Triple" class="figure mx-auto d-block"></figure><p>The basic data statement is expressed in the form
+<em>subject–predicate–object</em>, also known as a <em>triple</em>. The
+<em>subject</em> denotes the resource. In Wikidata, each item, or Q
+node, is a triple subject. The <em>object</em> is usually another data
+entity, though it may also be a standalone value, which is related to
+the subject by the predicate relator. The <em>predicate</em> denotes
 traits or aspects of the resource, and expresses a relationship between
-the subject and the object, for example: John-is-a person, John-born
-in-1980, John-works as-Engineer</p></li>
-<li><p>RDF data are stored on containers known as triplestores.</p></li>
-<li><p><a href="https://en.wikipedia.org/wiki/Semantic_triple" class="external-link">https://en.wikipedia.org/wiki/Semantic_triple</a></p></li>
+the subject and the object, for example:</p>
+<ul>
+<li>The British Library <em>is-a</em> library</li>
+<li>John <em>is-a</em> person</li>
+<li>John <em>born-in </em>1980</li>
+<li>John <em>has-occupation</em> engineer</li>
 </ul>
-<figure><img src="fig/RDF_subject_predicate_object.jpg" alt="RDF Tripe" class="figure mx-auto d-block"></figure></section><section><h2 class="section-heading" id="underlying-components">2.3 Underlying components<a class="anchor" aria-label="anchor" href="#underlying-components"></a>
+<p>Each of the above is a triple about the subject “John,” wither
+different predicates and objects.</p>
+<p>As you can imagine, Wikidata has a huge number of data items
+(subjects), and it includes millions and millions of triple statements.
+RDF data are stores are also known as triplestores.</p>
+</section><section><h2 class="section-heading" id="wikidata-concepts">2.3 Wikidata concepts<a class="anchor" aria-label="anchor" href="#wikidata-concepts"></a>
 </h2>
 <hr class="half-width">
-<ul>
-<li>Items<br>
-Items represents subjects such Douglas Adams and have identifiers that
-starts with letter “Q” like: Q42 for Douglas Adams.<br>
-Each item must have a name in one or more langauges, optionally have
-alternative names and descrition.</li>
-<li>Properties<br>
+<dl>
+<dt><strong>Items</strong></dt>
+<dd>
+Items represents things and conceps, including people, places, events,
+subjects, and more. Examples mentioned previously include the British
+Library or Douglas Adams. Wikidata items have identifiers that start
+with letter “Q”, like <code>Q42</code> for Douglas Adams.<br>
+Each item must have a label in one or more languages, optionally have
+alternative names and descrition.
+</dd>
+<dt><strong>Properties</strong></dt>
+<dd>
 Properties represents attributes of the subject such occupation and have
-identifiers that starts with letter “P” like: P106 for Occupation.</li>
-<li>Claims<br>
-Claims are the triples, which combine the formation of Item and Property
-and a value such: Douglas Adams (Q42) - occupation (P106) -
-comedian.<br>
-Note: value can be already stored in wikidata, therefore the bot assigns
-the Q number of the value instead.</li>
-<li>Statement<br>
+identifiers that starts with letter “P” like: P106 for Occupation.
+</dd>
+<dt><strong>Claims</strong></dt>
+<dd>
+Claims are the triple statements, which combine the formation of Item
+and Property and value. For example:
+<code>Douglas Adams (Q42) - occupation (P106) - comedian (Q245068)</code>.
+<em>Note:</em> value can be already stored in wikidata, therefore the
+bot assigns the Q number of the value instead.
+</dd>
+<dt><strong>Statement</strong></dt>
+<dd>
 A Claim is a part of a statement, a statement also includes: References,
-Ranks, and Qualifiers.</li>
-<li>References<br>
+Ranks, and Qualifiers.
+</dd>
+<dt><strong>References</strong></dt>
+<dd>
 Used to store the source of the claim, using properties, such stated in,
-qoute, and etc.</li>
-<li>Ranks<br>
-A useful component to mark outdated claims.</li>
-<li>Qualifiers<br>
-Qualifiers are besicly properties but on claims rather than items.</li>
-</ul>
-<div id="is-data-stored-in-the-rdf-triple-format-part-of-your-work-as-a-librarian" class="callout challenge">
+qoute, and etc.
+</dd>
+<dt><strong>Ranks</strong></dt>
+<dd>
+A useful component to deprecate outdated claims.
+</dd>
+<dt><strong>Qualifiers</strong></dt>
+<dd>
+Qualifiers are basically properties but on claims rather than items.
+</dd>
+</dl>
+<div id="can-you-identify-triple-structures-in-library-data" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<span class="callout-header">Challenge</span>
-<div id="is-data-stored-in-the-rdf-triple-format-part-of-your-work-as-a-librarian" class="callout-inner">
-<h3 class="callout-title">Is data stored in the RDF triple format part
-of your work as a librarian?</h3>
+<span class="callout-header">Discussion</span>
+<div id="can-you-identify-triple-structures-in-library-data" class="callout-inner">
+<h3 class="callout-title">Can you identify triple structures in library
+data?</h3>
 <div class="callout-content">
-<p>Take some time to think about if data stored in the RDF triple format
-is part of your work as a librarian. Can you give an example in the
-format of an RDF triplet?</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<p><em>TO DO</em>: PLEASE ADD A REAL LIFE EXAMPLE</p>
-</div>
+<p>Is data stored in the RDF triple format part of your work as a
+librarian? Take some time to think about if data stored in the RDF
+triple format is part of your work as a librarian. Can you give an
+example in the format of an RDF triple?</p>
 </div>
 </div>
 </div>
@@ -770,19 +910,19 @@ format of an RDF triplet?</p>
 page of former astronaut Mae Jemison.</h3>
 <div class="callout-content">
 <p>Got to the Wikidata page of Mae Jemison and point out one RDF triple.
-An RDF triplet consists of a subject, a predicate and an object. Can you
+An RDF triple consists of a subject, a predicate and an object. Can you
 assign the three corresponding Wikidata terms?</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>Got to Wikidata and either search for “Mae Jemison” or enter the ID
+<p>Go to Wikidata and either search for “Mae Jemison” or enter the ID
 <em>Q34091</em>. In the picture below the statement “Mae C. Jemison -
 part of - NASA Astronaut Group 12” is an RDF triple. <img src="fig/Mae_Jemison_Wikidata.png" alt="Wikidata_Main_Page" class="figure"><br><em>Screenshot of <a href="https://www.wikidata.org/wiki/Q34091" class="external-link">Wikidata Main
 Page</a></em></p>
@@ -790,34 +930,6 @@ Page</a></em></p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="scholia---a-webserive-with-wikidata-as-underlying-database">2.4 Scholia - a webserive with Wikidata as underlying database<a class="anchor" aria-label="anchor" href="#scholia---a-webserive-with-wikidata-as-underlying-database"></a>
-</h2>
-<hr class="half-width">
-<ul>
-<li>Introduction with <a href="https://www.lod-cloud.net/" class="external-link">The Linked
-Open Data Cloud</a>
-</li>
-<li>the structure enables queries</li>
-<li>reference to DBPedia</li>
-<li>you can build your own web services with Wikidata as database &gt;
-<a href="https://scholia.toolforge.org/" class="external-link">Scholia</a>
-<ul>
-<li>e.g. search for Alex Bateman</li>
-</ul>
-</li>
-</ul></section><section><h2 class="section-heading" id="wikidata-one-pager">2.5 Wikidata one pager<a class="anchor" aria-label="anchor" href="#wikidata-one-pager"></a>
-</h2>
-<hr class="half-width">
-<ul>
-<li><a href="https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf" class="external-link">https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf</a></li>
-</ul></section><section><h2 class="section-heading" id="how-wikidata-compares-with-other-data-sets">2.6 How Wikidata compares with other data sets<a class="anchor" aria-label="anchor" href="#how-wikidata-compares-with-other-data-sets"></a>
-</h2>
-<hr class="half-width">
-<ul>
-<li><a href="https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata" class="external-link">https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata</a></li>
-<li><a href="https://lod-cloud.net/" class="external-link">https://lod-cloud.net/</a></li>
-</ul>
-<p>FIXME</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -826,7 +938,15 @@ Open Data Cloud</a>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>First key point. (FIXME)</li>
+<li>Triples are the basic data structure of graph databases, and they
+are the conceptual structure of Wikidata statements.</li>
+<li>Wikidata items are denoted by a human-readable label and a short
+description, and a unique identifer that begins with a Q. These items
+are the subjects of linked Wikidata statements.</li>
+<li>Wikidata defines relationships between items, also known as triple
+<em>predicates</em>, with Wikidata <em>properties</em>.</li>
+<li>Wikidata statements can capture library information, such as
+relationships like creatorship, publication, aboutness, and more.</li>
 </ul>
 </div>
 </div>
@@ -1215,7 +1335,7 @@ SELECT-statement.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre><code>SELECT * WHERE {
    wd:Q7750812 wdt:P123 ?publisher .

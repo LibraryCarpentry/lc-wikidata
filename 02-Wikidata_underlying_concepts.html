@@ -119,11 +119,11 @@
   Library Carpentry Wikidata
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 100%" class="percentage">
-    100%
+<aside class="col-md-12 lesson-progress"><div style="width: 50%" class="percentage">
+    50%
   </div>
   <div class="progress library">
-    <div class="progress-bar library" role="progressbar" style="width: 100%" aria-valuenow="100" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar library" role="progressbar" style="width: 50%" aria-valuenow="50" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -226,12 +226,9 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#concepts-foundations-ways-of-storing-data.">2.1 Concepts foundations: ways of storing data.</a></li>
-<li><a href="#concepts-foundations-rdf-and-rdf-triples">2.2 Concepts foundations (RDF and RDF triples)</a></li>
-<li><a href="#underlying-components">2.3 Underlying components</a></li>
-<li><a href="#scholia---a-webserive-with-wikidata-as-underlying-database">2.4 Scholia - a webserive with Wikidata as underlying database</a></li>
-<li><a href="#wikidata-one-pager">2.5 Wikidata one pager</a></li>
-<li><a href="#how-wikidata-compares-with-other-data-sets">2.6 How Wikidata compares with other data sets</a></li>
+        <ul><li><a href="#conceptual-foundations-ways-of-storing-data">2.1 Conceptual foundations: ways of storing data</a></li>
+<li><a href="#conceptual-foundations-rdf-and-triples">2.2 Conceptual foundations: RDF and Triples</a></li>
+<li><a href="#wikidata-concepts">2.3 Wikidata concepts</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -332,7 +329,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Underlying concepts of Wikidata</h1>
-        <p>Last updated on 2023-04-24 |
+        <p>Last updated on 2026-03-17 |
 
         <a href="https://github.com/librarycarpentry/lc-wikidata/edit/main/episodes/02-Wikidata_underlying_concepts.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -364,97 +361,134 @@
 to traditional metadata field structure</li>
 <li>Know how linked data can create more context for patrons/users in
 library catalogs</li>
-<li>Know how linked data can improve recall in library catalogs? (TODO:
-Check if we want to address this here).</li>
+<li>Know how linked data can improve recall in library catalogs?</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="concepts-foundations-ways-of-storing-data-">2.1 Concepts foundations: ways of storing data.<a class="anchor" aria-label="anchor" href="#concepts-foundations-ways-of-storing-data-"></a></h2>
-<hr class="half-width"><p>There are many types of databases, the most common types are:</p>
+<section><h2 class="section-heading" id="conceptual-foundations-ways-of-storing-data">2.1 Conceptual foundations: ways of storing data<a class="anchor" aria-label="anchor" href="#conceptual-foundations-ways-of-storing-data"></a></h2>
+<hr class="half-width"><p>There are many types of database structures and systems. Two common
+database types are relational databases and graph databases.
+Understanding the commonalities and differencews between these
+structures helps to explain the uniqueness of Wikidata’s data
+structure.</p>
 <div class="section level3">
-<h3 id="relational-databases">2.1.1 Relational databases:<a class="anchor" aria-label="anchor" href="#relational-databases"></a></h3>
+<h3 id="relational-databases">2.1.1 Relational databases<a class="anchor" aria-label="anchor" href="#relational-databases"></a></h3>
 <p>A relational database is a set of formally described related tables
 from which data can be accessed or reassembled. This model organizes
 data into one or more tables (or “relations”) of columns and rows, with
 a unique key identifying each row. each table/relation represents one
 “entity type” and these entities are connected via constrained
 relationships. This model is fully structured and mostly uses SQL
-(Structured Query Language) to retrive and manuplate data.<br>
-Examples:</p>
-<figure><img src="fig/Relational_database_terms.svg.png" alt="relational database" class="figure mx-auto d-block"></figure></div>
+(Structured Query Language) to retrive and manuplate data.</p>
+<p>A single database table and its basic parts is demonstrated below.
+Note that each row is a set of ordered values that corresponds to a
+single data element. Each column in the table may be understood as an
+attribute, which is a common attribute, but for which each row has the
+data corresponding to that record. Together, the entire table consitutes
+a data element that can be related to other other tables.</p>
+<figure><img src="fig/Relational_database_terms.svg.png" alt="Schematic of a data table in a relational database, which can be understood as a series of records (ordered tuple values) with various attributes, which can be related to other tables in the database through structured queries." class="figure mx-auto d-block"></figure></div>
 <div class="section level3">
 <h3 id="graph-semantic-databases">2.1.2 Graph / Semantic databases<a class="anchor" aria-label="anchor" href="#graph-semantic-databases"></a></h3>
 <p>Semantic web is an extension of the World Wide Web standards, which
-promote common data formats and exchange protocols on the Web, most
-fundamentally the Resource Description Framework (RDF) is used to store
-data. Most RDF fundamentally uses SPARQL (Simple Protocol and Rdf Query
-Language) to read stored data while relational databases uses SQL
-(Structured Query Language) to do so. In SQL relational database terms,
-RDF data can also be considered or viewed as a table with only three
-columns – the subject column, the predicate column, and the object
-column.</p>
-<figure><img src="fig/Data_Structure_Diagram.jpg" alt="data structure diagram" class="figure mx-auto d-block"></figure></div>
-</section><section><h2 class="section-heading" id="concepts-foundations-rdf-and-rdf-triples">2.2 Concepts foundations (RDF and RDF triples)<a class="anchor" aria-label="anchor" href="#concepts-foundations-rdf-and-rdf-triples"></a></h2>
-<hr class="half-width"><ul><li><p>The RDF is a conceptual data model, It is based on the idea of
-making statements about resources in expressions of the form
-(subject–predicate–object), known as triples.</p></li>
-<li><p>The subject denotes the resource, and the predicate denotes
+promote common formats and exchange protocols on the Web. For data
+exchange, the fundamental Web standard is the Resource Description
+Framework, or RDF. Rather than being defined by tables, this “graph” or
+semantic structure is defined by relationship statements. RDF outlines a
+protocol for encoding and transmitting graph data on the web.</p>
+<p>RDF can be queried and analyzes using a language called SPARQL
+(Simple Protocol and RDF Query Language). This has its own syntax, but
+it is similar to how relational databases use SQL (Structured Query
+Language) to create and build queries. In SQL relational database terms,
+RDF data can also be processed as a table, but with only three columns –
+the subject column, the predicate column, and the object column.</p>
+<figure><img src="fig/Data_Structure_Diagram.jpg" alt="A data structure diagram illustrating a possible connection between a list of triples, represented by a data dictionary, and a graph diagram which visualizes the relationships stipulated by the triples." class="figure mx-auto d-block"></figure></div>
+</section><section><h2 class="section-heading" id="conceptual-foundations-rdf-and-triples">2.2 Conceptual foundations: RDF and Triples<a class="anchor" aria-label="anchor" href="#conceptual-foundations-rdf-and-triples"></a></h2>
+<hr class="half-width"><p>The RDF defines a conceptual data model that is based on the idea of
+making statements about resources. Unlike a relational database, the
+data model defined by RDF is text-focused, and it is based on relating
+defined entities (as Wikidata calls them, <em>items</em>) that can be
+referred to by a Internationalized Resource Identifier (an IRI, which is
+nearly synonymous with a URL), and which can be connected or related to
+any other defined entity through a standard language. While the data
+structures can be complex, they rely on a basic structure called a
+<strong>triple</strong>, which consists of a <em>subject</em> and an
+<em>object</em>, which are linked together, or related, by a defined
+relationship called a <em>predicate</em> (as Wikidata calls it, a
+<em>property</em>). Here youcan read Wikipedia’s definition of a <a href="https://en.wikipedia.org/wiki/Semantic_triple" class="external-link">semantic
+triple</a>.</p>
+<figure><img src="fig/RDF_subject_predicate_object.jpg" alt="Schematic illustration of an RDF Triple" class="figure mx-auto d-block"></figure><p>The basic data statement is expressed in the form
+<em>subject–predicate–object</em>, also known as a <em>triple</em>. The
+<em>subject</em> denotes the resource. In Wikidata, each item, or Q
+node, is a triple subject. The <em>object</em> is usually another data
+entity, though it may also be a standalone value, which is related to
+the subject by the predicate relator. The <em>predicate</em> denotes
 traits or aspects of the resource, and expresses a relationship between
-the subject and the object, for example: John-is-a person, John-born
-in-1980, John-works as-Engineer</p></li>
-<li><p>RDF data are stored on containers known as triplestores.</p></li>
-<li><p><a href="https://en.wikipedia.org/wiki/Semantic_triple" class="external-link">https://en.wikipedia.org/wiki/Semantic_triple</a></p></li>
-</ul><figure><img src="fig/RDF_subject_predicate_object.jpg" alt="RDF Tripe" class="figure mx-auto d-block"></figure></section><section><h2 class="section-heading" id="underlying-components">2.3 Underlying components<a class="anchor" aria-label="anchor" href="#underlying-components"></a></h2>
-<hr class="half-width"><ul><li>Items<br>
-Items represents subjects such Douglas Adams and have identifiers that
-starts with letter “Q” like: Q42 for Douglas Adams.<br>
-Each item must have a name in one or more langauges, optionally have
-alternative names and descrition.</li>
-<li>Properties<br>
+the subject and the object, for example:</p>
+<ul><li>The British Library <em>is-a</em> library</li>
+<li>John <em>is-a</em> person</li>
+<li>John <em>born-in </em>1980</li>
+<li>John <em>has-occupation</em> engineer</li>
+</ul><p>Each of the above is a triple about the subject “John,” wither
+different predicates and objects.</p>
+<p>As you can imagine, Wikidata has a huge number of data items
+(subjects), and it includes millions and millions of triple statements.
+RDF data are stores are also known as triplestores.</p>
+</section><section><h2 class="section-heading" id="wikidata-concepts">2.3 Wikidata concepts<a class="anchor" aria-label="anchor" href="#wikidata-concepts"></a></h2>
+<hr class="half-width"><dl><dt><strong>Items</strong></dt>
+<dd>
+Items represents things and conceps, including people, places, events,
+subjects, and more. Examples mentioned previously include the British
+Library or Douglas Adams. Wikidata items have identifiers that start
+with letter “Q”, like <code>Q42</code> for Douglas Adams.<br>
+Each item must have a label in one or more languages, optionally have
+alternative names and descrition.
+</dd>
+<dt><strong>Properties</strong></dt>
+<dd>
 Properties represents attributes of the subject such occupation and have
-identifiers that starts with letter “P” like: P106 for Occupation.</li>
-<li>Claims<br>
-Claims are the triples, which combine the formation of Item and Property
-and a value such: Douglas Adams (Q42) - occupation (P106) -
-comedian.<br>
-Note: value can be already stored in wikidata, therefore the bot assigns
-the Q number of the value instead.</li>
-<li>Statement<br>
+identifiers that starts with letter “P” like: P106 for Occupation.
+</dd>
+<dt><strong>Claims</strong></dt>
+<dd>
+Claims are the triple statements, which combine the formation of Item
+and Property and value. For example:
+<code>Douglas Adams (Q42) - occupation (P106) - comedian (Q245068)</code>.
+<em>Note:</em> value can be already stored in wikidata, therefore the
+bot assigns the Q number of the value instead.
+</dd>
+<dt><strong>Statement</strong></dt>
+<dd>
 A Claim is a part of a statement, a statement also includes: References,
-Ranks, and Qualifiers.</li>
-<li>References<br>
+Ranks, and Qualifiers.
+</dd>
+<dt><strong>References</strong></dt>
+<dd>
 Used to store the source of the claim, using properties, such stated in,
-qoute, and etc.</li>
-<li>Ranks<br>
-A useful component to mark outdated claims.</li>
-<li>Qualifiers<br>
-Qualifiers are besicly properties but on claims rather than items.</li>
-</ul><div id="is-data-stored-in-the-rdf-triple-format-part-of-your-work-as-a-librarian" class="callout challenge">
+qoute, and etc.
+</dd>
+<dt><strong>Ranks</strong></dt>
+<dd>
+A useful component to deprecate outdated claims.
+</dd>
+<dt><strong>Qualifiers</strong></dt>
+<dd>
+Qualifiers are basically properties but on claims rather than items.
+</dd>
+</dl><div id="can-you-identify-triple-structures-in-library-data" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<span class="callout-header">Challenge</span>
-<div id="is-data-stored-in-the-rdf-triple-format-part-of-your-work-as-a-librarian" class="callout-inner">
-<h3 class="callout-title">Is data stored in the RDF triple format part
-of your work as a librarian?</h3>
+<span class="callout-header">Discussion</span>
+<div id="can-you-identify-triple-structures-in-library-data" class="callout-inner">
+<h3 class="callout-title">Can you identify triple structures in library
+data?</h3>
 <div class="callout-content">
-<p>Take some time to think about if data stored in the RDF triple format
-is part of your work as a librarian. Can you give an example in the
-format of an RDF triplet?</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<p><em>TO DO</em>: PLEASE ADD A REAL LIFE EXAMPLE</p>
-</div>
+<p>Is data stored in the RDF triple format part of your work as a
+librarian? Take some time to think about if data stored in the RDF
+triple format is part of your work as a librarian. Can you give an
+example in the format of an RDF triple?</p>
 </div>
 </div>
 </div>
@@ -468,19 +502,19 @@ format of an RDF triplet?</p>
 page of former astronaut Mae Jemison.</h3>
 <div class="callout-content">
 <p>Got to the Wikidata page of Mae Jemison and point out one RDF triple.
-An RDF triplet consists of a subject, a predicate and an object. Can you
+An RDF triple consists of a subject, a predicate and an object. Can you
 assign the three corresponding Wikidata terms?</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>Got to Wikidata and either search for “Mae Jemison” or enter the ID
+<p>Go to Wikidata and either search for “Mae Jemison” or enter the ID
 <em>Q34091</em>. In the picture below the statement “Mae C. Jemison -
 part of - NASA Astronaut Group 12” is an RDF triple. <img src="fig/Mae_Jemison_Wikidata.png" alt="Wikidata_Main_Page" class="figure"><br><em>Screenshot of <a href="https://www.wikidata.org/wiki/Q34091" class="external-link">Wikidata Main
 Page</a></em></p>
@@ -488,22 +522,6 @@ Page</a></em></p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="scholia---a-webserive-with-wikidata-as-underlying-database">2.4 Scholia - a webserive with Wikidata as underlying database<a class="anchor" aria-label="anchor" href="#scholia---a-webserive-with-wikidata-as-underlying-database"></a></h2>
-<hr class="half-width"><ul><li>Introduction with <a href="https://www.lod-cloud.net/" class="external-link">The Linked
-Open Data Cloud</a>
-</li>
-<li>the structure enables queries</li>
-<li>reference to DBPedia</li>
-<li>you can build your own web services with Wikidata as database &gt;
-<a href="https://scholia.toolforge.org/" class="external-link">Scholia</a>
-<ul><li>e.g. search for Alex Bateman</li>
-</ul></li>
-</ul></section><section><h2 class="section-heading" id="wikidata-one-pager">2.5 Wikidata one pager<a class="anchor" aria-label="anchor" href="#wikidata-one-pager"></a></h2>
-<hr class="half-width"><ul><li><a href="https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf" class="external-link">https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf</a></li>
-</ul></section><section><h2 class="section-heading" id="how-wikidata-compares-with-other-data-sets">2.6 How Wikidata compares with other data sets<a class="anchor" aria-label="anchor" href="#how-wikidata-compares-with-other-data-sets"></a></h2>
-<hr class="half-width"><ul><li><a href="https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata" class="external-link">https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata</a></li>
-<li><a href="https://lod-cloud.net/" class="external-link">https://lod-cloud.net/</a></li>
-</ul><p>FIXME</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -511,7 +529,15 @@ Open Data Cloud</a>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>First key point. (FIXME)</li>
+<ul><li>Triples are the basic data structure of graph databases, and they
+are the conceptual structure of Wikidata statements.</li>
+<li>Wikidata items are denoted by a human-readable label and a short
+description, and a unique identifer that begins with a Q. These items
+are the subjects of linked Wikidata statements.</li>
+<li>Wikidata defines relationships between items, also known as triple
+<em>predicates</em>, with Wikidata <em>properties</em>.</li>
+<li>Wikidata statements can capture library information, such as
+relationships like creatorship, publication, aboutness, and more.</li>
 </ul></div>
 </div>
 </div>
@@ -575,7 +601,7 @@ Open Data Cloud</a>
   "url": "https://librarycarpentry.github.io/lc-wikidata/02-Wikidata_underlying_concepts.html",
   "identifier": "https://librarycarpentry.github.io/lc-wikidata/02-Wikidata_underlying_concepts.html",
   "dateCreated": "2018-09-17",
-  "dateModified": "2023-04-24",
+  "dateModified": "2026-03-17",
   "datePublished": "2026-03-17"
 }
 
