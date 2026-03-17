@@ -1,7 +1,7 @@
 ---
 title: Underlying concepts of Wikidata
-teaching: 0
-exercises: 0
+teaching: 10
+exercises: 10
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
