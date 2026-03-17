@@ -41,21 +41,51 @@ to other other tables.
 
 ### 2\.1.2 Graph / Semantic databases
 
-Semantic web is an extension of the World Wide Web standards, which promote common data formats and exchange protocols on the Web, most fundamentally the Resource Description Framework (RDF) is used to store data. Most RDF fundamentally uses SPARQL (Simple Protocol and Rdf Query Language) to read stored data while relational databases uses SQL (Structured Query Language) to do so. In SQL relational database terms, RDF data can also be considered or viewed as a table with only three columns – the subject column, the predicate column, and the object column.
+Semantic web is an extension of the World Wide Web standards, which promote common
+formats and exchange protocols on the Web. For data exchange, the fundamental Web standard
+is the Resource Description Framework, or RDF. Rather than being defined by tables,
+this "graph" or semantic structure is defined by relationship statements. RDF outlines
+a protocol for encoding and transmitting graph data on the web.  
 
-![](fig/Data_Structure_Diagram.jpg){alt='data structure diagram'}
+RDF can be queried and analyzes using a language called SPARQL (Simple Protocol
+and RDF Query Language). This has its own syntax, but it is similar to how relational
+databases use SQL (Structured Query Language) to create and build queries.
+In SQL relational database terms, RDF data can also be processed as a table,
+but with only three columns – the subject column, the predicate column, and the object column.
+
+![](fig/Data_Structure_Diagram.jpg){alt='A data structure diagram illustrating a possible connection between a list of triples, represented by a data dictionary, and a graph diagram which visualizes the relationships stipulated by the triples.'}
 
 ## 2\.2 Conceptual foundations: RDF and Triples
 
-- The RDF is a conceptual data model, It is based on the idea of making statements about resources in expressions of the form (subject–predicate–object), known as triples.
+The RDF defines a conceptual data model that is based on the idea of
+making statements about resources. Unlike a relational database,
+the data model defined by RDF is text-focused, and it is based on relating defined entities
+(as Wikidata calls them, *items*) that can be referred to by a Internationalized 
+Resource Identifier (an IRI, which is nearly synonymous with a URL), and which can be
+connected or related to any other defined entity through a standard language. While the data
+structures can be complex, they rely on a basic structure called a **triple**,
+which consists of a *subject* and an *object*, which are linked together, or related, by a defined 
+relationship called a *predicate* (as Wikidata calls it, a *property*).
+Here youcan read Wikipedia's definition of a [semantic triple](https://en.wikipedia.org/wiki/Semantic_triple).
 
-- The subject denotes the resource, and the predicate denotes traits or aspects of the resource, and expresses a relationship between the subject and the object, for example: John-is-a person, John-born in-1980, John-works as-Engineer
+![](fig/RDF_subject_predicate_object.jpg){alt='Schematic illustration of an RDF Triple'}
 
-- RDF data are stored on containers known as triplestores.
+The basic data statement is expressed in the form *subject–predicate–object*, also known as a *triple*.
+The *subject* denotes the resource. In Wikidata, each item, or Q node, is a triple subject.
+The *object* is usually another data entity, though it may also be a standalone value, which is related to the subject by the predicate relator.
+The *predicate* denotes traits or aspects of the resource,
+and expresses a relationship between the subject and the object, for example:
 
-- [https://en.wikipedia.org/wiki/Semantic\_triple](https://en.wikipedia.org/wiki/Semantic_triple)
+- John *is-a* person 
+- John *born-in *1980
+- John *has-occupation* engineer
 
-![](fig/RDF_subject_predicate_object.jpg){alt='RDF Tripe'}
+Each of the above is a triple about the subject "John," wither different predicates
+and objects.
+
+As you can imagine, Wikidata has a huge number of data items (subjects), and 
+it includes millions and millions of triple statements. 
+RDF data are stores are also known as triplestores.
 
 ## 2\.3 Underlying components
 
