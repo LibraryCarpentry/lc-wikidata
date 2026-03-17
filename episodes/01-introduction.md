@@ -1,6 +1,6 @@
 ---
 title: What is Wikidata?
-teaching: 20
+teaching: 10
 exercises: 10
 ---
 
