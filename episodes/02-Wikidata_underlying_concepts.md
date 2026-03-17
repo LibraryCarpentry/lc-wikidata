@@ -8,7 +8,7 @@ exercises: 10
 
 - Know what a triple is, and relate structure of a Wikidata statement to traditional metadata field structure
 - Know how linked data can create more context for patrons/users in library catalogs
-- Know how linked data can improve recall in library catalogs? (TODO: Check if we want to address this here).
+- Know how linked data can improve recall in library catalogs? 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -148,7 +148,10 @@ In the picture below the statement "Mae C. Jemison - part of - NASA Astronaut Gr
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- First key point. (FIXME)
+- Triples are the basic data structure of graph databases, and they are the conceptual structure of Wikidata statements.
+- Wikidata items are denoted by a human-readable label and a short description, and a unique identifer that begins with a Q. These items are the subjects of linked Wikidata statements.
+- Wikidata defines relationships between items, also known as triple *predicates*, with Wikidata *properties*.
+- Wikidata statements can capture library information, such as relationships like creatorship, publication, aboutness, and more.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
