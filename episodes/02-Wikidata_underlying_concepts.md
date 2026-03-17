@@ -146,27 +146,6 @@ In the picture below the statement "Mae C. Jemison - part of - NASA Astronaut Gr
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## 2\.4 Scholia: a webservice with Wikidata as underlying database
-
-- Introduction with [The Linked Open Data Cloud](https://www.lod-cloud.net/)
-- the structure enables queries
-- reference to DBPedia
-- you can build your own web services with Wikidata as database > [Scholia](https://scholia.toolforge.org/)
-  - e.g. search for Alex Bateman
-
-## 2\.5 Wikidata one pager
-
-- [https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf](https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf)
-
-## 2\.6 Wikidata in comparison with other data
-
-- [https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia\_and\_Wikidata](https://meta.wikimedia.org/wiki/Wikidata/Notes/DBpedia_and_Wikidata)
-- [https://lod-cloud.net/](https://lod-cloud.net/)
-
-FIXME
-
-
-
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - First key point. (FIXME)
