@@ -90,18 +90,15 @@ Wikidata items, as you can see above, have many special parts, like statements, 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg){alt='Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed'}
 
-:::::::::::: challenge
+:::::::::::: callout
 
-### Exploring a Wikidata item
+### Wikidata editing and change history
 
-Most pages can be edited by anyone (note, however, that the British Library - Q23308 item is semi-protected). To edit an item, click the pen icon followed by the word "edit" in the upper-right area of an item page. Don't worry if you made a mistake, you can always go back in an item's history and restore or undo changes.
-
-:::::::: solution 
-
-- To see the changes made to an item, click "View history"
-- Before making changes or editing an item, you should be logged in
-
-::::::::
+Most pages can be edited by anyone (note, however, that the British Library - Q23308 item is semi-protected), and like other wiki projects, Wikidata tracks all changes made to an item.
+To see the changes made to an item, click "View history".
+To edit an item, click the pen icon followed by the word "edit" in the upper-right area of an item page.
+Don't worry if you made a mistake, you can always go back in an item's history and restore or undo changes.
+We will explore the steps of editing a Wikidata item in [episode 3, "Introduction to editing"](../episodes/03-intro_to_editing.html).
 
 ::::::::::::
 
