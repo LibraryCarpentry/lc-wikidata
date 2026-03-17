@@ -113,38 +113,31 @@ For example: `Douglas Adams (Q42) - occupation (P106) - comedian (Q245068)`. *No
 **Qualifiers**
 : Qualifiers are basically properties but on claims rather than items.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::  discussion
 
-## Is data stored in the RDF triple format part of your work as a librarian?
+### Can you identify triple structures in library data?
 
+Is data stored in the RDF triple format part of your work as a librarian?
 Take some time to think about if data stored in the RDF triple format
-is part of your work as a librarian. Can you give an example in the format of an RDF triplet?
-
-:::::::::::::::  solution
-
-## Solution
-
-*TO DO*: PLEASE ADD A REAL LIFE EXAMPLE
-
-
+is part of your work as a librarian.
+Can you give an example in the format of an RDF triple?
 
 :::::::::::::::::::::::::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 ## Point out one RDF triple on the Wikidata item page of former astronaut Mae Jemison.
 
 Got to the Wikidata page of Mae Jemison and point out one RDF triple.
-An RDF triplet consists of a subject, a predicate and an object.
+An RDF triple consists of a subject, a predicate and an object.
 Can you assign the three corresponding Wikidata terms?
 
 :::::::::::::::  solution
 
 ## Solution
 
-Got to Wikidata and either search for "Mae Jemison" or enter the ID *Q34091*.
+Go to Wikidata and either search for "Mae Jemison" or enter the ID *Q34091*.
 In the picture below the statement "Mae C. Jemison - part of - NASA Astronaut Group 12" is an RDF triple.
 ![](fig/Mae_Jemison_Wikidata.png){alt='Wikidata\_Main\_Page'}  
 *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Q34091)*
