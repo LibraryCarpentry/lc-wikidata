@@ -105,22 +105,33 @@ Most pages can be edited by anyone (note, however, that the British Library - Q2
 
 ::::::::::::
 
+## 1\.3 Wikidata's commitment to open data 
 
-- All of Wikidata's data is published online under the [Creative Commons CC0 License](https://creativecommons.org/publicdomain/zero/1.0/), which states:
+All of Wikidata's data is published freely and openly online under a [Creative Commons CC0 License](https://creativecommons.org/publicdomain/zero/1.0/), which states:
 "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission." 
 In other words, the data is openly licensed and reusable. Since Wikidata can also be linked to other data sources on the web, this means Wikidata is *linked open data*.
 
 - Follow this link to view a pdf that offers a one-page overview of Wikidata (visual): [https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf](https://commons.wikimedia.org/wiki/File:Wikidata-in-brief-1.0.pdf)
 
-## 1\.2 Play games to open
+:::::::::::: challenge
 
-- Visit the Wikipedia page of the city you were born in two languages
-  of you choice (you can choose different language version in the left
-  side of a Wikipedia page) and look the size of the population. Are
-  the numbers the same in the different language? Visit the item in
-  Wikidata.
+### Explore a Wikidata Item
 
-## 1\.3 Wikidata Item Eastereggs
+Locate the Wikidata page of the city you were born in. Look for the population. 
+
+- Has the population changed over time? Some wikidata pages appear in multiple languages. 
+- Are the aliases and data similar between Wikidata and the various Wikipedia entries in different languages? 
+- Compare the information in Wikipedia and Wikidata
+
+:::::::: solution
+
+- Depending on the detail and amount of information about a place, there may be multiple values regarding a city's population. Because a city changes over time, Wikidata statements can be qualified, including with the addition of a start/end date, or by providing a citation for the data. The change in population over time provides a good example of the importance of providing qualifications for Wikidata staements.
+
+::::::::
+
+::::::::::::
+
+## 1\.4 Wikidata Item Eastereggs
 
 While most of the Q identifiers are arbitrary numbers, there are a few that suggest some meaning or humor, such as:
 
@@ -136,20 +147,39 @@ While most of the Q identifiers are arbitrary numbers, there are a few that sugg
 - [Q666 - Number of the beast](https://www.wikidata.org/wiki/Q666)
 - [Q12345 - Count von Count, Character on Sesame Street](https://www.wikidata.org/wiki/Q12345)
 
-## 1\.4 Linking Wikidata to other Wiki resources
+## 1\.5 Linking Wikidata to other Wiki resources
 
-- Link from Wikipedia to Wikidata
-  - e.g. [https://en.wikipedia.org/wiki/On\_the\_Origin\_of\_Species](https://en.wikipedia.org/wiki/On_the_Origin_of_Species)
-    - \=> Follow the link "Wikidata item" on the left side under "tools"
-    - \=> [https://www.wikidata.org/wiki/Q20124](https://www.wikidata.org/wiki/Q20124)
-    - \=> the Wikipedia article is linked on the Wikidata's item page. You can find it on the right side.
-    - \=> link to WikiCommons and WikiSource
+One of the most important and powerful aspects of Wikidata item pages is the final subheading, *Identifiers*. This is a special section that appears at the end of a Wikidata item page, and it is where information about how an item is identified in other databases or knowledge bases. Here, for example, is where you will find information about how an author's Wikidata page relates to various national library catalogs, the Virtual International Authority File, or fan databases that document an author's writings. This linking feature, which is quite highly developed in Wikipedia, makes the data especially valuable to libraries, archives, and other cultural heritage information.
+
+As well as linking to external identifiers and authority sources, this section also has information about links to an item's Wikipedia page (if there is one), as well as other WikiMedia projects, including WikiCommons, WikiSource, and others. 
+
+:::::::::::: challenge 
+
+### Links from Wikipedia to Wikidata
+
+Let's take a look at the relationships between Wikipedia and Wikidata. For example, how about Darwin's [On the Origin of Species](https://en.wikipedia.org/wiki/On_the_Origin_of_Species), a notable scientific work that is discussed in both resources.
+
+- What information is common between both resources? How would you describe the information in Wikidata, in comparison to that in Wikipedia? How are they similar or different?
+
+:::::::: solution 
+
+  - \=> Follow the link "Wikidata item" on the left side under "tools"
+  - \=> [https://www.wikidata.org/wiki/Q20124](https://www.wikidata.org/wiki/Q20124)
+  - \=> the Wikipedia article is linked on the Wikidata's item page. You can find it on the right side.
+  - \=> link to WikiCommons and WikiSource
+
+It is important to note that Wikidata is limited to basic statements or assertions, such as when the work was published, who and where it was published, and who wrote the work. This is similar to a catalog record. The Wikipedia article, on the other hand, discusses the themes and structure, the impact and reception of the work, and subsequent or ongoing debates.
+
+::::::::
+
+::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Wikidata entities are known as Items, and each item is displayed on a page that is identified with the item's "Q" number
-- Relationships between entities are known as Properties, and each property is identified with a "P" number
 - Statements are assertions about items, which state relationships between items using wikidata properties.
+- Relationships between entities are known as Properties, and each property is identified with a "P" number
 - Statements are also known as "triples"
+- Wikidata and Wikipedia are complementary, but Wikidata is focused on basic claims or assertions, not descriptive or narrative information
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
