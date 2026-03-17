@@ -76,6 +76,7 @@ The *object* is usually another data entity, though it may also be a standalone 
 The *predicate* denotes traits or aspects of the resource,
 and expresses a relationship between the subject and the object, for example:
 
+- The British Library *is-a* library
 - John *is-a* person 
 - John *born-in *1980
 - John *has-occupation* engineer
@@ -87,25 +88,30 @@ As you can imagine, Wikidata has a huge number of data items (subjects), and
 it includes millions and millions of triple statements. 
 RDF data are stores are also known as triplestores.
 
-## 2\.3 Underlying components
+## 2\.3 Wikidata concepts
 
-- Items  
-  Items represents subjects such Douglas Adams and have identifiers that starts with letter "Q" like: Q42 for Douglas Adams.  
-  Each item must have a name in one or more langauges, optionally have alternative names and descrition.
-- Properties  
-  Properties represents attributes of the subject such occupation and have identifiers that starts with letter "P" like: P106 for Occupation.
-- Claims  
-  Claims are the triples, which combine the formation of Item and Property and a value such:
-  Douglas Adams (Q42) - occupation (P106) - comedian.  
-  Note: value can be already stored in wikidata, therefore the bot assigns the Q number of the value instead.
-- Statement  
-  A Claim is a part of a statement, a statement also includes: References, Ranks, and Qualifiers.
-- References  
-  Used to store the source of the claim, using properties, such stated in, qoute, and etc.
-- Ranks  
-  A useful component to mark outdated claims.
-- Qualifiers  
-  Qualifiers are besicly properties but on claims rather than items.
+**Items**
+: Items represents things and conceps, including people, places, events, subjects, and more. Examples mentioned previously include the British Library or Douglas Adams. Wikidata items have identifiers that start with letter "Q", like `Q42` for Douglas Adams.  
+  Each item must have a label in one or more languages, optionally have alternative names and descrition.
+
+**Properties**
+: Properties represents attributes of the subject such occupation and have identifiers that starts with letter "P" like: P106 for Occupation.
+
+**Claims**  
+: Claims are the triple statements, which combine the formation of Item and Property and value.
+For example: `Douglas Adams (Q42) - occupation (P106) - comedian (Q245068)`. *Note:* value can be already stored in wikidata, therefore the bot assigns the Q number of the value instead.
+
+**Statement**  
+: A Claim is a part of a statement, a statement also includes: References, Ranks, and Qualifiers.
+
+**References**
+: Used to store the source of the claim, using properties, such stated in, qoute, and etc.
+
+**Ranks**  
+: A useful component to deprecate outdated claims.
+
+**Qualifiers**
+: Qualifiers are basically properties but on claims rather than items.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
