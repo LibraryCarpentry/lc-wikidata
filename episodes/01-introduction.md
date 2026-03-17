@@ -50,7 +50,7 @@ Wikidata has many features that make it of interest to librarians and knowledge 
   a. *Scholia*: A tool built on top of Wikidata that visualizes scholarly profiles and research outputs, showing the impact of Wikidata in academic and research contexts. Librarians can showcase Scholia as a tangible example of how data in Wikidata is used for research and scholarship.
   b. *Crosswalks between systems*: Wikidata’s ability to link various identifiers (e.g., connecting ORCID to GND or VIAF) is beneficial for cross-referencing and data cleaning in library management systems.
 
-## 1\.1 Intro interface
+## 1\.1 Wikidata interface
 
 This section of the lesson introduces the Wikidata interface as it can be seen in a web browser.
 Let's see if we as humans can simply read the data on Wikidata:
