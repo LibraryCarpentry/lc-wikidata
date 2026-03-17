@@ -32,7 +32,7 @@ Wikidata uses the same speed and similar collaborative editing platform, but for
 
 Wikidata contains various data types (e.g. text, images, quantities, coordinates, geographic shapes, dates). The data can be viewed in a web browser, but it can also be queried via a query interface called SPARQL, which we will cover later in this lesson. Data on Wikidata is published under the Creative Commons Public Domain 1.0 license. Thus, the data can be modified, copied, and distributed without permission.
 
-Wikidata also contains authority files, bibliographic data, and other content normally managed in library databases.
+Wikidata also contains authority files, bibliographic data, and other content that can similarly be found or managed in library databases.
 
 Importantly, Wikidata can be understood as linked open data, which can be  [connected](https://www.wikidata.org/wiki/Wikidata:Data_access#How_can_I_get_data_out_of_Wikidata?) to other open data sets on the web.
 
