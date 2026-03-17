@@ -53,42 +53,58 @@ Wikidata has many features that make it of interest to librarians and knowledge 
 ## 1\.1 Wikidata interface
 
 This section of the lesson introduces the Wikidata interface as it can be seen in a web browser.
-Let's see if we as humans can simply read the data on Wikidata:
+Let's learn about some of the important elements of how you can read
+and interact with the data on Wikidata.
 
-- Explore a Wikidata Item page
-
-  - Start by going to the [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. You will see something like this:
+- Start by going to the [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page) by typing "www.wikidata.org" into your browser. You will see something like this:
   
   ![](fig/Wikidata_Main_Page.png){alt='Screenshot of the Wikidata main page displaying in a web browser'}  
   *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
-  
-  - Now go to the search bar in the top right corner and enter "british library". This will give you a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page:
-    [https://www.wikidata.org/wiki/Q23308](https://www.wikidata.org/wiki/Q23308)
-  
-  - Let us explore the item *British Library (Q23308)*. The top part of the item page identifies the item. It displays:
-    
-    - unique identifier (constructed as the capital letter followed by one or more numbers)
-    - label
-    - description
-    - aliases
-  
-  - Lower on the page is a *statements* section, which shows relationships that have been asserted about the item. A statement has:
-    
-    - property (constructed as the capital letter P followed by one or more numbers)
-    - value
-    - qualifier (optional)
-    - references (optional)
-    - can also be called a "triple," which will be explained later
-    - As you can see, a property can have multiple values for one property; for example "member of"; and can be further specified by qualifiers (not shown on the item page for British Library).
 
-- There are many special terms and definitions here, like statements, qualifiers and so on. Since many of these terms can be confusing, you may check [this overview graphic as a reference](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg):
+## 1\.2 Wikidata Items and Item Pages
+
+The primary unit of data described on Wikidata are "items." Each item has an item page with a unique identifier designated by the letter `Q` followed by a string of numbers. Let's explore a Wikidata item page, which will also demonstrate the characteristics of items in Wikidata.
+
+### Explore a Wikidata Item page
+  
+- Click in the search bar in the top right corner of the main page and enter "british library". As you start typing, you will see a list with search results. Click the entry that says: "British Library (Q23308) national library of the United Kingdom". Now you should see the british library's item page: 
+[https://www.wikidata.org/wiki/Q23308](https://www.wikidata.org/wiki/Q23308)
+  
+- Let us explore the item *British Library (Q23308)*. The top part of the item page identifies the item. Here you will see:
+    
+  - label
+  - description
+  - unique identifier (constructed as the capital letter followed by one or more numbers)
+  - aliases
+  
+- Farther down on the page is a *Statements* subheading. This section shows relationships, or claims, that have been asserted about the item. Statement may include:
+    
+  - property (constructed as the capital letter P followed by one or more numbers)
+  - value
+  - qualifier (optional)
+  - references (optional)
+  - As you can see, a property can have multiple values. For example, *member of* indicates multiple values. These values can be further specified or supported by qualifiers (not shown on the item page for British Library)
+  - statements can also be called "triples," since they include three parts (the item, the property relationship, and the property's value), which we will look into more closely later on
+
+Wikidata items, as you can see above, have many special parts, like statements, qualifiers, and so on. The following overview graphic, [directly linked here](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg), explains many of the various elements of a Wikidata item and shows how they may appear on an item page:
 
 ![](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg){alt='Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed'}
 
-- Most pages can be edited by anyone (note, however, that the British Library - Q23308 item is semi-protected). To edit an item, click the pen icon followed by the word "edit" in the upper-right are of the page. Don't worry if you made a mistake, you can always go back in an item's history and restore or undo changes.
-  
-  - "View history" - more later
-  - "Log in" and other things for registered users
+:::::::::::: challenge
+
+### Exploring a Wikidata item
+
+Most pages can be edited by anyone (note, however, that the British Library - Q23308 item is semi-protected). To edit an item, click the pen icon followed by the word "edit" in the upper-right area of an item page. Don't worry if you made a mistake, you can always go back in an item's history and restore or undo changes.
+
+:::::::: solution 
+
+- To see the changes made to an item, click "View history"
+- Before making changes or editing an item, you should be logged in
+
+::::::::
+
+::::::::::::
+
 
 - All of Wikidata's data is published online under the [Creative Commons CC0 License](https://creativecommons.org/publicdomain/zero/1.0/), which states:
 "The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission." 
