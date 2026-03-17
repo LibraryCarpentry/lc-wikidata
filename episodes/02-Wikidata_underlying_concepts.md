@@ -29,9 +29,15 @@ helps to explain the uniqueness of Wikidata's data structure.
 ### 2\.1.1 Relational databases
 
 A relational database is a set of formally described related tables from which data can be accessed or reassembled. This model organizes data into one or more tables (or "relations") of columns and rows, with a unique key identifying each row. each table/relation represents one "entity type" and these entities are connected via constrained relationships. This model is fully structured and mostly uses SQL (Structured Query Language) to retrive and manuplate data.  
-Examples:
 
-![](fig/Relational_database_terms.svg.png){alt='relational database'}
+A single database table and its basic parts is demonstrated below.
+Note that each row is a set of ordered values that corresponds to a single data element.
+Each column in the table may be understood as an attribute, which is a common attribute,
+but for which each row has the data corresponding to that record.
+Together, the entire table consitutes a data element that can be related
+to other other tables.
+
+![](fig/Relational_database_terms.svg.png){alt='Schematic of a data table in a relational database, which can be understood as a series of records (ordered tuple values) with various attributes, which can be related to other tables in the database through structured queries.'}
 
 ### 2\.1.2 Graph / Semantic databases
 
