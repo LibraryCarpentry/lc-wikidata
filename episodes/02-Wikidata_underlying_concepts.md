@@ -19,7 +19,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## 2\.1 Concepts foundations: ways of storing data
+## 2\.1 Conceptual foundations: ways of storing data
 
 There are many types of database structures and systems.
 Two common database types are relational databases and graph databases.
