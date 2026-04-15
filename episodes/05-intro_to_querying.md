@@ -88,7 +88,7 @@ SELECT * WHERE {
 ```
 
 *Hint* It is enough to start typing "SELECT" and then use the auto-completion with
-Ctrl+Space. % TODO what is this for on a Mac?
+Ctrl+Space.
 
 Inside the parenthesis you can then place the statements describing the graph pattern
 you are looking for.
