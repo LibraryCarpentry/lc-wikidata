@@ -55,6 +55,13 @@ but with only three columns – the subject column, the predicate column, and th
 
 ![](fig/Data_Structure_Diagram.jpg){alt='A data structure diagram illustrating a possible connection between a list of triples, represented by a data dictionary, and a graph diagram which visualizes the relationships stipulated by the triples.'}
 
+The scale of linked open data on the web can be visualized in the 
+[Linked Open Data Cloud](https://lod-cloud.net/), which shows the 
+connections between hundreds of open datasets. Note that this 
+visualization is updated regularly, so it will look different over time.
+
+![](https://lod-cloud.net/clouds/lod-cloud.svg){alt='Visualization of the Linked Open Data Cloud showing connections between hundreds of open datasets'}
+
 ## 2\.2 Conceptual foundations: RDF and Triples
 
 The RDF defines a conceptual data model that is based on the idea of
