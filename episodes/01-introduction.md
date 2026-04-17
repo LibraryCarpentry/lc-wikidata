@@ -28,6 +28,16 @@ Wikidata [describes itself](https://www.wikidata.org/wiki/Wikidata:Main_Page) as
 
 Most users will be familiar with [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Introduction), the "free encyclopedia, written collaboratively by the people who use it. It is a special type of website designed to make collaboration easy, called a wiki. Many people are constantly improving Wikipedia, making thousands of changes per hour. All of these changes are recorded in article histories and recent changes."
 
+As librarian and developer Dan Scott has noted, rather than investing 
+resources into enhancing local data silos like library catalogues or 
+digital exhibits, libraries and archives can maximize the visibility and 
+reusability of their data by enriching Wikidata as a centralized, open 
+repository — and then pulling that data back into local systems.
+
+Another sign of Wikidata's growing importance: Google closed their own 
+knowledge base project Freebase in 2016 in favor of backing Wikidata, 
+and Google's Knowledge Graph now draws on Wikidata data.
+
 Wikidata uses the same speed and similar collaborative editing platform, but for data. Wikidata functions as the central database for a variety of Wiki projects, including Wikipedia, Wiktionary, and Wikisource, among others.
 
 Wikidata contains various data types (e.g. text, images, quantities, coordinates, geographic shapes, dates). The data can be viewed in a web browser, but it can also be queried via a query interface called SPARQL, which we will cover later in this lesson. Data on Wikidata is published under the Creative Commons Public Domain 1.0 license. Thus, the data can be modified, copied, and distributed without permission.
