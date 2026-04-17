@@ -23,7 +23,12 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-FIXME
+In this episode we will learn how to query Wikidata using SPARQL, 
+the query language for RDF data. We will start with simple queries 
+and work our way up to more complex ones, including visualizations 
+like maps, charts, and graphs. The Wikidata Query Service at 
+[https://query.wikidata.org/](https://query.wikidata.org/) will be 
+our main tool throughout this episode.
 
 
 
@@ -557,7 +562,14 @@ https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- First key point. (FIXME)
+- SPARQL is a query language for RDF data that allows you to search 
+  across the entire Wikidata knowledge graph.
+- The Wikidata Query Service at https://query.wikidata.org/ provides 
+  an interface to write and run SPARQL queries with auto-completion.
+- Results can be visualized in multiple ways including tables, maps, 
+  charts, and graphs using the Display menu or #defaultView.
+- It is good practice to modify existing example queries rather than 
+  writing queries from scratch.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
