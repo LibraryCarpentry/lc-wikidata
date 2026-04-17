@@ -140,8 +140,12 @@ library materials.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- create new items
-- add new statements
+- Use the test instance of Wikidata (test.wikidata.org) to practice editing without affecting the live database.
+- New items require a label, description, and optional aliases; each item receives a unique Q-identifier.
+- Statements link properties (e.g. P569 "date of birth") to values and should be supported by references pointing to reliable sources.
+- Identifiers such as VIAF, Library of Congress authority ID, IMDb ID, or ORCID connect a Wikidata item to external databases and increase its reliability.
+- Community norms govern how labels and descriptions are written; following them ensures consistency across Wikidata.
+- Wikidata distinguishes between a work and its editions — this is especially relevant for books and library materials.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
