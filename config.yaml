@@ -64,7 +64,7 @@ episodes:
 - 03-intro_to_editing.md
 - 04-advanced_editing.md
 - 05-intro_to_querying.md
-- 06-bulk_actions.md
+# - 06-bulk_actions.md
 
 # Information for Learners
 learners: 
