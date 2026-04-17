@@ -32,6 +32,21 @@ Here we will work in the test instance of Wikidata so you will not break anythin
 
 ## 3\.2 Create new items
 
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+This exercise uses the test instance of Wikidata by default to avoid 
+cluttering the live database with practice entries. If you want to make 
+the exercise more hands-on, an alternative is to have learners find their 
+own institution's library in Wikidata and add a missing statement (e.g. 
+coordinates, official website, or an external identifier like ISNI). 
+This requires some preparation in advance.
+
+Note: Based on learner feedback, the focus of this lesson has shifted 
+towards SPARQL queries. This exercise can be kept short or skipped 
+if time is limited.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 In the following we will create new items. In order to avoid to fill Wikidata with test entries, we will use the test instance ([https://test.wikidata.org/](https://test.wikidata.org/)) and not the official, production version ([https://wikidata.org/](https://wikidata.org/)).
 
 Go to the test instance at [https://test.wikidata.org/](https://test.wikidata.org/)
