@@ -1,7 +1,7 @@
 ---
 title: Introduction to editing
-teaching: 0
-exercises: 0
+teaching: 15
+exercises: 15
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
