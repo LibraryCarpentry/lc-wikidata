@@ -101,14 +101,42 @@ Support a person by it's IDs. Give the participtants the identifiers and source 
 
 ## 3\.5 Norms and good practices
 
-- Customization of languages for user interface
-- Wikidata "item" vs. "article" vs. "entry"
-- Policies for
-  - [Labels](https://www.wikidata.org/wiki/Special:MyLanguage/Help:Label)
-  - [Descriptions](https://www.wikidata.org/wiki/Special:MyLanguage/Help:Description)
-- Books
-  - [Data model](https://www.wikidata.org/wiki/Wikidata:WikiProject_Books)
-  - [Inventaire](https://inventaire.io/welcome)
+Wikidata has a number of community norms and best practices that are 
+important to follow when creating and editing items.
+
+### Language settings
+
+You can customize the languages displayed in the Wikidata interface 
+under your user preferences. This is useful if you work with items 
+in multiple languages.
+
+### Terminology
+
+Wikidata uses the term "item" rather than "article" or "entry". 
+This reflects that Wikidata is a database of structured data, not 
+a collection of articles like Wikipedia.
+
+### Policies for labels and descriptions
+
+Wikidata has specific guidelines for how labels and descriptions 
+should be written:
+
+- [Labels](https://www.wikidata.org/wiki/Special:MyLanguage/Help:Label) 
+  should be short and unambiguous.
+- [Descriptions](https://www.wikidata.org/wiki/Special:MyLanguage/Help:Description) 
+  should be brief and help distinguish an item from similar items.
+
+### Books and library materials
+
+Books are a common use case for librarians working with Wikidata, 
+but they have a relatively complex data model. Wikidata distinguishes 
+between a work (the intellectual content) and its editions (physical 
+manifestations). The [WikiProject Books data model](https://www.wikidata.org/wiki/Wikidata:WikiProject_Books) 
+provides guidance on how to model books correctly.
+
+[Inventaire](https://inventaire.io/welcome) is an example of a 
+tool built on Wikidata that focuses specifically on books and 
+library materials.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
