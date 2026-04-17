@@ -453,6 +453,16 @@ SELECT-statement.</p>
 </div>
 <div class="section level3">
 <h3 id="showing-labels-to-q-numbers">Showing labels to Q-numbers<a class="anchor" aria-label="anchor" href="#showing-labels-to-q-numbers"></a></h3>
+<p>By default, SPARQL queries return Q-numbers instead of human-readable
+labels. To show labels, add the <code>SERVICE wikibase:label</code>
+block to your query:</p>
+<pre><code>SELECT ?item ?itemLabel
+WHERE {
+?item wdt:P31 wd:Q7075.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}</code></pre>
+<p>The <code>[AUTO_LANGUAGE]</code> placeholder automatically uses your
+browser’s language setting, with English as a fallback.</p>
 </div>
 <div class="section level3">
 <h3 id="namespaces-and-prefixes">Namespaces and Prefixes<a class="anchor" aria-label="anchor" href="#namespaces-and-prefixes"></a></h3>
@@ -474,12 +484,29 @@ itself. etc.</li>
 </ul></div>
 <div class="section level3">
 <h3 id="more-conditions">More conditions<a class="anchor" aria-label="anchor" href="#more-conditions"></a></h3>
-<ul><li>publications from Addison-Wesley vs. books from Addison-Wesley
-vs. books authored by Richard Feynman from Addison-Wesley</li>
-<li>LIMIT</li>
-<li>ORDER</li>
-<li>FILTER</li>
-<li>OPTIONAL</li>
+</div>
+<div class="section level3">
+<h3 id="more-conditions-1">More conditions<a class="anchor" aria-label="anchor" href="#more-conditions-1"></a></h3>
+<p>You can combine multiple conditions in a single query. Here is an
+example that finds books published by Addison-Wesley authored by Richard
+Feynman:</p>
+<pre><code>SELECT ?book ?bookLabel WHERE {
+?book wdt:P31 wd:Q571.        # instance of book
+?book wdt:P123 wd:Q353060.    # published by Addison-Wesley
+?book wdt:P50 wd:Q39246.      # authored by Richard Feynman
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}</code></pre>
+<p>Useful modifiers:</p>
+<ul><li>
+<code>LIMIT 10</code> — restrict results to 10 rows</li>
+<li>
+<code>ORDER BY DESC(?date)</code> — sort results by date, newest
+first</li>
+<li>
+<code>FILTER(YEAR(?date) &gt; 2000)</code> — filter by year</li>
+<li>
+<code>OPTIONAL { ?item wdt:P18 ?image }</code> — include a field
+only if it exists</li>
 </ul></div>
 <div class="section level3">
 <h3 id="how-to-visualize-your-query">How to visualize your query<a class="anchor" aria-label="anchor" href="#how-to-visualize-your-query"></a></h3>
@@ -805,11 +832,38 @@ WHERE
 }</code></pre>
 </div>
 </section><section><h2 class="section-heading" id="more-advanced-queries">5.4 More Advanced queries<a class="anchor" aria-label="anchor" href="#more-advanced-queries"></a></h2>
-<hr class="half-width"><p>further links</p>
-<pre><code>https://commons.wikimedia.org/wiki/File:Wikidata_Query_Service_in_Brief.pdf
-https://www.uni-mannheim.de/media/Einrichtungen/dws/Files_Teaching/Semantic_Web_Technologies/SWT05-SPARQL-v1.pdf
-https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial</code></pre>
-<div id="keypoints1" class="callout keypoints">
+<hr class="half-width"><p>Here are some more advanced query patterns that are particularly
+useful for library use cases.</p>
+<div class="section level3">
+<h3 id="federated-queries-and-subqueries">Federated queries and subqueries<a class="anchor" aria-label="anchor" href="#federated-queries-and-subqueries"></a></h3>
+<p>You can use subqueries to pre-filter data before the main query
+processes it, which can significantly speed up complex queries:</p>
+<pre><code>SELECT ?item ?itemLabel ?authorLabel WHERE {
+?item wdt:P31 wd:Q13442814.     # scholarly article
+?item wdt:P50 ?author.
+?author wdt:P108 wd:Q49210.     # affiliated with a specific institution
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+LIMIT 20</code></pre>
+</div>
+<div class="section level3">
+<h3 id="maintenance-queries">Maintenance queries<a class="anchor" aria-label="anchor" href="#maintenance-queries"></a></h3>
+<p>Maintenance queries help identify items that are missing information.
+These are useful for librarians who want to improve data quality:</p>
+<pre><code># Libraries without coordinates
+SELECT ?item ?itemLabel WHERE { ?item wdt:P31 wd:Q7075. # instance of library FILTER NOT EXISTS { ?item wdt:P625 ?coord } SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } } LIMIT 20</code></pre>
+<pre><code># Scholarly articles without a DOI
+SELECT ?item ?itemLabel WHERE { ?item wdt:P31 wd:Q13442814. # scholarly article FILTER NOT EXISTS { ?item wdt:P356 ?doi } SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } } LIMIT 20</code></pre>
+</div>
+<div class="section level3">
+<h3 id="further-resources">Further resources<a class="anchor" aria-label="anchor" href="#further-resources"></a></h3>
+<ul><li><a href="https://commons.wikimedia.org/wiki/File:Wikidata_Query_Service_in_Brief.pdf" class="external-link">Wikidata
+Query Service in Brief (PDF)</a></li>
+<li><a href="https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial" class="external-link">SPARQL
+tutorial on Wikidata</a></li>
+<li><a href="https://www.uni-mannheim.de/media/Einrichtungen/dws/Files_Teaching/Semantic_Web_Technologies/SWT05-SPARQL-v1.pdf" class="external-link">SPARQL
+lecture slides, University of Mannheim</a></li>
+</ul><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -825,6 +879,7 @@ charts, and graphs using the Display menu or #defaultView.</li>
 <li>It is good practice to modify existing example queries rather than
 writing queries from scratch.</li>
 </ul></div>
+</div>
 </div>
 </div>
 </section></div> <!-- / div.lesson-content -->
@@ -865,7 +920,7 @@ writing queries from scratch.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.1.0" class="external-link">varnish (1.1.0)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
