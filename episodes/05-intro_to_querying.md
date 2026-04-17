@@ -593,7 +593,7 @@ it, which can significantly speed up complex queries:
 SELECT ?item ?itemLabel ?authorLabel WHERE {
 ?item wdt:P31 wd:Q13442814.     # scholarly article
 ?item wdt:P50 ?author.
-?author wdt:P108 wd:wd:Q160302.     # affiliated with a specific institution
+?author wdt:P108 wd:Q160302.     # affiliated with a specific institution
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 LIMIT 20
