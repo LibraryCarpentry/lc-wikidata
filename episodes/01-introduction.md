@@ -84,9 +84,9 @@ The primary unit of data described on Wikidata are "items." Each item has an ite
   - qualifier (optional)
   - references (optional)
   - As you can see, a property can have multiple values. For example, *member of* indicates multiple values. These values can be further specified or supported by qualifiers (not shown on the item page for British Library)
-  - statements can also be called "triples," since they include three parts (the item, the property relationship, and the property's value), which we will look into more closely later on
-
-Wikidata items, as you can see above, have many special parts, like statements, qualifiers, and so on. The following overview graphic, [directly linked here](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg), explains many of the various elements of a Wikidata item and shows how they may appear on an item page:
+  - statements can also be called "triples," since they include three parts (the item, the property relationship, and the property's value), which we will look into more closely later on.
+ 
+Wikidata items, as you can see above, have many special parts, like statements, qualifiers, and so on. The following diagram uses a different Wikidata item — [Douglas Adams (Q42)]((https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg)) — to illustrate the various elements of a Wikidata item and shows how they may appear on an item page. This is the official Wikidata example item and is widely used in Wikidata documentation:
 
 ![](https://upload.wikimedia.org/wikipedia/commons/a/ae/Datamodel_in_Wikidata.svg){alt='Labeled display of a Wikidata item showing how elements like identifier, description, and staements may be displayed'}
 
@@ -114,7 +114,7 @@ In other words, the data is openly licensed and reusable. Since Wikidata can als
 
 ### Explore a Wikidata Item
 
-Locate the Wikidata page of the city you were born in. Look for the population. 
+Locate the Wikidata page of the city or country you were born in. Look for the population. 
 
 - Has the population changed over time? Some wikidata pages appear in multiple languages. 
 - Are the aliases and data similar between Wikidata and the various Wikipedia entries in different languages? 
@@ -122,7 +122,7 @@ Locate the Wikidata page of the city you were born in. Look for the population.
 
 :::::::: solution
 
-- Depending on the detail and amount of information about a place, there may be multiple values regarding a city's population. Because a city changes over time, Wikidata statements can be qualified, including with the addition of a start/end date, or by providing a citation for the data. The change in population over time provides a good example of the importance of providing qualifications for Wikidata staements.
+- Depending on the detail and amount of information about a place, there may be multiple values regarding a city's population. Because a city or country changes over time, Wikidata statements can be qualified, including with the addition of a start/end date, or by providing a citation for the data. The change in population over time provides a good example of the importance of providing qualifications for Wikidata staements.
 
 ::::::::
 
