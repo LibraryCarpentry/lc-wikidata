@@ -92,6 +92,7 @@ as ice-breakers, but availability may vary — test them before the lesson:
 - [Wikidata distributed games](https://tools.wmflabs.org/wikidata-game/distributed/#)
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ## 1\.2 Wikidata Items and Item Pages
 
 The primary unit of data described on Wikidata are "items." Each item has an item page with a unique identifier designated by the letter `Q` followed by a string of numbers. Let's explore a Wikidata item page, which will also demonstrate the characteristics of items in Wikidata.
