@@ -362,7 +362,11 @@ identifying missing information.</li>
 </div>
 </div>
 </div>
-<p>FIXME</p>
+<p>In this episode we will learn how to query Wikidata using SPARQL, the
+query language for RDF data. We will start with simple queries and work
+our way up to more complex ones, including visualizations like maps,
+charts, and graphs. The Wikidata Query Service at <a href="https://query.wikidata.org/" class="external-link">https://query.wikidata.org/</a> will
+be our main tool throughout this episode.</p>
 <p>There are different ways to query information in Wikidata. The
 simplest way is to search for an entry in Wikidata and looking up all
 information for that entry, e.g. <a href="https://www.wikidata.org/w/index.php?search=Richard+Feynman" class="external-link">search
@@ -440,7 +444,7 @@ SELECT-statement.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre><code>SELECT * WHERE {
    wd:Q7750812 wdt:P123 ?publisher .
@@ -814,7 +818,14 @@ https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial</code></pre>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>First key point. (FIXME)</li>
+<ul><li>SPARQL is a query language for RDF data that allows you to search
+across the entire Wikidata knowledge graph.</li>
+<li>The Wikidata Query Service at <a href="https://query.wikidata.org/" class="external-link uri">https://query.wikidata.org/</a> provides an interface to
+write and run SPARQL queries with auto-completion.</li>
+<li>Results can be visualized in multiple ways including tables, maps,
+charts, and graphs using the Display menu or #defaultView.</li>
+<li>It is good practice to modify existing example queries rather than
+writing queries from scratch.</li>
 </ul></div>
 </div>
 </div>
@@ -856,7 +867,7 @@ https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial</code></pre>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.1.0" class="external-link">varnish (1.1.0)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
