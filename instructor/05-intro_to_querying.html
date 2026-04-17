@@ -843,7 +843,7 @@ processes it, which can significantly speed up complex queries:</p>
 <pre><code>SELECT ?item ?itemLabel ?authorLabel WHERE {
 ?item wdt:P31 wd:Q13442814.     # scholarly article
 ?item wdt:P50 ?author.
-?author wdt:P108 wd:Q49210.     # affiliated with a specific institution
+?author wdt:P108 wd:wd:Q160302.     # affiliated with a specific institution
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 LIMIT 20</code></pre>
@@ -922,7 +922,7 @@ writing queries from scratch.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.1.0" class="external-link">varnish (1.1.0)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
