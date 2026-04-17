@@ -60,7 +60,12 @@ A new window with QuickStatements will pop up. Now you'll get an overview of the
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- First key point. (FIXME)
+- Sourcemd and QuickStatements allow you to automatically add 
+  bibliographic metadata from DOIs or PMIDs to Wikidata.
+- The Author Disambiguator tool can help convert unstructured 
+  author strings to linked Wikidata items.
+- Tools for advanced editing are under active development and 
+  may change or be temporarily unavailable.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
