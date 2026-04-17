@@ -6,9 +6,10 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Know what a triple is, and relate structure of a Wikidata statement to traditional metadata field structure
-- Know how linked data can create more context for patrons/users in library catalogs
-- Know how linked data can improve recall in library catalogs? 
+- Know what a triple is, and relate structure of a Wikidata statement to traditional metadata field structure.
+- Know how linked data can create more context for patrons/users in library catalogs.
+- Know how linked data can improve recall in library catalogs.
+- Be aware of tools and services built on top of Wikidata, such as Scholia and InteractOA.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -16,6 +17,7 @@ exercises: 10
 
 - What is a RDF triple?
 - What are the underlying components of RDF?
+- What tools and services are built on top of Wikidata?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -54,13 +56,6 @@ In SQL relational database terms, RDF data can also be processed as a table,
 but with only three columns – the subject column, the predicate column, and the object column.
 
 ![](fig/Data_Structure_Diagram.jpg){alt='A data structure diagram illustrating a possible connection between a list of triples, represented by a data dictionary, and a graph diagram which visualizes the relationships stipulated by the triples.'}
-
-The scale of linked open data on the web can be visualized in the 
-[Linked Open Data Cloud](https://lod-cloud.net/), which shows the 
-connections between hundreds of open datasets. Note that this 
-visualization is updated regularly, so it will look different over time.
-
-![](https://lod-cloud.net/clouds/lod-cloud.svg){alt='Visualization of the Linked Open Data Cloud showing connections between hundreds of open datasets'}
 
 ## 2\.2 Conceptual foundations: RDF and Triples
 
@@ -153,12 +148,72 @@ In the picture below the statement "Mae C. Jemison - part of - NASA Astronaut Gr
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## 2\.4 Tools and services using Wikidata
+
+Wikidata's open data can be used and reused by anyone. A number of tools 
+and services have been built on top of Wikidata's database, demonstrating 
+its value as a linked open data resource.
+
+### The Linked Open Data Cloud
+
+Wikidata is part of a much larger ecosystem of linked open datasets. 
+The [Linked Open Data Cloud](https://lod-cloud.net/) visualizes the 
+connections between hundreds of open datasets on the web. Note that 
+this visualization is updated regularly.
+
+![](https://lod-cloud.net/clouds/lod-cloud.svg){alt='Visualization of the Linked Open Data Cloud showing connections between hundreds of open datasets'}
+
+### Scholia
+
+[Scholia](https://scholia.toolforge.org/) is a tool built on top of 
+Wikidata that visualizes scholarly profiles and research outputs. It has 
+no own database but queries Wikidata directly, which means any addition 
+to Wikidata is immediately reflected in Scholia. It is particularly 
+useful for librarians working with research information.
+
+::::::::::::::::::::::::::::::::::::::::  challenge
+
+### Explore a Wikidata item and its Scholia profile
+
+**Part 1: Wikidata item**
+
+Go to the Wikidata page of [Donna Haraway (Q253407)](https://www.wikidata.org/wiki/Q253407), 
+a feminist scholar and philosopher of science.
+
+- What statements can you find?
+- What identifiers are listed?
+- What links to other Wiki projects do you see?
+
+**Part 2: Scholia profile**
+
+Now go to the Scholia profile of 
+[Alex Bateman (Q18921408)](https://scholia.toolforge.org/author/Q18921408), 
+a bioinformatician with many publications in Wikidata.
+
+- How many publications are listed per year?
+- What topics does his research cover?
+- Who are his most frequent co-authors?
+- Can you find the academic tree and citation statistics?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+### InteractOA
+
+[InteractOA](https://interactoa.zbmed.de/) is another example of a 
+web service built on top of Wikidata. It visualizes genomic RNA 
+interaction networks based on data stored in Wikidata, linked directly 
+to the open-access articles that describe the evidence for these 
+interactions. It demonstrates that Wikidata can serve as a sustainable, 
+open database for specialized scientific knowledge.
+
+
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Triples are the basic data structure of graph databases, and they are the conceptual structure of Wikidata statements.
-- Wikidata items are denoted by a human-readable label and a short description, and a unique identifer that begins with a Q. These items are the subjects of linked Wikidata statements.
+- Wikidata items are denoted by a human-readable label and a short description, and a unique identifier that begins with a Q. These items are the subjects of linked Wikidata statements.
 - Wikidata defines relationships between items, also known as triple *predicates*, with Wikidata *properties*.
 - Wikidata statements can capture library information, such as relationships like creatorship, publication, aboutness, and more.
+- Wikidata is part of a larger Linked Open Data ecosystem, and its data can be reused to build tools and services such as Scholia, InteractOA, and others.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
