@@ -61,6 +61,37 @@ and interact with the data on Wikidata.
   ![](fig/Wikidata_Main_Page.png){alt='Screenshot of the Wikidata main page displaying in a web browser'}  
   *Screenshot of [Wikidata Main Page](https://www.wikidata.org/wiki/Wikidata:Main_Page)*
 
+::::::::::::::::::::::::::::::::::::::::: discussion
+
+### Explore Wikidata
+
+Take 5 minutes to freely explore Wikidata. You could:
+
+- Open a [random item](https://www.wikidata.org/wiki/Special:Random) and see what you find
+- Search for your hometown, a person you know, or your institution
+- Look at how items are connected to each other
+
+Share what you found with the group.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+If you want a more structured activity, here are two options that work 
+well as an introduction:
+
+- [Creating & Editing Libraries in Wikidata](https://coffeecode.net/creating-and-editing-libraries-in-wikidata.html)
+- [Increasing Visibility of Women with Wikidata](https://diff.wikimedia.org/2018/03/29/increasing-visibility-women-with-wikidata/)
+
+Note that these activities involve editing, so they may be better suited 
+for later in the lesson once learners are more familiar with Wikidata.
+
+There are also some Wikidata-specific games and tools that can be used 
+as ice-breakers, but availability may vary — test them before the lesson:
+
+- [Wikidata distributed games](https://tools.wmflabs.org/wikidata-game/distributed/#)
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::
 ## 1\.2 Wikidata Items and Item Pages
 
 The primary unit of data described on Wikidata are "items." Each item has an item page with a unique identifier designated by the letter `Q` followed by a string of numbers. Let's explore a Wikidata item page, which will also demonstrate the characteristics of items in Wikidata.
