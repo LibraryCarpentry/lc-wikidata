@@ -86,6 +86,11 @@ well as an introduction:
 Note that these activities involve editing, so they may be better suited 
 for later in the lesson once learners are more familiar with Wikidata.
 
+There are also some Wikidata-specific games and tools that can be used 
+as ice-breakers, but availability may vary — test them before the lesson:
+
+- [Wikidata distributed games](https://tools.wmflabs.org/wikidata-game/distributed/#)
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## 1\.2 Wikidata Items and Item Pages
