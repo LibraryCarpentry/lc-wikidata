@@ -383,9 +383,54 @@ of publication. Click on “Open in QuickStatements”.</p>
 overview of the new item and its statements. Confirm the changes by
 hitting the the “run” button:</p>
 <figure><img src="../fig/episode_04_screenshot_05_run_editing.png" alt="run_editing" class="figure mx-auto d-block"></figure></section><section><h2 class="section-heading" id="optional-converting-author-strings-to-author">4.4 (OPTIONAL) Converting “author strings” to “author”<a class="anchor" aria-label="anchor" href="#optional-converting-author-strings-to-author"></a></h2>
-<hr class="half-width"><p><a href="https://github.com/foerstner-lab/Publication_list/blob/master/Query_Strings_for_Wikidata.md" class="external-link">Find
-Author Strings</a> <a href="https://author-disambiguator.toolforge.org/" class="external-link">Author
-Disambiguator</a></p>
+<hr class="half-width"><p>When bibliographic data is imported into Wikidata in bulk, author
+names are often stored as plain text strings using the property
+<strong>author name string (P2093)</strong> rather than as linked
+Wikidata items using <strong>author (P50)</strong>. Converting these
+strings to proper linked author items makes the data much more useful —
+for example, it enables tools like Scholia to generate complete
+researcher profiles.</p>
+<div class="section level3">
+<h3 id="finding-author-strings">Finding author strings<a class="anchor" aria-label="anchor" href="#finding-author-strings"></a></h3>
+<p>You can find author strings that need disambiguation using this query
+collection maintained by the Foerstner Lab:</p>
+<p><a href="https://github.com/foerstner-lab/Publication_list/blob/master/Query_Strings_for_Wikidata.md" class="external-link">Find
+Author Strings</a></p>
+<p>You can also access your own Scholia profile’s curation page by
+appending <code>/missing</code> to your Scholia author URL, e.g.:
+<code>https://scholia.toolforge.org/author/Q18921408/missing</code></p>
+</div>
+<div class="section level3">
+<h3 id="using-the-author-disambiguator">Using the Author Disambiguator<a class="anchor" aria-label="anchor" href="#using-the-author-disambiguator"></a></h3>
+<p>The <a href="https://author-disambiguator.toolforge.org/" class="external-link">Author
+Disambiguator</a> is a tool that helps you convert author name strings
+(P2093) to linked author items (P50). To use it:</p>
+<ol style="list-style-type: decimal"><li>Go to <a href="https://author-disambiguator.toolforge.org/" class="external-link">https://author-disambiguator.toolforge.org/</a>
+and log in with your Wikimedia account.</li>
+<li>Enter an author name in the search field. Use natural order (Given
+name Family name).</li>
+<li>The tool will display a list of publications in Wikidata that have
+this name as an author string.</li>
+<li>Check the publications that belong to this author.</li>
+<li>Select the corresponding Wikidata author item from the list of
+potential matches at the bottom, or create a new one if needed.</li>
+<li>Click “Link selected works to author” to replace the string with a
+proper linked item.</li>
+</ol><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>This exercise works best with authors who have many publications
+already in Wikidata, such as researchers active in open science or life
+sciences communities. Encourage learners to try their own name or the
+name of a colleague.</p>
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -400,6 +445,7 @@ strings to linked Wikidata items.</li>
 <li>Tools for advanced editing are under active development and may
 change or be temporarily unavailable.</li>
 </ul></div>
+</div>
 </div>
 </div>
 </section></div> <!-- / div.lesson-content -->
@@ -440,7 +486,7 @@ change or be temporarily unavailable.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.0)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.1.0" class="external-link">varnish (1.1.0)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
