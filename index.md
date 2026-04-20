@@ -16,7 +16,7 @@ understand how to perform a mass import into Wikidata.
 
 ## Under Design
 
-**This lesson is currently in its early design stage;
+**This lesson is still in beta;
 please check the repository issues and pull requests
 to see what we have so far.
 Contributions are very welcome**
