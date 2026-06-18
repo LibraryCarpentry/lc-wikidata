@@ -1,10 +1,9 @@
 # Maintainers for Library Carpentry: Wikidata
 
-- [Till Sauerwein](https://github.com/Tillsa)
-- [Muhammad Elhossary](https://github.com/elhossary)
 - [Konrad Förstner](https://github.com/konrad)
 - [Rabea Müller](https://github.com/RabeaMue)
-- [Shelby Watson](https://github.com/sawatson-um)
+- [Till Sauerwein](https://github.com/Tillsa)
+
 
 Lesson Maintainers communication is via the [team site](https://github.com/orgs/LibraryCarpentry/teams/lc-wikidata).
 
