@@ -9,15 +9,15 @@ authors:
   - given-names: Konrad
     family-names: Förstner
     affiliation: ZB MED - Information Centre for Life Sciences
-    orcid: 0000-0002-1481-2996
+    orcid: 'https://orcid.org/0000-0002-1481-2996'
   - given-names: Rabea
     family-names: Müller
     affiliation: ZB MED - Information Centre for Life Sciences
-    orcid: 0000-0002-3096-8237
+    orcid: 'https://orcid.org/0000-0002-3096-8237'
   - given-names: Till
     family-names: Sauerwein
     affiliation: ZB MED - Information Centre for Life Sciences
-    orcid: 0000-0001-5830-4208
+    orcid: 'https://orcid.org/0000-0001-5830-4208'
 repository-code: "https://github.com/LibraryCarpentry/lc-wikidata"
 url: "https://librarycarpentry.github.io/lc-wikidata/"
 abstract: >-
