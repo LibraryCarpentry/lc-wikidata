@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Library Carpentry: Wikidata"
+message: >-
+  Please cite this lesson using the information in this file
+  when you refer to it in publications, and/or if you re-use,
+  adapt, or expand on the content in your own training material.
+type: dataset
+authors:
+  - given-names: Rabea
+    family-names: Müller
+    affiliation: ZB MED - Information Centre for Life Sciences
+    orcid: 0000-0002-3096-8237
+  - given-names: Till
+    family-names: Sauerwein
+    affiliation: ZB MED - Information Centre for Life Sciences
+    orcid: 0000-0001-5830-4208
+repository-code: "https://github.com/LibraryCarpentry/lc-wikidata"
+url: "https://librarycarpentry.github.io/lc-wikidata/"
+abstract: >-
+  An introduction to Wikidata for librarians, covering the
+  underlying concepts of Wikidata, its interface and connection
+  to other Wikimedia projects, and how to create, edit and
+  query Wikidata items.
+keywords:
+  - Carpentries
+  - Library Carpentry
+  - Wikidata
+  - linked open data
+license: CC-BY-4.0
