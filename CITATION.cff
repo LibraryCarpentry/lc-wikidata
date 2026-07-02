@@ -6,6 +6,10 @@ message: >-
   adapt, or expand on the content in your own training material.
 type: dataset
 authors:
+  - given-names: Konrad
+    family-names: Förstner
+    affiliation: ZB MED - Information Centre for Life Sciences
+    orcid: 0000-0002-1481-2996
   - given-names: Rabea
     family-names: Müller
     affiliation: ZB MED - Information Centre for Life Sciences
