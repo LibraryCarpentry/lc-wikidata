@@ -30,9 +30,8 @@ Library Carpentry is authored and maintained through issues, commits, and pull r
 
 ## Citation
 
-Cite as:
-
-Library Carpentry: Wikidata. September 2019. [https://librarycarpentry.org/lc-wikidata](https://librarycarpentry.org/lc-wikidata).
+Please see [CITATION.cff](CITATION.cff) for citation information, or use
+the "Cite this repository" button in the GitHub sidebar.
 
 ## Checking and Previewing the Lesson
 
