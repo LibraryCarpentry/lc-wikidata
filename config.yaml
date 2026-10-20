@@ -17,7 +17,10 @@ title: 'Library Carpentry Wikidata'
 created: '2018-09-17'
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries'
+keywords: 'Wikidata, linked open data, knowledge graphs, SPARQL, metadata, Wikimedia, Library Carpentry'
+
+# Short description of the lesson (used for the lesson metadata, e.g. in TeSS)
+desc: 'An introduction to Wikidata for librarians: understand its underlying concepts and its connection to other Wikimedia projects, create and edit items with references, and query the data with SPARQL.'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
